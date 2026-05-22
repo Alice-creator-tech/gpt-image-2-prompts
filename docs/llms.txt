@@ -6,7 +6,7 @@ Core facts:
 - 874 prompt-image pairs
 - 3 source categories: Men's Fashion, Women's Fashion, Kids Fashion
 - Every example includes original prompt text, matched image URL, category, tags, and source page URL.
-- Main dataset: https://alice-creator-tech.github.io/gpt-image-2-prompts/data/prompts.json
+- Main dataset: https://gptimage2prompts.github.io/gpt-image-2-prompts/data/prompts.json
 - GPTImg2 source library: https://gptimg2.art/zh/prompts/gpt-image-2
 - Generator: https://gptimg2.art/zh/ai-image
 

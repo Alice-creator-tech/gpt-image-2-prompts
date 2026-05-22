@@ -28,6 +28,6 @@ This dataset is intended for prompt education, search, retrieval, prompt library
 
 ## Source
 
-Project homepage: https://alice-creator-tech.github.io/gpt-image-2-prompts
+Project homepage: https://gptimage2prompts.github.io/gpt-image-2-prompts
 
 Tool entry point: https://gptimg2.art/

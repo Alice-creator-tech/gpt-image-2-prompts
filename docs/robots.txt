@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alice-creator-tech.github.io/gpt-image-2-prompts/sitemap.xml
+Sitemap: https://gptimage2prompts.github.io/gpt-image-2-prompts/sitemap.xml
