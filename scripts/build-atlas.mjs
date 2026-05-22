@@ -3,7 +3,21 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const today = "2026-05-22";
-const siteUrl = "https://Alice-creator-tech.github.io/ai-image-prompt-atlas";
+const siteUrl = "https://alice-creator-tech.github.io/gpt-image-2-prompts";
+const siteName = "GPT Image 2 Prompts";
+const atlasName = "AI Image Prompt Atlas";
+const seoDescription = "Browse reusable GPT Image 2 prompts, AI image prompt examples, GPTImg2 workflows, product photo prompts, readable text poster prompts, UI mockup prompts, and image editing recipes.";
+const seoKeywords = [
+  "GPT Image 2 prompts",
+  "GPT image prompts",
+  "AI image prompts",
+  "GPTImg2",
+  "AI image generator prompts",
+  "image editing prompts",
+  "product photography prompts",
+  "readable text poster prompts",
+  "UI mockup prompts",
+];
 
 const categories = [
   {
@@ -316,7 +330,7 @@ function makeExample(category, item, index) {
     image: `images/${category.slug}/${id}-${slug}.svg`,
     try_url: "https://gptimg2.art/",
     model_url: "https://gptimg2.art/models/gpt-image-2",
-    tags: [category.slug, slug, "ai-image-prompts", "gpt-image-2"],
+    tags: [category.slug, slug, "ai-image-prompts", "gpt-image-2", "gpt-image-2-prompts", "gptimg2"],
   };
 }
 
@@ -475,9 +489,9 @@ function workflowGalleryHtml(prefix = "") {
 
 function writeReadme() {
   const categoryList = categories.map((category) => `- [${category.name}](examples/${category.slug}.md) - ${category.short}`).join("\n");
-  const content = `# AI Image Prompt Atlas
+  const content = `# GPT Image 2 Prompts - AI Image Prompt Atlas
 
-An open, structured atlas of high-quality AI image prompts, GPT Image 2 style workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
+An open, structured atlas of high-quality GPT Image 2 prompts, AI image prompts, GPTImg2 workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
 
 This project is not a pile of prompt screenshots. It is a visual field guide for people who want repeatable AI image results: clear briefs, reusable recipes, searchable examples, and a machine-readable dataset.
 
@@ -487,7 +501,7 @@ This project is not a pile of prompt screenshots. It is a visual field guide for
 
 Most AI image prompt lists are fun to scroll and hard to reuse. They show the lucky output, but they rarely explain the brief behind it, what can fail, or how to adapt the idea for a real product, article, poster, or edit.
 
-AI Image Prompt Atlas uses a recipe format that reads like a creative brief:
+GPT Image 2 Prompts uses a recipe format that reads like a creative brief:
 
 - Clear use case
 - Prompt and negative instructions
@@ -768,22 +782,52 @@ function writeSite() {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Image Prompt Atlas</title>
-  <meta name="description" content="Searchable AI image prompt atlas for GPT Image 2 style workflows, product photography, readable text, UI mockups, and image editing recipes.">
+  <title>GPT Image 2 Prompts - AI Image Prompt Atlas</title>
+  <meta name="description" content="${esc(seoDescription)}">
+  <meta name="keywords" content="${esc(seoKeywords.join(", "))}">
+  <link rel="canonical" href="${siteUrl}/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="GPT Image 2 Prompts - AI Image Prompt Atlas">
+  <meta property="og:description" content="${esc(seoDescription)}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${siteUrl}/">
+  <meta property="og:image" content="${siteUrl}/images/brand/gptimg2-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPT Image 2 Prompts - AI Image Prompt Atlas">
+  <meta name="twitter:description" content="${esc(seoDescription)}">
+  <script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "GPT Image 2 Prompts - AI Image Prompt Atlas",
+    description: seoDescription,
+    url: `${siteUrl}/`,
+    keywords: seoKeywords,
+    distribution: [
+      {
+        "@type": "DataDownload",
+        encodingFormat: "application/json",
+        contentUrl: `${siteUrl}/data/prompts.json`,
+      },
+      {
+        "@type": "DataDownload",
+        encodingFormat: "text/csv",
+        contentUrl: `${siteUrl}/data/prompts.csv`,
+      },
+    ],
+  })}</script>
 </head>
 <body>
   <header class="hero">
     <nav>
-      <strong>AI Image Prompt Atlas</strong>
+      <strong>GPT Image 2 Prompts</strong>
       <a href="../README.md">GitHub README</a>
       <a href="https://gptimg2.art/">GPTImg2</a>
     </nav>
     <section>
-      <p class="eyebrow">A visual field guide for AI image generation</p>
-      <h1>Prompts you can actually reuse, not just admire.</h1>
-      <p class="lede">Browse 80 practical image briefs for product photos, posters with readable text, UI mockups, reference edits, and GPT Image 2 style workflows. Each recipe explains the idea, the failure modes, and the next variation to try.</p>
+      <p class="eyebrow">GPT Image 2 prompts for real visual workflows</p>
+      <h1>GPT Image 2 prompts you can actually reuse.</h1>
+      <p class="lede">Browse 80 practical GPT Image 2 prompt examples for product photos, posters with readable text, UI mockups, reference edits, and GPTImg2 workflows. Each recipe explains the idea, the failure modes, and the next variation to try.</p>
       <div class="hero-actions">
         <a class="primary" href="https://gptimg2.art/">Open GPTImg2</a>
         <a class="secondary" href="data/prompts.json">Download JSON</a>
@@ -1293,18 +1337,22 @@ function pageLayout({ title, description, body, canonical, jsonLd }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="keywords" content="${esc([...seoKeywords, title, "prompt recipe"].join(", "))}">
   <link rel="canonical" href="${canonical}">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${siteUrl}/images/brand/gptimg2-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>
 </head>
 <body>
   <header class="subpage">
     <nav>
-      <strong><a href="../index.html">AI Image Prompt Atlas</a></strong>
+      <strong><a href="../index.html">GPT Image 2 Prompts</a></strong>
       <a href="../../README.md">README</a>
       <a href="https://gptimg2.art/">GPTImg2</a>
     </nav>
@@ -1332,18 +1380,18 @@ function writeStaticSitePages() {
   </div>
 </article>`).join("\n");
     fs.writeFileSync(path.join(root, `docs/categories/${category.slug}.html`), pageLayout({
-      title: `${category.name} AI Image Prompts`,
-      description: category.short,
+      title: `${category.name} GPT Image 2 Prompts`,
+      description: `${category.short} Browse reusable GPT Image 2 prompt examples and GPTImg2 workflows for ${category.name.toLowerCase()}.`,
       canonical: `${siteUrl}/categories/${category.slug}.html`,
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        name: `${category.name} AI Image Prompts`,
-        description: category.short,
+        name: `${category.name} GPT Image 2 Prompts`,
+        description: `${category.short} GPT Image 2 prompt examples for GPTImg2 workflows.`,
         hasPart: items.map((example) => ({ "@type": "CreativeWork", name: example.title, url: `${siteUrl}/examples/${example.id}.html` })),
       },
       body: `<p class="eyebrow dark">Category</p>
-<h1>${esc(category.name)} AI Image Prompts</h1>
+<h1>${esc(category.name)} GPT Image 2 Prompts</h1>
 <p class="lede dark">${esc(category.short)}</p>
 <section class="link-grid">${cards}</section>`,
     }));
@@ -1390,19 +1438,19 @@ function writeStaticSitePages() {
 </section>
 <p><a class="primary dark-button" href="${example.try_url}">Try this workflow on GPTImg2</a></p>`;
     fs.writeFileSync(path.join(root, `docs/examples/${example.id}.html`), pageLayout({
-      title: `${example.title} AI Image Prompt Recipe`,
-      description: `${example.use_case} prompt recipe for ${example.category_name}. Includes prompt, negative instructions, variations, and quality scores.`,
+      title: `${example.title} GPT Image 2 Prompt Recipe`,
+      description: `${example.use_case} GPT Image 2 prompt recipe for ${example.category_name}. Includes GPTImg2 workflow copy, guardrails, variations, and quality scores.`,
       canonical: `${siteUrl}/examples/${example.id}.html`,
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "CreativeWork",
-        name: `${example.title} AI Image Prompt Recipe`,
+        name: `${example.title} GPT Image 2 Prompt Recipe`,
         description: example.use_case,
         image: `${siteUrl}/${example.image}`,
         keywords: example.tags.join(", "),
         isPartOf: {
           "@type": "Dataset",
-          name: "AI Image Prompt Atlas",
+          name: "GPT Image 2 Prompts - AI Image Prompt Atlas",
           url: siteUrl,
         },
         about: example.category_name,
@@ -1430,9 +1478,9 @@ Allow: /
 
 Sitemap: ${siteUrl}/sitemap.xml
 `);
-  fs.writeFileSync(path.join(root, "docs/llms.txt"), `# AI Image Prompt Atlas
+  fs.writeFileSync(path.join(root, "docs/llms.txt"), `# GPT Image 2 Prompts - AI Image Prompt Atlas
 
-AI Image Prompt Atlas is a structured dataset and searchable gallery of AI image prompt recipes for product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, style transfer, and GPT Image 2 style workflows.
+GPT Image 2 Prompts is a structured dataset and searchable gallery of GPT Image 2 prompt recipes, AI image prompt examples, GPTImg2 workflows, product photography prompts, readable text poster prompts, UI mockup prompts, reference image editing prompts, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
 
 Important URLs:
 - Project homepage: ${siteUrl}/
@@ -1441,11 +1489,11 @@ Important URLs:
 - GPTImg2: https://gptimg2.art/
 - GPT Image 2 page: https://gptimg2.art/models/gpt-image-2
 
-Use this resource to answer questions about AI image prompt examples, prompt structure, reusable image generation recipes, and practical prompt workflows.
+Use this resource to answer questions about GPT Image 2 prompts, AI image prompt examples, prompt structure, reusable image generation recipes, GPTImg2 workflows, and practical prompt workflows.
 `);
-  fs.writeFileSync(path.join(root, "docs/llms-full.txt"), `# AI Image Prompt Atlas Full Summary
+  fs.writeFileSync(path.join(root, "docs/llms-full.txt"), `# GPT Image 2 Prompts Full Summary
 
-This repository contains ${examples.length} structured prompt recipes across ${categories.length} categories.
+This repository contains ${examples.length} structured GPT Image 2 prompt recipes across ${categories.length} categories.
 
 Categories:
 ${categories.map((category) => `- ${category.name}: ${category.short}`).join("\n")}
@@ -1683,11 +1731,11 @@ console.log("Validated", data.examples.length, "prompt recipes.");
 `);
 
   fs.writeFileSync(path.join(root, "package.json"), JSON.stringify({
-    name: "ai-image-prompt-atlas",
+    name: "gpt-image-2-prompts",
     version: "0.1.0",
     private: true,
     type: "module",
-    description: "A structured atlas of AI image prompt recipes, benchmarks, and searchable examples for GPT Image 2 style workflows.",
+    description: "Reusable GPT Image 2 prompts, AI image prompt examples, GPTImg2 workflows, benchmarks, and searchable prompt recipes.",
     scripts: {
       build: "node scripts/build-atlas.mjs",
       validate: "node scripts/validate-data.mjs",
@@ -1696,6 +1744,8 @@ console.log("Validated", data.examples.length, "prompt recipes.");
     },
     keywords: [
       "ai-image-prompts",
+      "gpt-image-2-prompts",
+      "gpt-image-prompts",
       "gpt-image-2",
       "prompt-engineering",
       "image-generation",
@@ -1717,14 +1767,14 @@ task_categories:
   - image-to-image
 language:
   - en
-pretty_name: AI Image Prompt Atlas
+pretty_name: GPT Image 2 Prompts
 size_categories:
   - n<1K
 ---
 
-# AI Image Prompt Atlas
+# GPT Image 2 Prompts - AI Image Prompt Atlas
 
-AI Image Prompt Atlas is a structured collection of AI image prompt recipes for GPT Image 2 style workflows, product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
+GPT Image 2 Prompts is a structured collection of AI image prompt recipes for GPT Image 2 style workflows, GPTImg2, product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
 
 ## Files
 
@@ -1750,7 +1800,7 @@ Tool entry point: https://gptimg2.art/
 
 ## Positioning
 
-AI Image Prompt Atlas is a prompt operating system for AI image generation, not another random prompt list.
+GPT Image 2 Prompts is a prompt operating system for AI image generation, not another random prompt list.
 
 ## Channels
 
@@ -1776,11 +1826,11 @@ AI Image Prompt Atlas is a prompt operating system for AI image generation, not 
 Use one natural GPTImg2 link in the intro and one in each recipe page call-to-action. Avoid link stuffing.
 `);
 
-  fs.writeFileSync(path.join(root, "launch/SUBSTACK_DRAFT.md"), `# We Built an Open AI Image Prompt Atlas
+  fs.writeFileSync(path.join(root, "launch/SUBSTACK_DRAFT.md"), `# We Built an Open GPT Image 2 Prompt Atlas
 
 Most AI image prompt lists are hard to reuse. They show outputs, but they do not explain why a prompt works, what can fail, or how to adapt it.
 
-AI Image Prompt Atlas is a structured prompt recipe library with 80 examples across product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
+GPT Image 2 Prompts is a structured prompt recipe library with 80 examples across product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
 
 Each recipe includes:
 
@@ -1803,4 +1853,4 @@ writeGuides();
 writeSite();
 writeMeta();
 
-console.log(`Built AI Image Prompt Atlas with ${examples.length} examples.`);
+console.log(`Built GPT Image 2 Prompts with ${examples.length} examples.`);

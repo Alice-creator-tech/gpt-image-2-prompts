@@ -1,6 +1,6 @@
-# AI Image Prompt Atlas Full Summary
+# GPT Image 2 Prompts Full Summary
 
-This repository contains 80 structured prompt recipes across 10 categories.
+This repository contains 80 structured GPT Image 2 prompt recipes across 10 categories.
 
 Categories:
 - Product Photography: Commercial product images with controlled lighting, materials, and layout.

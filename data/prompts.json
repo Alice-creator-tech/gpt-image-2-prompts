@@ -41,7 +41,9 @@
         "product-photography",
         "minimal-wireless-charger",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -83,7 +85,9 @@
         "product-photography",
         "glass-skincare-bottle",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -125,7 +129,9 @@
         "product-photography",
         "ceramic-coffee-mug",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -167,7 +173,9 @@
         "product-photography",
         "running-shoe-detail",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -209,7 +217,9 @@
         "product-photography",
         "desk-lamp-launch",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -251,7 +261,9 @@
         "product-photography",
         "reusable-water-bottle",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -293,7 +305,9 @@
         "product-photography",
         "smartwatch-strap-set",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -335,7 +349,9 @@
         "product-photography",
         "artisan-chocolate-box",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -377,7 +393,9 @@
         "readable-text",
         "launch-poster",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -419,7 +437,9 @@
         "readable-text",
         "workshop-flyer",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -461,7 +481,9 @@
         "readable-text",
         "quote-card",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -503,7 +525,9 @@
         "readable-text",
         "sale-banner",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -545,7 +569,9 @@
         "readable-text",
         "music-poster",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -587,7 +613,9 @@
         "readable-text",
         "app-update-card",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -629,7 +657,9 @@
         "readable-text",
         "coffee-menu",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -671,7 +701,9 @@
         "readable-text",
         "book-cover",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -713,7 +745,9 @@
         "ui-mockups",
         "analytics-dashboard",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -755,7 +789,9 @@
         "ui-mockups",
         "mobile-finance-app",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -797,7 +833,9 @@
         "ui-mockups",
         "ai-editor-interface",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -839,7 +877,9 @@
         "ui-mockups",
         "travel-planner",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -881,7 +921,9 @@
         "ui-mockups",
         "team-kanban",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -923,7 +965,9 @@
         "ui-mockups",
         "recipe-app",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -965,7 +1009,9 @@
         "ui-mockups",
         "music-dashboard",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1007,7 +1053,9 @@
         "ui-mockups",
         "learning-portal",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1049,7 +1097,9 @@
         "reference-editing",
         "background-swap",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1091,7 +1141,9 @@
         "reference-editing",
         "outfit-change",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1133,7 +1185,9 @@
         "reference-editing",
         "product-colorway",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1175,7 +1229,9 @@
         "reference-editing",
         "lighting-upgrade",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1217,7 +1273,9 @@
         "reference-editing",
         "clean-object-removal",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1259,7 +1317,9 @@
         "reference-editing",
         "season-change",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1301,7 +1361,9 @@
         "reference-editing",
         "material-swap",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1343,7 +1405,9 @@
         "reference-editing",
         "text-replacement",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1385,7 +1449,9 @@
         "ecommerce-mockups",
         "amazon-main-image",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1427,7 +1493,9 @@
         "ecommerce-mockups",
         "shopify-hero-set",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1469,7 +1537,9 @@
         "ecommerce-mockups",
         "packaging-box",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1511,7 +1581,9 @@
         "ecommerce-mockups",
         "before-after-split",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1553,7 +1625,9 @@
         "ecommerce-mockups",
         "bundle-layout",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1595,7 +1669,9 @@
         "ecommerce-mockups",
         "lifestyle-shelf-shot",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1637,7 +1713,9 @@
         "ecommerce-mockups",
         "size-comparison",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1679,7 +1757,9 @@
         "ecommerce-mockups",
         "feature-callouts",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1721,7 +1801,9 @@
         "social-covers",
         "ai-prompt-guide-cover",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1763,7 +1845,9 @@
         "social-covers",
         "creator-toolkit-thumbnail",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1805,7 +1889,9 @@
         "social-covers",
         "linkedin-carousel",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1847,7 +1933,9 @@
         "social-covers",
         "newsletter-header",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1889,7 +1977,9 @@
         "social-covers",
         "twitter-card",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1931,7 +2021,9 @@
         "social-covers",
         "podcast-cover",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -1973,7 +2065,9 @@
         "social-covers",
         "case-study-header",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2015,7 +2109,9 @@
         "social-covers",
         "launch-countdown",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2057,7 +2153,9 @@
         "brand-visuals",
         "minimal-logo-mark",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2099,7 +2197,9 @@
         "brand-visuals",
         "brand-moodboard",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2141,7 +2241,9 @@
         "brand-visuals",
         "sticker-sheet",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2183,7 +2285,9 @@
         "brand-visuals",
         "icon-set-preview",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2225,7 +2329,9 @@
         "brand-visuals",
         "mascot-concept",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2267,7 +2373,9 @@
         "brand-visuals",
         "packaging-pattern",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2309,7 +2417,9 @@
         "brand-visuals",
         "ad-campaign-key-visual",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2351,7 +2461,9 @@
         "brand-visuals",
         "style-tile",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2393,7 +2505,9 @@
         "infographics",
         "prompt-anatomy",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2435,7 +2549,9 @@
         "infographics",
         "workflow-ladder",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2477,7 +2593,9 @@
         "infographics",
         "model-comparison",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2519,7 +2637,9 @@
         "infographics",
         "creative-brief-map",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2561,7 +2681,9 @@
         "infographics",
         "ecommerce-funnel",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2603,7 +2725,9 @@
         "infographics",
         "editing-checklist",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2645,7 +2769,9 @@
         "infographics",
         "prompt-matrix",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2687,7 +2813,9 @@
         "infographics",
         "failure-modes",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2729,7 +2857,9 @@
         "character-design",
         "mascot-sheet",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2771,7 +2901,9 @@
         "character-design",
         "pose-variations",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2813,7 +2945,9 @@
         "character-design",
         "outfit-sheet",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2855,7 +2989,9 @@
         "character-design",
         "expression-grid",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2897,7 +3033,9 @@
         "character-design",
         "game-npc",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2939,7 +3077,9 @@
         "character-design",
         "comic-hero",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -2981,7 +3121,9 @@
         "character-design",
         "3d-toy-render",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3023,7 +3165,9 @@
         "character-design",
         "chibi-sticker-pack",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3065,7 +3209,9 @@
         "style-transfer",
         "editorial-illustration",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3107,7 +3253,9 @@
         "style-transfer",
         "clay-render",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3149,7 +3297,9 @@
         "style-transfer",
         "risograph-poster",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3191,7 +3341,9 @@
         "style-transfer",
         "blueprint-diagram",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3233,7 +3385,9 @@
         "style-transfer",
         "watercolor-scene",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3275,7 +3429,9 @@
         "style-transfer",
         "pixel-art-object",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3317,7 +3473,9 @@
         "style-transfer",
         "paper-cutout",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     },
     {
@@ -3359,7 +3517,9 @@
         "style-transfer",
         "cinematic-still",
         "ai-image-prompts",
-        "gpt-image-2"
+        "gpt-image-2",
+        "gpt-image-2-prompts",
+        "gptimg2"
       ]
     }
   ]

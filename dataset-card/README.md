@@ -5,14 +5,14 @@ task_categories:
   - image-to-image
 language:
   - en
-pretty_name: AI Image Prompt Atlas
+pretty_name: GPT Image 2 Prompts
 size_categories:
   - n<1K
 ---
 
-# AI Image Prompt Atlas
+# GPT Image 2 Prompts - AI Image Prompt Atlas
 
-AI Image Prompt Atlas is a structured collection of AI image prompt recipes for GPT Image 2 style workflows, product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
+GPT Image 2 Prompts is a structured collection of AI image prompt recipes for GPT Image 2 style workflows, GPTImg2, product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
 
 ## Files
 
@@ -28,6 +28,6 @@ This dataset is intended for prompt education, search, retrieval, prompt library
 
 ## Source
 
-Project homepage: https://Alice-creator-tech.github.io/ai-image-prompt-atlas
+Project homepage: https://alice-creator-tech.github.io/gpt-image-2-prompts
 
 Tool entry point: https://gptimg2.art/

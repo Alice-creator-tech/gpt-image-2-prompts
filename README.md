@@ -1,6 +1,6 @@
-# AI Image Prompt Atlas
+# GPT Image 2 Prompts - AI Image Prompt Atlas
 
-An open, structured atlas of high-quality AI image prompts, GPT Image 2 style workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
+An open, structured atlas of high-quality GPT Image 2 prompts, AI image prompts, GPTImg2 workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
 
 This project is not a pile of prompt screenshots. It is a visual field guide for people who want repeatable AI image results: clear briefs, reusable recipes, searchable examples, and a machine-readable dataset.
 
@@ -10,7 +10,7 @@ This project is not a pile of prompt screenshots. It is a visual field guide for
 
 Most AI image prompt lists are fun to scroll and hard to reuse. They show the lucky output, but they rarely explain the brief behind it, what can fail, or how to adapt the idea for a real product, article, poster, or edit.
 
-AI Image Prompt Atlas uses a recipe format that reads like a creative brief:
+GPT Image 2 Prompts uses a recipe format that reads like a creative brief:
 
 - Clear use case
 - Prompt and negative instructions

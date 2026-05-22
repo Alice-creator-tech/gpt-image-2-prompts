@@ -2,7 +2,7 @@
 
 ## Positioning
 
-AI Image Prompt Atlas is a prompt operating system for AI image generation, not another random prompt list.
+GPT Image 2 Prompts is a prompt operating system for AI image generation, not another random prompt list.
 
 ## Channels
 

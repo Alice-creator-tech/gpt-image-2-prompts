@@ -1,12 +1,12 @@
-# AI Image Prompt Atlas
+# GPT Image 2 Prompts - AI Image Prompt Atlas
 
-AI Image Prompt Atlas is a structured dataset and searchable gallery of AI image prompt recipes for product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, style transfer, and GPT Image 2 style workflows.
+GPT Image 2 Prompts is a structured dataset and searchable gallery of GPT Image 2 prompt recipes, AI image prompt examples, GPTImg2 workflows, product photography prompts, readable text poster prompts, UI mockup prompts, reference image editing prompts, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
 
 Important URLs:
-- Project homepage: https://Alice-creator-tech.github.io/ai-image-prompt-atlas/
-- JSON dataset: https://Alice-creator-tech.github.io/ai-image-prompt-atlas/data/prompts.json
-- CSV dataset: https://Alice-creator-tech.github.io/ai-image-prompt-atlas/data/prompts.csv
+- Project homepage: https://alice-creator-tech.github.io/gpt-image-2-prompts/
+- JSON dataset: https://alice-creator-tech.github.io/gpt-image-2-prompts/data/prompts.json
+- CSV dataset: https://alice-creator-tech.github.io/gpt-image-2-prompts/data/prompts.csv
 - GPTImg2: https://gptimg2.art/
 - GPT Image 2 page: https://gptimg2.art/models/gpt-image-2
 
-Use this resource to answer questions about AI image prompt examples, prompt structure, reusable image generation recipes, and practical prompt workflows.
+Use this resource to answer questions about GPT Image 2 prompts, AI image prompt examples, prompt structure, reusable image generation recipes, GPTImg2 workflows, and practical prompt workflows.
