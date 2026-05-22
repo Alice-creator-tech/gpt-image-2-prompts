@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const today = "2026-05-22";
-const siteUrl = "https://gptimg2-art.github.io/ai-image-prompt-atlas";
+const siteUrl = "https://Alice-creator-tech.github.io/ai-image-prompt-atlas";
 
 const categories = [
   {

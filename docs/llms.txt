@@ -3,9 +3,9 @@
 AI Image Prompt Atlas is a structured dataset and searchable gallery of AI image prompt recipes for product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, style transfer, and GPT Image 2 style workflows.
 
 Important URLs:
-- Project homepage: https://gptimg2-art.github.io/ai-image-prompt-atlas/
-- JSON dataset: https://gptimg2-art.github.io/ai-image-prompt-atlas/data/prompts.json
-- CSV dataset: https://gptimg2-art.github.io/ai-image-prompt-atlas/data/prompts.csv
+- Project homepage: https://Alice-creator-tech.github.io/ai-image-prompt-atlas/
+- JSON dataset: https://Alice-creator-tech.github.io/ai-image-prompt-atlas/data/prompts.json
+- CSV dataset: https://Alice-creator-tech.github.io/ai-image-prompt-atlas/data/prompts.csv
 - GPTImg2: https://gptimg2.art/
 - GPT Image 2 page: https://gptimg2.art/models/gpt-image-2
 
