@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Image Prompt Atlas Example",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "category",
+    "prompt",
+    "image",
+    "score"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "use_case": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "negative_prompt": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "score": {
+      "type": "object"
+    }
+  }
+}

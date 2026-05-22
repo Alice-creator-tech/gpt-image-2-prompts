@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Image Prompt Atlas</title>
+  <meta name="description" content="Searchable AI image prompt atlas for GPT Image 2 style workflows, product photography, readable text, UI mockups, and image editing recipes.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <strong>AI Image Prompt Atlas</strong>
+      <a href="../README.md">GitHub README</a>
+      <a href="https://gptimg2.art/">GPTImg2</a>
+    </nav>
+    <section>
+      <p class="eyebrow">Open prompt recipes for visual AI workflows</p>
+      <h1>Search, copy, benchmark, and adapt high-quality AI image prompts.</h1>
+      <p class="lede">A structured atlas for product photos, readable text posters, UI mockups, reference edits, social covers, and GPT Image 2 style generation workflows.</p>
+      <div class="hero-actions">
+        <a class="primary" href="https://gptimg2.art/">Try GPTImg2</a>
+        <a class="secondary" href="data/prompts.json">Download JSON</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="controls" aria-label="Prompt filters">
+      <input id="search" type="search" placeholder="Search prompts, categories, use cases...">
+      <select id="category">
+        <option value="all">All categories</option>
+      </select>
+      <select id="difficulty">
+        <option value="all">All difficulty levels</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </section>
+    <section id="stats" class="stats"></section>
+    <section id="grid" class="grid"></section>
+  </main>
+  <template id="card-template">
+    <article class="card">
+      <img alt="" loading="lazy">
+      <div class="card-body">
+        <div class="meta"></div>
+        <h2></h2>
+        <p class="use-case"></p>
+        <pre></pre>
+        <div class="scores"></div>
+        <div class="actions">
+          <button type="button">Copy prompt</button>
+          <a href="https://gptimg2.art/">Try</a>
+        </div>
+      </div>
+    </article>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>

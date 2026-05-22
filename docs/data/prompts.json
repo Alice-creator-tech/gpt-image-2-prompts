@@ -1,0 +1,3286 @@
+{
+  "updated_at": "2026-05-22",
+  "count": 80,
+  "examples": [
+    {
+      "id": "product-photography-001",
+      "slug": "minimal-wireless-charger",
+      "title": "Minimal Wireless Charger",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "premium ecommerce hero image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished premium ecommerce hero image.\n\nSubject: a matte black wireless charging dock for a smartphone and earbuds.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal premium ecommerce hero image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-001-minimal-wireless-charger.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "minimal-wireless-charger",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-002",
+      "slug": "glass-skincare-bottle",
+      "title": "Glass Skincare Bottle",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "beauty product listing image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished beauty product listing image.\n\nSubject: a translucent amber skincare serum bottle with a matte cream label.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal beauty product listing image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-002-glass-skincare-bottle.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "glass-skincare-bottle",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-003",
+      "slug": "ceramic-coffee-mug",
+      "title": "Ceramic Coffee Mug",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "lifestyle product hero image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished lifestyle product hero image.\n\nSubject: a handmade speckled ceramic coffee mug with a soft curved handle.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal lifestyle product hero image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-003-ceramic-coffee-mug.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "ceramic-coffee-mug",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-004",
+      "slug": "running-shoe-detail",
+      "title": "Running Shoe Detail",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "sport ecommerce detail shot",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished sport ecommerce detail shot.\n\nSubject: a lightweight running shoe with breathable mesh and reflective trim.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal sport ecommerce detail shot version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-004-running-shoe-detail.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "running-shoe-detail",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-005",
+      "slug": "desk-lamp-launch",
+      "title": "Desk Lamp Launch",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "landing page product render",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished landing page product render.\n\nSubject: a brushed aluminum adjustable desk lamp with a warm LED strip.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal landing page product render version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-005-desk-lamp-launch.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "desk-lamp-launch",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-006",
+      "slug": "reusable-water-bottle",
+      "title": "Reusable Water Bottle",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "marketplace catalog image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished marketplace catalog image.\n\nSubject: a stainless steel reusable water bottle with a powder coated finish.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal marketplace catalog image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-006-reusable-water-bottle.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "reusable-water-bottle",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-007",
+      "slug": "smartwatch-strap-set",
+      "title": "Smartwatch Strap Set",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "accessory comparison image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished accessory comparison image.\n\nSubject: three interchangeable smartwatch straps in silicone, nylon, and leather.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal accessory comparison image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-007-smartwatch-strap-set.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "smartwatch-strap-set",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "product-photography-008",
+      "slug": "artisan-chocolate-box",
+      "title": "Artisan Chocolate Box",
+      "category": "product-photography",
+      "category_name": "Product Photography",
+      "use_case": "premium food product photo",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished premium food product photo.\n\nSubject: a luxury chocolate gift box with twelve pieces and gold foil details.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal premium food product photo version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/product-photography/product-photography-008-artisan-chocolate-box.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "product-photography",
+        "artisan-chocolate-box",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-001",
+      "slug": "launch-poster",
+      "title": "Launch Poster",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "startup announcement visual",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished startup announcement visual.\n\nSubject: a clean launch poster with the headline NEW CREATIVE TOOLS.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal startup announcement visual version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-001-launch-poster.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "launch-poster",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-002",
+      "slug": "workshop-flyer",
+      "title": "Workshop Flyer",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "event promotion poster",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished event promotion poster.\n\nSubject: a vertical workshop flyer with the headline PROMPT LAB.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal event promotion poster version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-002-workshop-flyer.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "workshop-flyer",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-003",
+      "slug": "quote-card",
+      "title": "Quote Card",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "social media quote graphic",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished social media quote graphic.\n\nSubject: an editorial quote card with the phrase MAKE THE IDEA VISIBLE.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal social media quote graphic version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-003-quote-card.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "quote-card",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-004",
+      "slug": "sale-banner",
+      "title": "Sale Banner",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "campaign banner",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished campaign banner.\n\nSubject: a modern ecommerce banner with the headline WINTER STUDIO SALE.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal campaign banner version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-004-sale-banner.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "sale-banner",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-005",
+      "slug": "music-poster",
+      "title": "Music Poster",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "music event poster",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished music event poster.\n\nSubject: a minimal concert poster with the headline MIDNIGHT SYNTHS.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal music event poster version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-005-music-poster.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "music-poster",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-006",
+      "slug": "app-update-card",
+      "title": "App Update Card",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "SaaS release image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished SaaS release image.\n\nSubject: a product update card with the text VERSION 2.0.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal SaaS release image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-006-app-update-card.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "app-update-card",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-007",
+      "slug": "coffee-menu",
+      "title": "Coffee Menu",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "restaurant menu visual",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished restaurant menu visual.\n\nSubject: a small cafe menu board with clear prices and item names.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal restaurant menu visual version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-007-coffee-menu.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "coffee-menu",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "readable-text-008",
+      "slug": "book-cover",
+      "title": "Book Cover",
+      "category": "readable-text",
+      "category_name": "Readable Text Posters",
+      "use_case": "publishing concept",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "4:5 or 9:16",
+      "prompt": "Create a polished publishing concept.\n\nSubject: a contemporary book cover with the title THE VISUAL BRIEF.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, extra words",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal publishing concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/readable-text/readable-text-008-book-cover.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "readable-text",
+        "book-cover",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-001",
+      "slug": "analytics-dashboard",
+      "title": "Analytics Dashboard",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "SaaS hero mockup",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished SaaS hero mockup.\n\nSubject: a clean analytics dashboard for creator revenue and audience growth.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal SaaS hero mockup version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-001-analytics-dashboard.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "analytics-dashboard",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-002",
+      "slug": "mobile-finance-app",
+      "title": "Mobile Finance App",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "app store preview",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished app store preview.\n\nSubject: a mobile app screen for budgeting and subscription tracking.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal app store preview version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-002-mobile-finance-app.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "mobile-finance-app",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-003",
+      "slug": "ai-editor-interface",
+      "title": "AI Editor Interface",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "product screenshot concept",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished product screenshot concept.\n\nSubject: an AI image editor interface with prompt panel and before-after preview.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal product screenshot concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-003-ai-editor-interface.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "ai-editor-interface",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-004",
+      "slug": "travel-planner",
+      "title": "Travel Planner",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "mobile UI concept",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished mobile UI concept.\n\nSubject: a trip planning app with itinerary cards, map preview, and weather.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal mobile UI concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-004-travel-planner.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "travel-planner",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-005",
+      "slug": "team-kanban",
+      "title": "Team Kanban",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "productivity tool mockup",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished productivity tool mockup.\n\nSubject: a collaborative kanban board with tasks, avatars, and priority tags.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal productivity tool mockup version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-005-team-kanban.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "team-kanban",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-006",
+      "slug": "recipe-app",
+      "title": "Recipe App",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "mobile app mockup",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished mobile app mockup.\n\nSubject: a cooking app screen with ingredients, timer, and nutrition card.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal mobile app mockup version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-006-recipe-app.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "recipe-app",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-007",
+      "slug": "music-dashboard",
+      "title": "Music Dashboard",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "creator platform concept",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished creator platform concept.\n\nSubject: an artist dashboard with stream analytics and playlist placements.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal creator platform concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-007-music-dashboard.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "music-dashboard",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ui-mockups-008",
+      "slug": "learning-portal",
+      "title": "Learning Portal",
+      "category": "ui-mockups",
+      "category_name": "UI Mockups",
+      "use_case": "education SaaS visual",
+      "input_type": "text prompt",
+      "output_type": "concept UI image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished education SaaS visual.\n\nSubject: an online course dashboard with progress rings and lesson cards.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal education SaaS visual version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/ui-mockups/ui-mockups-008-learning-portal.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ui-mockups",
+        "learning-portal",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-001",
+      "slug": "background-swap",
+      "title": "Background Swap",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "portrait background edit",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished portrait background edit.\n\nSubject: replace a plain studio background with a sunlit modern apartment.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal portrait background edit version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-001-background-swap.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "background-swap",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-002",
+      "slug": "outfit-change",
+      "title": "Outfit Change",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "professional portrait edit",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished professional portrait edit.\n\nSubject: change the outfit to a navy blazer and white shirt while preserving face and pose.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal professional portrait edit version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-002-outfit-change.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "outfit-change",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-003",
+      "slug": "product-colorway",
+      "title": "Product Colorway",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "SKU color variation",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished SKU color variation.\n\nSubject: turn the product shell from white to matte forest green.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal SKU color variation version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-003-product-colorway.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "product-colorway",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-004",
+      "slug": "lighting-upgrade",
+      "title": "Lighting Upgrade",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "photo enhancement",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished photo enhancement.\n\nSubject: improve flat lighting into soft cinematic window light.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal photo enhancement version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-004-lighting-upgrade.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "lighting-upgrade",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-005",
+      "slug": "clean-object-removal",
+      "title": "Clean Object Removal",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "commercial cleanup",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished commercial cleanup.\n\nSubject: remove stray cables and desk clutter from a product photo.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal commercial cleanup version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-005-clean-object-removal.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "clean-object-removal",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-006",
+      "slug": "season-change",
+      "title": "Season Change",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "environment edit",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished environment edit.\n\nSubject: change a summer street scene into early autumn while keeping architecture identical.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal environment edit version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-006-season-change.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "season-change",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-007",
+      "slug": "material-swap",
+      "title": "Material Swap",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "interior design edit",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished interior design edit.\n\nSubject: change a plastic chair into walnut wood with the same shape.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal interior design edit version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-007-material-swap.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "material-swap",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "reference-editing-008",
+      "slug": "text-replacement",
+      "title": "Text Replacement",
+      "category": "reference-editing",
+      "category_name": "Reference Image Editing",
+      "use_case": "localized marketing asset",
+      "input_type": "reference image + text instruction",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished localized marketing asset.\n\nSubject: replace the poster headline while preserving layout and typography.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal localized marketing asset version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 5,
+        "commercial_usability": 4
+      },
+      "image": "images/reference-editing/reference-editing-008-text-replacement.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "reference-editing",
+        "text-replacement",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-001",
+      "slug": "amazon-main-image",
+      "title": "Amazon Main Image",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "marketplace listing",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished marketplace listing.\n\nSubject: a white-background product image for a compact desk organizer.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal marketplace listing version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-001-amazon-main-image.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "amazon-main-image",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-002",
+      "slug": "shopify-hero-set",
+      "title": "Shopify Hero Set",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "brand storefront",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished brand storefront.\n\nSubject: three product images for a skincare bundle on a soft pastel background.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal brand storefront version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-002-shopify-hero-set.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "shopify-hero-set",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-003",
+      "slug": "packaging-box",
+      "title": "Packaging Box",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "packaging concept",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished packaging concept.\n\nSubject: a recyclable kraft paper packaging box for organic tea.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal packaging concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-003-packaging-box.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "packaging-box",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-004",
+      "slug": "before-after-split",
+      "title": "Before After Split",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "conversion ad",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished conversion ad.\n\nSubject: a split comparison image for a cleaning product.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal conversion ad version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-004-before-after-split.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "before-after-split",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-005",
+      "slug": "bundle-layout",
+      "title": "Bundle Layout",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "bundle listing",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished bundle listing.\n\nSubject: a neatly arranged bundle of notebook, pen, and desk accessories.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal bundle listing version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-005-bundle-layout.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "bundle-layout",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-006",
+      "slug": "lifestyle-shelf-shot",
+      "title": "Lifestyle Shelf Shot",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "lifestyle listing image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished lifestyle listing image.\n\nSubject: a home shelf scene featuring a minimalist candle jar.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal lifestyle listing image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-006-lifestyle-shelf-shot.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "lifestyle-shelf-shot",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-007",
+      "slug": "size-comparison",
+      "title": "Size Comparison",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "listing infographic",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished listing infographic.\n\nSubject: a product scale comparison next to a phone and hand silhouette.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal listing infographic version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-007-size-comparison.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "size-comparison",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "ecommerce-mockups-008",
+      "slug": "feature-callouts",
+      "title": "Feature Callouts",
+      "category": "ecommerce-mockups",
+      "category_name": "Ecommerce Mockups",
+      "use_case": "feature visual",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished feature visual.\n\nSubject: a product image with three clean annotation callouts.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal feature visual version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 5
+      },
+      "image": "images/ecommerce-mockups/ecommerce-mockups-008-feature-callouts.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "ecommerce-mockups",
+        "feature-callouts",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-001",
+      "slug": "ai-prompt-guide-cover",
+      "title": "AI Prompt Guide Cover",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "article cover",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished article cover.\n\nSubject: a 16:9 blog cover about writing better AI image prompts.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal article cover version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-001-ai-prompt-guide-cover.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "ai-prompt-guide-cover",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-002",
+      "slug": "creator-toolkit-thumbnail",
+      "title": "Creator Toolkit Thumbnail",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "video thumbnail",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished video thumbnail.\n\nSubject: a YouTube-style thumbnail for a creator tools roundup.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal video thumbnail version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-002-creator-toolkit-thumbnail.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "creator-toolkit-thumbnail",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-003",
+      "slug": "linkedin-carousel",
+      "title": "LinkedIn Carousel",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "B2B social post",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished B2B social post.\n\nSubject: a professional carousel cover about product photography prompts.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal B2B social post version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-003-linkedin-carousel.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "linkedin-carousel",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-004",
+      "slug": "newsletter-header",
+      "title": "Newsletter Header",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "email header",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished email header.\n\nSubject: an editorial newsletter header for creative AI workflows.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal email header version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-004-newsletter-header.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "newsletter-header",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-005",
+      "slug": "twitter-card",
+      "title": "Twitter Card",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "link preview image",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished link preview image.\n\nSubject: a compact card for a prompt template collection.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal link preview image version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-005-twitter-card.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "twitter-card",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-006",
+      "slug": "podcast-cover",
+      "title": "Podcast Cover",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "podcast artwork",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished podcast artwork.\n\nSubject: a square podcast cover for a show about visual AI tools.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal podcast artwork version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-006-podcast-cover.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "podcast-cover",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-007",
+      "slug": "case-study-header",
+      "title": "Case Study Header",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "case study cover",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished case study cover.\n\nSubject: a clean header for an ecommerce image generation case study.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal case study cover version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-007-case-study-header.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "case-study-header",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "social-covers-008",
+      "slug": "launch-countdown",
+      "title": "Launch Countdown",
+      "category": "social-covers",
+      "category_name": "Social Covers",
+      "use_case": "campaign asset",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "16:9",
+      "prompt": "Create a polished campaign asset.\n\nSubject: a bold social countdown graphic reading 3 DAYS TO LAUNCH.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal campaign asset version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/social-covers/social-covers-008-launch-countdown.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "social-covers",
+        "launch-countdown",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-001",
+      "slug": "minimal-logo-mark",
+      "title": "Minimal Logo Mark",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "logo exploration",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished logo exploration.\n\nSubject: a vector-friendly abstract mark for an AI design studio.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal logo exploration version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-001-minimal-logo-mark.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "minimal-logo-mark",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-002",
+      "slug": "brand-moodboard",
+      "title": "Brand Moodboard",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "identity direction",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished identity direction.\n\nSubject: a moodboard for a calm productivity app brand.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal identity direction version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-002-brand-moodboard.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "brand-moodboard",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-003",
+      "slug": "sticker-sheet",
+      "title": "Sticker Sheet",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "community swag",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished community swag.\n\nSubject: a playful sticker sheet for a creative toolkit brand.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal community swag version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-003-sticker-sheet.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "sticker-sheet",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-004",
+      "slug": "icon-set-preview",
+      "title": "Icon Set Preview",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "product branding",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished product branding.\n\nSubject: a consistent set of eight app feature icons.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal product branding version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-004-icon-set-preview.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "icon-set-preview",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-005",
+      "slug": "mascot-concept",
+      "title": "Mascot Concept",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "brand character",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished brand character.\n\nSubject: a friendly abstract assistant mascot for a design tool.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal brand character version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-005-mascot-concept.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "mascot-concept",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-006",
+      "slug": "packaging-pattern",
+      "title": "Packaging Pattern",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "brand pattern",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished brand pattern.\n\nSubject: a repeatable pattern for boutique stationery packaging.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal brand pattern version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-006-packaging-pattern.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "packaging-pattern",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-007",
+      "slug": "ad-campaign-key-visual",
+      "title": "Ad Campaign Key Visual",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "marketing concept",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished marketing concept.\n\nSubject: a key visual for a premium AI image editor campaign.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal marketing concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-007-ad-campaign-key-visual.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "ad-campaign-key-visual",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "brand-visuals-008",
+      "slug": "style-tile",
+      "title": "Style Tile",
+      "category": "brand-visuals",
+      "category_name": "Brand Visuals",
+      "use_case": "brand system preview",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished brand system preview.\n\nSubject: a style tile showing colors, type, textures, and buttons.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal brand system preview version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/brand-visuals/brand-visuals-008-style-tile.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "brand-visuals",
+        "style-tile",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-001",
+      "slug": "prompt-anatomy",
+      "title": "Prompt Anatomy",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "educational diagram",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished educational diagram.\n\nSubject: an infographic explaining subject, composition, style, details, and constraints.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal educational diagram version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-001-prompt-anatomy.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "prompt-anatomy",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-002",
+      "slug": "workflow-ladder",
+      "title": "Workflow Ladder",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "process infographic",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished process infographic.\n\nSubject: a step-by-step visual workflow from brief to final image.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal process infographic version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-002-workflow-ladder.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "workflow-ladder",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-003",
+      "slug": "model-comparison",
+      "title": "Model Comparison",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "analysis graphic",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished analysis graphic.\n\nSubject: a comparison chart for image generation use cases.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal analysis graphic version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-003-model-comparison.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "model-comparison",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-004",
+      "slug": "creative-brief-map",
+      "title": "Creative Brief Map",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "guide illustration",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished guide illustration.\n\nSubject: a mind map for turning vague ideas into image prompts.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal guide illustration version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-004-creative-brief-map.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "creative-brief-map",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-005",
+      "slug": "ecommerce-funnel",
+      "title": "Ecommerce Funnel",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "marketing diagram",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished marketing diagram.\n\nSubject: an infographic showing product image types across a sales funnel.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal marketing diagram version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-005-ecommerce-funnel.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "ecommerce-funnel",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-006",
+      "slug": "editing-checklist",
+      "title": "Editing Checklist",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "QA guide",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished QA guide.\n\nSubject: a checklist visual for reference image editing quality control.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal QA guide version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-006-editing-checklist.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "editing-checklist",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-007",
+      "slug": "prompt-matrix",
+      "title": "Prompt Matrix",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "prompt education",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished prompt education.\n\nSubject: a matrix comparing style, lighting, camera, and constraints.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal prompt education version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-007-prompt-matrix.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "prompt-matrix",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "infographics-008",
+      "slug": "failure-modes",
+      "title": "Failure Modes",
+      "category": "infographics",
+      "category_name": "Infographics",
+      "use_case": "training graphic",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished training graphic.\n\nSubject: a visual chart of common AI image generation mistakes.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal training graphic version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 4,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/infographics/infographics-008-failure-modes.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "infographics",
+        "failure-modes",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-001",
+      "slug": "mascot-sheet",
+      "title": "Mascot Sheet",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "character reference",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished character reference.\n\nSubject: a full character sheet for a friendly AI studio mascot.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal character reference version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-001-mascot-sheet.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "mascot-sheet",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-002",
+      "slug": "pose-variations",
+      "title": "Pose Variations",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "animation reference",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished animation reference.\n\nSubject: the same character in six distinct poses.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal animation reference version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-002-pose-variations.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "pose-variations",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-003",
+      "slug": "outfit-sheet",
+      "title": "Outfit Sheet",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "fashion concept",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished fashion concept.\n\nSubject: a character wearing four seasonal outfits.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal fashion concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-003-outfit-sheet.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "outfit-sheet",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-004",
+      "slug": "expression-grid",
+      "title": "Expression Grid",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "emotion reference",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished emotion reference.\n\nSubject: a grid of twelve facial expressions for one character.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal emotion reference version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-004-expression-grid.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "expression-grid",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-005",
+      "slug": "game-npc",
+      "title": "Game NPC",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "game concept art",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished game concept art.\n\nSubject: a stylized non-player character for a cozy management game.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal game concept art version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-005-game-npc.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "game-npc",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-006",
+      "slug": "comic-hero",
+      "title": "Comic Hero",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "comic concept",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished comic concept.\n\nSubject: a clean comic-style hero with cape, boots, and symbol.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal comic concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-006-comic-hero.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "comic-hero",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-007",
+      "slug": "3d-toy-render",
+      "title": "3D Toy Render",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "toy concept",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished toy concept.\n\nSubject: a collectible vinyl toy version of an original character.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal toy concept version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-007-3d-toy-render.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "3d-toy-render",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "character-design-008",
+      "slug": "chibi-sticker-pack",
+      "title": "Chibi Sticker Pack",
+      "category": "character-design",
+      "category_name": "Character Design",
+      "use_case": "social sticker pack",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished social sticker pack.\n\nSubject: a set of chibi reaction stickers for one character.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal social sticker pack version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/character-design/character-design-008-chibi-sticker-pack.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "character-design",
+        "chibi-sticker-pack",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-001",
+      "slug": "editorial-illustration",
+      "title": "Editorial Illustration",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "style exploration",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished style exploration.\n\nSubject: turn a product concept into a clean editorial illustration.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal style exploration version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-001-editorial-illustration.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "editorial-illustration",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-002",
+      "slug": "clay-render",
+      "title": "Clay Render",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "visual metaphor",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished visual metaphor.\n\nSubject: render a dashboard screen as a soft clay 3D scene.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal visual metaphor version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-002-clay-render.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "clay-render",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-003",
+      "slug": "risograph-poster",
+      "title": "Risograph Poster",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "print style",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished print style.\n\nSubject: convert a social cover into a two-color risograph print.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal print style version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-003-risograph-poster.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "risograph-poster",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-004",
+      "slug": "blueprint-diagram",
+      "title": "Blueprint Diagram",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "technical visual",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished technical visual.\n\nSubject: turn a product photo into a technical blueprint drawing.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal technical visual version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-004-blueprint-diagram.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "blueprint-diagram",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-005",
+      "slug": "watercolor-scene",
+      "title": "Watercolor Scene",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "travel art",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished travel art.\n\nSubject: convert a city photo into a soft watercolor travel postcard.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal travel art version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-005-watercolor-scene.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "watercolor-scene",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-006",
+      "slug": "pixel-art-object",
+      "title": "Pixel Art Object",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "game asset",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "advanced",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished game asset.\n\nSubject: turn a product into a crisp pixel art inventory icon.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal game asset version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-006-pixel-art-object.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "pixel-art-object",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-007",
+      "slug": "paper-cutout",
+      "title": "Paper Cutout",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "craft style",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "easy",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished craft style.\n\nSubject: create a layered paper cutout version of a brand visual.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal craft style version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 5,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-007-paper-cutout.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "paper-cutout",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    },
+    {
+      "id": "style-transfer-008",
+      "slug": "cinematic-still",
+      "title": "Cinematic Still",
+      "category": "style-transfer",
+      "category_name": "Style Transfer",
+      "use_case": "storyboard visual",
+      "input_type": "text prompt",
+      "output_type": "generated image",
+      "difficulty": "medium",
+      "aspect_ratio": "1:1 or 16:9",
+      "prompt": "Create a polished storyboard visual.\n\nSubject: turn a simple concept into a cinematic film still.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.",
+      "negative_prompt": "watermark, unreadable text, random logos, warped hands or objects, duplicated subjects, messy background, low-resolution artifacts, unwanted typography",
+      "why_it_works": [
+        "The use case is declared before the visual style.",
+        "The subject is specific enough to reduce model guessing.",
+        "Composition and lighting constraints make the result easier to revise.",
+        "Failure modes are named directly, which improves practical usability."
+      ],
+      "variations": [
+        "Make a minimal storyboard visual version with more whitespace.",
+        "Make a bold social-media-ready version with stronger contrast.",
+        "Make a premium editorial version with refined lighting and texture."
+      ],
+      "score": {
+        "prompt_clarity": 5,
+        "composition_control": 4,
+        "text_accuracy": 3,
+        "object_consistency": 4,
+        "commercial_usability": 4
+      },
+      "image": "images/style-transfer/style-transfer-008-cinematic-still.svg",
+      "try_url": "https://gptimg2.art/",
+      "model_url": "https://gptimg2.art/models/gpt-image-2",
+      "tags": [
+        "style-transfer",
+        "cinematic-still",
+        "ai-image-prompts",
+        "gpt-image-2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ai-image-prompt-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A structured atlas of AI image prompt recipes, benchmarks, and searchable examples for GPT Image 2 style workflows.",
+  "scripts": {
+    "build": "node scripts/build-atlas.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "serve": "python3 -m http.server 8766",
+    "check": "npm run build && npm run validate"
+  },
+  "keywords": [
+    "ai-image-prompts",
+    "gpt-image-2",
+    "prompt-engineering",
+    "image-generation",
+    "gptimg2",
+    "awesome-list"
+  ]
+}

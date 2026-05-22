@@ -1,0 +1,53 @@
+# AI Image Prompt Atlas Full Summary
+
+This repository contains 80 structured prompt recipes across 10 categories.
+
+Categories:
+- Product Photography: Commercial product images with controlled lighting, materials, and layout.
+- Readable Text Posters: Poster and cover prompts that prioritize legible typography and clean layout.
+- UI Mockups: App and dashboard visuals with readable interface hierarchy.
+- Reference Image Editing: Editing prompts that preserve subject identity while changing context or style.
+- Ecommerce Mockups: Market-ready product, packaging, and listing visuals.
+- Social Covers: Thumbnails, blog covers, carousels, and social posts.
+- Brand Visuals: Brand marks, campaign art direction, and visual identity exploration.
+- Infographics: Structured visuals that explain workflows, comparisons, and concepts.
+- Character Design: Consistent character sheets, poses, outfits, and stylized concepts.
+- Style Transfer: Prompts for controlled visual style changes without losing core structure.
+
+Prompt recipe fields:
+- title
+- category
+- use case
+- input type
+- output type
+- difficulty
+- aspect ratio
+- prompt
+- negative prompt
+- why it works
+- variations
+- editorial scores
+- image path
+- GPTImg2 links
+
+Representative examples:
+- Minimal Wireless Charger: premium ecommerce hero image
+- Glass Skincare Bottle: beauty product listing image
+- Ceramic Coffee Mug: lifestyle product hero image
+- Running Shoe Detail: sport ecommerce detail shot
+- Desk Lamp Launch: landing page product render
+- Reusable Water Bottle: marketplace catalog image
+- Smartwatch Strap Set: accessory comparison image
+- Artisan Chocolate Box: premium food product photo
+- Launch Poster: startup announcement visual
+- Workshop Flyer: event promotion poster
+- Quote Card: social media quote graphic
+- Sale Banner: campaign banner
+- Music Poster: music event poster
+- App Update Card: SaaS release image
+- Coffee Menu: restaurant menu visual
+- Book Cover: publishing concept
+- Analytics Dashboard: SaaS hero mockup
+- Mobile Finance App: app store preview
+- AI Editor Interface: product screenshot concept
+- Travel Planner: mobile UI concept

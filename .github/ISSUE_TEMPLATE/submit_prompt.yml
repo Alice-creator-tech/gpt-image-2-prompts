@@ -1,0 +1,38 @@
+name: Submit a prompt recipe
+description: Suggest a new prompt recipe for the atlas
+title: "[Prompt]: "
+labels: ["prompt-submission"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Product Photography
+        - Readable Text Posters
+        - UI Mockups
+        - Reference Image Editing
+        - Ecommerce Mockups
+        - Social Covers
+        - Brand Visuals
+        - Infographics
+        - Character Design
+        - Style Transfer
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Why it works
