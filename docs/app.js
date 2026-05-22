@@ -4,22 +4,18 @@ const categorySelect = document.querySelector("#category");
 const difficultySelect = document.querySelector("#difficulty");
 const stats = document.querySelector("#stats");
 const template = document.querySelector("#card-template");
-
 let examples = [];
 let categories = [];
-
 function label(value) {
-  return value.replaceAll("-", " ").replaceAll("_", " ").replace(/\b\w/g, (char) => char.toUpperCase());
+  return String(value || "").replaceAll("-", " ").replaceAll("_", " ").replace(/\b\w/g, (char) => char.toUpperCase());
 }
-
 function renderStats(items) {
   stats.innerHTML = [
-    [items.length, "visible recipes"],
-    [categories.length, "categories"],
-    [new Set(items.map((item) => item.difficulty)).size, "difficulty levels"],
+    [items.length, "visible real examples"],
+    [examples.length, "verified prompt-image pairs"],
+    [categories.length, "source categories"],
   ].map(([value, text]) => '<div class="stat"><strong>' + value + '</strong> ' + text + '</div>').join("");
 }
-
 function render() {
   const query = search.value.trim().toLowerCase();
   const selectedCategory = categorySelect.value;
@@ -36,23 +32,19 @@ function render() {
     const node = template.content.cloneNode(true);
     node.querySelector("img").src = item.image;
     node.querySelector("img").alt = item.title;
-    node.querySelector(".meta").textContent = item.category_name + " / " + label(item.difficulty);
-    node.querySelector("h2").textContent = item.title;
+    node.querySelector(".meta").textContent = item.category_name + " / " + label(item.difficulty) + " / verified source";
+    node.querySelector("h2").innerHTML = '<a href="examples/' + item.id + '.html">' + item.title + '</a>';
     node.querySelector(".use-case").textContent = item.use_case;
     node.querySelector(".brief").textContent = item.brief;
     node.querySelector("pre").textContent = item.prompt;
     node.querySelector(".scores").innerHTML = Object.entries(item.score)
       .map(([key, value]) => '<span class="score">' + label(key) + ': ' + value + '/5</span>')
       .join("");
-    node.querySelector("button").addEventListener("click", async () => {
-      await navigator.clipboard.writeText(item.prompt);
-    });
-    node.querySelector("a").href = item.try_url;
-    node.querySelector("h2").innerHTML = '<a href="examples/' + item.id + '.html">' + item.title + '</a>';
+    node.querySelector("button").addEventListener("click", async () => navigator.clipboard.writeText(item.prompt));
+    node.querySelector("a").href = item.source_page;
     grid.append(node);
   }
 }
-
 Promise.all([
   fetch("data/prompts.json").then((res) => res.json()),
   fetch("data/categories.json").then((res) => res.json()),
@@ -62,12 +54,11 @@ Promise.all([
   for (const category of categories) {
     const option = document.createElement("option");
     option.value = category.slug;
-    option.textContent = category.name;
+    option.textContent = category.name + " (" + category.count + ")";
     categorySelect.append(option);
   }
   render();
 });
-
 search.addEventListener("input", render);
 categorySelect.addEventListener("change", render);
 difficultySelect.addEventListener("change", render);

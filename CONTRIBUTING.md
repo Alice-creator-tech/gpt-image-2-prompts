@@ -1,21 +1,11 @@
 # Contributing
 
-Thanks for improving AI Image Prompt Atlas.
+Please submit real prompt-image pairs only.
 
-## Submit a Prompt Recipe
+Include:
 
-Please include:
-
-- Title
+- Prompt text
+- Output image URL or file
+- Source URL
 - Category
-- Use case
-- Prompt
-- Negative instructions
-- Output image
-- Tool/model used
-- Why the prompt works
-- License/source confirmation
-
-## Quality Bar
-
-Good submissions are specific, reusable, and explainable. Avoid one-line prompts that only list styles.
+- Notes about what the prompt is useful for

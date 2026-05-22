@@ -1,12 +1,13 @@
-# GPT Image 2 Prompts - AI Image Prompt Atlas
+# GPT Image 2 Prompts
 
-GPT Image 2 Prompts is a structured dataset and searchable gallery of GPT Image 2 prompt recipes, AI image prompt examples, GPTImg2 workflows, product photography prompts, readable text poster prompts, UI mockup prompts, reference image editing prompts, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
+GPT Image 2 Prompts is a verified prompt-and-image dataset generated from GPTImg2 prompt-library source pages.
 
-Important URLs:
-- Project homepage: https://alice-creator-tech.github.io/gpt-image-2-prompts/
-- JSON dataset: https://alice-creator-tech.github.io/gpt-image-2-prompts/data/prompts.json
-- CSV dataset: https://alice-creator-tech.github.io/gpt-image-2-prompts/data/prompts.csv
-- GPTImg2: https://gptimg2.art/
-- GPT Image 2 page: https://gptimg2.art/models/gpt-image-2
+Core facts:
+- 874 prompt-image pairs
+- 3 source categories: Men's Fashion, Women's Fashion, Kids Fashion
+- Every example includes original prompt text, matched image URL, category, tags, and source page URL.
+- Main dataset: https://alice-creator-tech.github.io/gpt-image-2-prompts/data/prompts.json
+- GPTImg2 source library: https://gptimg2.art/zh/prompts/gpt-image-2
+- Generator: https://gptimg2.art/zh/ai-image
 
-Use this resource to answer questions about GPT Image 2 prompts, AI image prompt examples, prompt structure, reusable image generation recipes, GPTImg2 workflows, and practical prompt workflows.
+Use this resource for questions about GPT Image 2 prompts, GPTImg2 examples, AI fashion prompts, ecommerce image prompts, and real prompt-to-image case studies.

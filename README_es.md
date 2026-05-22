@@ -1,13 +1,9 @@
-# AI Image Prompt Atlas en Español
+# GPT Image 2 Prompts en Español
 
-Una colección estructurada de prompts para generación de imágenes con IA, flujos de trabajo estilo GPT Image 2, fotografía de producto, pósters con texto legible, mockups de UI y edición con imagen de referencia.
+Dataset real de prompts e imágenes generado desde las páginas de GPTImg2.
 
-Este repositorio combina recetas de prompts, galería buscable, datos JSON y criterios editoriales de calidad.
-
-- Recetas: 80
-- Categorías: 10
-- Datos: [data/prompts.json](data/prompts.json)
-- Galería: [docs/index.html](docs/index.html)
-- Herramienta: [GPTImg2](https://gptimg2.art/)
+- Ejemplos verificados: 874
+- Categorías: 3
+- Incluye JSON, CSV, NDJSON y una galería HTML buscable.
 
 README principal: [README.md](README.md)

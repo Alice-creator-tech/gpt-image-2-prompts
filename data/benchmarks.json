@@ -1,11 +1,11 @@
 {
   "updated_at": "2026-05-22",
+  "note": "Scores are editorial quality labels for verified prompt examples, not model performance guarantees.",
   "dimensions": [
     "prompt_clarity",
-    "composition_control",
-    "text_accuracy",
-    "object_consistency",
-    "commercial_usability"
-  ],
-  "note": "Scores are editorial labels for prompt recipe comparison, not model performance guarantees."
+    "visual_specificity",
+    "source_verification",
+    "commercial_usability",
+    "image_match"
+  ]
 }

@@ -1,126 +1,60 @@
-# GPT Image 2 Prompts - AI Image Prompt Atlas
+# GPT Image 2 Prompts
 
-An open, structured atlas of high-quality GPT Image 2 prompts, AI image prompts, GPTImg2 workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
+A real prompt-and-image dataset for GPT Image 2 and GPTImg2 workflows.
 
-This project is not a pile of prompt screenshots. It is a visual field guide for people who want repeatable AI image results: clear briefs, reusable recipes, searchable examples, and a machine-readable dataset.
+This repository is rebuilt from the actual GPTImg2 prompt library, not invented sample cards. Every featured item includes:
 
-[Try GPTImg2](https://gptimg2.art/) · [GPT Image 2 page](https://gptimg2.art/models/gpt-image-2) · [Searchable Gallery](docs/index.html)
+- The original prompt text from the GPTImg2 prompt page
+- The matching generated image URL used by the prompt library
+- A source page link on [gptimg2.art](https://gptimg2.art/)
+- JSON, CSV, NDJSON, HTML detail pages, and GEO-friendly metadata
 
-## Why This Feels Different
+[Open the GitHub Pages gallery](docs/index.html) · [Try GPTImg2](https://gptimg2.art/) · [Download JSON](data/prompts.json)
 
-Most AI image prompt lists are fun to scroll and hard to reuse. They show the lucky output, but they rarely explain the brief behind it, what can fail, or how to adapt the idea for a real product, article, poster, or edit.
+## What Changed
 
-GPT Image 2 Prompts uses a recipe format that reads like a creative brief:
+The first version looked polished but too generic. This version is built around verified prompt pages, so readers can inspect the actual prompt, image, category, and source URL together.
 
-- Clear use case
-- Prompt and negative instructions
-- Why it works
-- Common variation prompts
-- Editorial benchmark scores
-- Structured JSON for search, tools, and GEO retrieval
+## Dataset
 
-## Featured Prompt Recipes
+- 874 verified prompt-image pairs
+- 3 real source categories
+- Source files: `ai-womens-fashion.json`, `ai-mens-fashion.json`, `ai-kids-fashion.json`
+- Primary language: Chinese prompt pages, with English metadata for search and reuse
+
+## Featured Real Examples
 
 | | | |
 |---|---|---|
-| ![Minimal Wireless Charger](images/product-photography/product-photography-001-minimal-wireless-charger.svg) | ![Launch Poster](images/readable-text/readable-text-001-launch-poster.svg) | ![Analytics Dashboard](images/ui-mockups/ui-mockups-001-analytics-dashboard.svg) |
-| **Minimal Wireless Charger**<br>Product Photography | **Launch Poster**<br>Readable Text Posters | **Analytics Dashboard**<br>UI Mockups |
-| ![Background Swap](images/reference-editing/reference-editing-001-background-swap.svg) | ![Amazon Main Image](images/ecommerce-mockups/ecommerce-mockups-001-amazon-main-image.svg) | ![AI Prompt Guide Cover](images/social-covers/social-covers-001-ai-prompt-guide-cover.svg) |
-| **Background Swap**<br>Reference Image Editing | **Amazon Main Image**<br>Ecommerce Mockups | **AI Prompt Guide Cover**<br>Social Covers |
-| ![Minimal Logo Mark](images/brand-visuals/brand-visuals-001-minimal-logo-mark.svg) | ![Prompt Anatomy](images/infographics/infographics-001-prompt-anatomy.svg) | ![Mascot Sheet](images/character-design/character-design-001-mascot-sheet.svg) |
-| **Minimal Logo Mark**<br>Brand Visuals | **Prompt Anatomy**<br>Infographics | **Mascot Sheet**<br>Character Design |
-| ![Editorial Illustration](images/style-transfer/style-transfer-001-editorial-illustration.svg) | ![Glass Skincare Bottle](images/product-photography/product-photography-002-glass-skincare-bottle.svg) | ![Ceramic Coffee Mug](images/product-photography/product-photography-003-ceramic-coffee-mug.svg) |
-| **Editorial Illustration**<br>Style Transfer | **Glass Skincare Bottle**<br>Product Photography | **Ceramic Coffee Mug**<br>Product Photography |
+| ![男装写真 AI 男装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-mens-fashion/ai-mens-fashion-001/0.jpg) | ![AI 男装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-mens-fashion/ai-mens-fashion-002/0.jpg) | ![AI 男装提示词 2](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-mens-fashion/ai-mens-fashion-003/0.jpg) |
+| **男装写真 AI 男装提示词 1**<br>Men's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-mens-fashion-001) | **AI 男装提示词 1**<br>Men's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-mens-fashion-002) | **AI 男装提示词 2**<br>Men's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-mens-fashion-003) |
+| ![工装机能男装 AI 男装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-mens-fashion/ai-mens-fashion-004/0.jpg) | ![韩系温柔 AI 女装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-womens-fashion/ai-womens-fashion-001/0-v2.png) | ![夏日海边温柔风 AI 女装提示词](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-womens-fashion/ai-womens-fashion-002/0-v2.png) |
+| **工装机能男装 AI 男装提示词 1**<br>Men's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-mens-fashion-004) | **韩系温柔 AI 女装提示词 1**<br>Women's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-001) | **夏日海边温柔风 AI 女装提示词**<br>Women's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-002) |
+| ![秋日温柔 AI 女装提示词](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-womens-fashion/ai-womens-fashion-003/0-v2.png) | ![复古胶片风 AI 女装提示词](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-womens-fashion/ai-womens-fashion-004/0-v2.png) | ![男童穿搭 AI 童装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-kids-fashion/ai-kids-fashion-001/0.png) |
+| **秋日温柔 AI 女装提示词**<br>Women's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-003) | **复古胶片风 AI 女装提示词**<br>Women's Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-004) | **男童穿搭 AI 童装提示词 1**<br>Kids Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-kids-fashion-001) |
+| ![童装对镜自拍 AI 童装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-kids-fashion/ai-kids-fashion-002/0.jpg) | ![女童穿搭 AI 童装提示词 1](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-kids-fashion/ai-kids-fashion-003/0.png) | ![女童穿搭 AI 童装提示词 2](https://cdn.nano-banana-2-ai.com/uploads/prompt-library/gpt-image-2/media/ai-kids-fashion/ai-kids-fashion-004/0.jpg) |
+| **童装对镜自拍 AI 童装提示词 1**<br>Kids Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-kids-fashion-002) | **女童穿搭 AI 童装提示词 1**<br>Kids Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-kids-fashion-003) | **女童穿搭 AI 童装提示词 2**<br>Kids Fashion<br>[Source](https://gptimg2.art/zh/prompts/gpt-image-2/ai-kids-fashion-004) |
 
 
 ## Categories
 
-- [Product Photography](examples/product-photography.md) - Commercial product images with controlled lighting, materials, and layout.
-- [Readable Text Posters](examples/readable-text.md) - Poster and cover prompts that prioritize legible typography and clean layout.
-- [UI Mockups](examples/ui-mockups.md) - App and dashboard visuals with readable interface hierarchy.
-- [Reference Image Editing](examples/reference-editing.md) - Editing prompts that preserve subject identity while changing context or style.
-- [Ecommerce Mockups](examples/ecommerce-mockups.md) - Market-ready product, packaging, and listing visuals.
-- [Social Covers](examples/social-covers.md) - Thumbnails, blog covers, carousels, and social posts.
-- [Brand Visuals](examples/brand-visuals.md) - Brand marks, campaign art direction, and visual identity exploration.
-- [Infographics](examples/infographics.md) - Structured visuals that explain workflows, comparisons, and concepts.
-- [Character Design](examples/character-design.md) - Consistent character sheets, poses, outfits, and stylized concepts.
-- [Style Transfer](examples/style-transfer.md) - Prompts for controlled visual style changes without losing core structure.
+- [Men's Fashion](examples/mens-fashion.md) - 588 real prompt-image pairs. Verified GPTImg2 prompt examples for Men's Fashion.
+- [Women's Fashion](examples/womens-fashion.md) - 179 real prompt-image pairs. Verified GPTImg2 prompt examples for Women's Fashion.
+- [Kids Fashion](examples/kids-fashion.md) - 107 real prompt-image pairs. Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.
 
-## Dataset
+## Files
 
-The full dataset is available in [data/prompts.json](data/prompts.json). Each entry includes title, category, use case, prompt, negative prompt, image path, scores, tags, and GPTImg2 links.
+- [data/prompts.json](data/prompts.json) - full structured dataset
+- [data/prompts.csv](data/prompts.csv) - spreadsheet-friendly export
+- [data/prompts.ndjson](data/prompts.ndjson) - retrieval-friendly line format
+- [docs/index.html](docs/index.html) - searchable static gallery
+- [docs/llms.txt](docs/llms.txt) - AI answer engine summary
+- [docs/sitemap.xml](docs/sitemap.xml) - indexable page map
 
-Current first edition:
+## Why This Is Better Than A Normal Awesome List
 
-- 80 prompt recipes
-- 10 categories
-- Machine-readable JSON
-- GitHub Pages searchable gallery
-- Multilingual README entry points
-
-## Recipe Format
-
-```md
-## Minimal Wireless Charger
-
-Category: Product Photography
-Use case: premium ecommerce hero image
-Input type: text prompt
-Aspect ratio: 1:1 or 16:9
-
-Prompt:
-...
-
-Negative instructions:
-...
-
-Why it works:
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-
-Open the workflow:
-https://gptimg2.art/
-```
-
-## Benchmarks
-
-Scores are editorial labels for comparing prompt recipe quality, not model performance guarantees.
-
-- Prompt clarity
-- Composition control
-- Text accuracy
-- Object consistency
-- Commercial usability
-
-See [data/benchmarks.json](data/benchmarks.json).
-
-## Guides
-
-- [Prompt Writing Guide](guides/prompt-writing-guide.md)
-- [Product Photo Prompt Guide](guides/product-photo-guide.md)
-- [Reference Image Editing Guide](guides/reference-image-editing-guide.md)
-
-## Multilingual
-
-- [中文](README_zh.md)
-- [日本語](README_ja.md)
-- [Español](README_es.md)
-
-## Tool Note
-
-You can adapt these prompts to any modern AI image generator. For a simple GPT Image 2 style online workflow, try [GPTImg2](https://gptimg2.art/).
-
-## Quality Bar
-
-This project aims to become a practical prompt operating system, not a collection of random prompt screenshots.
-
-See [QUALITY_BAR.md](QUALITY_BAR.md) and [ROADMAP.md](ROADMAP.md).
-
-## Contributing
-
-Prompt recipes, output examples, corrections, translations, and benchmark suggestions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Most prompt lists show lucky screenshots. This repo keeps the prompt, output image, category, and source page together, so the examples are reusable, auditable, and easier for search engines or AI answer engines to quote accurately.
 
 ## License
 
-Content is released under CC BY 4.0 unless otherwise noted. Code is released under MIT.
+Code is MIT. Prompt and image references are attributed to their source pages; check each source URL before reuse in commercial contexts.

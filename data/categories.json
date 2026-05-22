@@ -2,64 +2,25 @@
   "updated_at": "2026-05-22",
   "categories": [
     {
-      "slug": "product-photography",
-      "name": "Product Photography",
-      "short": "Commercial product images with controlled lighting, materials, and layout.",
-      "color": "#2764d8"
+      "slug": "mens-fashion",
+      "name": "Men's Fashion",
+      "short": "Verified GPTImg2 prompt examples for Men's Fashion.",
+      "color": "#2764d8",
+      "count": 588
     },
     {
-      "slug": "readable-text",
-      "name": "Readable Text Posters",
-      "short": "Poster and cover prompts that prioritize legible typography and clean layout.",
-      "color": "#0f8b6f"
+      "slug": "womens-fashion",
+      "name": "Women's Fashion",
+      "short": "Verified GPTImg2 prompt examples for Women's Fashion.",
+      "color": "#2764d8",
+      "count": 179
     },
     {
-      "slug": "ui-mockups",
-      "name": "UI Mockups",
-      "short": "App and dashboard visuals with readable interface hierarchy.",
-      "color": "#7c3aed"
-    },
-    {
-      "slug": "reference-editing",
-      "name": "Reference Image Editing",
-      "short": "Editing prompts that preserve subject identity while changing context or style.",
-      "color": "#c2410c"
-    },
-    {
-      "slug": "ecommerce-mockups",
-      "name": "Ecommerce Mockups",
-      "short": "Market-ready product, packaging, and listing visuals.",
-      "color": "#be123c"
-    },
-    {
-      "slug": "social-covers",
-      "name": "Social Covers",
-      "short": "Thumbnails, blog covers, carousels, and social posts.",
-      "color": "#0284c7"
-    },
-    {
-      "slug": "brand-visuals",
-      "name": "Brand Visuals",
-      "short": "Brand marks, campaign art direction, and visual identity exploration.",
-      "color": "#b45309"
-    },
-    {
-      "slug": "infographics",
-      "name": "Infographics",
-      "short": "Structured visuals that explain workflows, comparisons, and concepts.",
-      "color": "#4f46e5"
-    },
-    {
-      "slug": "character-design",
-      "name": "Character Design",
-      "short": "Consistent character sheets, poses, outfits, and stylized concepts.",
-      "color": "#db2777"
-    },
-    {
-      "slug": "style-transfer",
-      "name": "Style Transfer",
-      "short": "Prompts for controlled visual style changes without losing core structure.",
-      "color": "#64748b"
+      "slug": "kids-fashion",
+      "name": "Kids Fashion",
+      "short": "Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.",
+      "color": "#7c5b16",
+      "count": 107
     }
   ]
 }

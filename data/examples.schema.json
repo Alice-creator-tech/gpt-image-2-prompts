@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AI Image Prompt Atlas Example",
+  "title": "GPT Image 2 Prompt Example",
   "type": "object",
   "required": [
     "id",
@@ -8,6 +8,7 @@
     "category",
     "prompt",
     "image",
+    "source_page",
     "score"
   ],
   "properties": {
@@ -20,16 +21,13 @@
     "category": {
       "type": "string"
     },
-    "use_case": {
-      "type": "string"
-    },
     "prompt": {
       "type": "string"
     },
-    "negative_prompt": {
+    "image": {
       "type": "string"
     },
-    "image": {
+    "source_page": {
       "type": "string"
     },
     "score": {

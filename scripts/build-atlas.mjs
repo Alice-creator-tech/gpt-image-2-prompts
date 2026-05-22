@@ -2,515 +2,371 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
+const sourceRoot = process.env.GPTIMG2_REPO || "/Users/aishu/cloudflare/gptimg2";
+const sourceDir = path.join(sourceRoot, "data/prompt-library/imports/gpt-image-2");
 const today = "2026-05-22";
 const siteUrl = "https://alice-creator-tech.github.io/gpt-image-2-prompts";
-const siteName = "GPT Image 2 Prompts";
-const atlasName = "AI Image Prompt Atlas";
-const seoDescription = "Browse reusable GPT Image 2 prompts, AI image prompt examples, GPTImg2 workflows, product photo prompts, readable text poster prompts, UI mockup prompts, and image editing recipes.";
+const productUrl = "https://gptimg2.art";
+const generatorUrl = `${productUrl}/zh/ai-image`;
+const sourceFiles = [
+  "ai-womens-fashion.json",
+  "ai-mens-fashion.json",
+  "ai-kids-fashion.json",
+];
+
+const categoryCopy = {
+  "women-s-fashion": {
+    name: "Women's Fashion",
+    short: "Verified GPTImg2 prompts for women's fashion, product styling, ecommerce hero images, and social commerce visuals.",
+    color: "#be3455",
+  },
+  "men-s-fashion": {
+    name: "Men's Fashion",
+    short: "Real GPTImg2 prompt pages for menswear lookbooks, product detail shots, model scenes, and marketplace-ready visuals.",
+    color: "#245f8f",
+  },
+  "kids-fashion": {
+    name: "Kids Fashion",
+    short: "Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.",
+    color: "#7c5b16",
+  },
+};
+
+const workflowAssets = [
+  {
+    title: "GPTImg2 prompt workspace",
+    file: "image-to-prompt-desktop.png",
+    source: "/Users/aishu/Documents/Playground/gptimg2-blog-submissions/assets/image-to-prompt-desktop.png",
+    caption: "The real GPTImg2 workspace used for prompt exploration and image generation.",
+  },
+  {
+    title: "Mobile prompt workflow",
+    file: "image-to-prompt-mobile.png",
+    source: "/Users/aishu/Documents/Playground/gptimg2-blog-submissions/assets/image-to-prompt-mobile.png",
+    caption: "A mobile view of the same prompt workflow, useful for social content and quick reuse.",
+  },
+  {
+    title: "Prompt anatomy",
+    file: "prompt-anatomy.jpg",
+    source: "/Users/aishu/Documents/Playground/gptimg2-note-assets/02-prompt-anatomy-square.jpg",
+    caption: "A reusable structure for subject, styling, composition, details, and constraints.",
+  },
+  {
+    title: "Product workflow",
+    file: "product-workflow.jpg",
+    source: "/Users/aishu/Documents/Playground/gptimg2-note-assets/03-product-workflow-square.jpg",
+    caption: "A GPTImg2 product-image workflow asset that connects prompts to usable commercial output.",
+  },
+];
+
 const seoKeywords = [
   "GPT Image 2 prompts",
   "GPT image prompts",
-  "AI image prompts",
-  "GPTImg2",
-  "AI image generator prompts",
-  "image editing prompts",
-  "product photography prompts",
-  "readable text poster prompts",
-  "UI mockup prompts",
-];
-
-const categories = [
-  {
-    slug: "product-photography",
-    name: "Product Photography",
-    short: "Commercial product images with controlled lighting, materials, and layout.",
-    color: "#2764d8",
-    examples: [
-      ["Minimal Wireless Charger", "a matte black wireless charging dock for a smartphone and earbuds", "premium ecommerce hero image"],
-      ["Glass Skincare Bottle", "a translucent amber skincare serum bottle with a matte cream label", "beauty product listing image"],
-      ["Ceramic Coffee Mug", "a handmade speckled ceramic coffee mug with a soft curved handle", "lifestyle product hero image"],
-      ["Running Shoe Detail", "a lightweight running shoe with breathable mesh and reflective trim", "sport ecommerce detail shot"],
-      ["Desk Lamp Launch", "a brushed aluminum adjustable desk lamp with a warm LED strip", "landing page product render"],
-      ["Reusable Water Bottle", "a stainless steel reusable water bottle with a powder coated finish", "marketplace catalog image"],
-      ["Smartwatch Strap Set", "three interchangeable smartwatch straps in silicone, nylon, and leather", "accessory comparison image"],
-      ["Artisan Chocolate Box", "a luxury chocolate gift box with twelve pieces and gold foil details", "premium food product photo"],
-    ],
-  },
-  {
-    slug: "readable-text",
-    name: "Readable Text Posters",
-    short: "Poster and cover prompts that prioritize legible typography and clean layout.",
-    color: "#0f8b6f",
-    examples: [
-      ["Launch Poster", "a clean launch poster with the headline NEW CREATIVE TOOLS", "startup announcement visual"],
-      ["Workshop Flyer", "a vertical workshop flyer with the headline PROMPT LAB", "event promotion poster"],
-      ["Quote Card", "an editorial quote card with the phrase MAKE THE IDEA VISIBLE", "social media quote graphic"],
-      ["Sale Banner", "a modern ecommerce banner with the headline WINTER STUDIO SALE", "campaign banner"],
-      ["Music Poster", "a minimal concert poster with the headline MIDNIGHT SYNTHS", "music event poster"],
-      ["App Update Card", "a product update card with the text VERSION 2.0", "SaaS release image"],
-      ["Coffee Menu", "a small cafe menu board with clear prices and item names", "restaurant menu visual"],
-      ["Book Cover", "a contemporary book cover with the title THE VISUAL BRIEF", "publishing concept"],
-    ],
-  },
-  {
-    slug: "ui-mockups",
-    name: "UI Mockups",
-    short: "App and dashboard visuals with readable interface hierarchy.",
-    color: "#7c3aed",
-    examples: [
-      ["Analytics Dashboard", "a clean analytics dashboard for creator revenue and audience growth", "SaaS hero mockup"],
-      ["Mobile Finance App", "a mobile app screen for budgeting and subscription tracking", "app store preview"],
-      ["AI Editor Interface", "an AI image editor interface with prompt panel and before-after preview", "product screenshot concept"],
-      ["Travel Planner", "a trip planning app with itinerary cards, map preview, and weather", "mobile UI concept"],
-      ["Team Kanban", "a collaborative kanban board with tasks, avatars, and priority tags", "productivity tool mockup"],
-      ["Recipe App", "a cooking app screen with ingredients, timer, and nutrition card", "mobile app mockup"],
-      ["Music Dashboard", "an artist dashboard with stream analytics and playlist placements", "creator platform concept"],
-      ["Learning Portal", "an online course dashboard with progress rings and lesson cards", "education SaaS visual"],
-    ],
-  },
-  {
-    slug: "reference-editing",
-    name: "Reference Image Editing",
-    short: "Editing prompts that preserve subject identity while changing context or style.",
-    color: "#c2410c",
-    examples: [
-      ["Background Swap", "replace a plain studio background with a sunlit modern apartment", "portrait background edit"],
-      ["Outfit Change", "change the outfit to a navy blazer and white shirt while preserving face and pose", "professional portrait edit"],
-      ["Product Colorway", "turn the product shell from white to matte forest green", "SKU color variation"],
-      ["Lighting Upgrade", "improve flat lighting into soft cinematic window light", "photo enhancement"],
-      ["Clean Object Removal", "remove stray cables and desk clutter from a product photo", "commercial cleanup"],
-      ["Season Change", "change a summer street scene into early autumn while keeping architecture identical", "environment edit"],
-      ["Material Swap", "change a plastic chair into walnut wood with the same shape", "interior design edit"],
-      ["Text Replacement", "replace the poster headline while preserving layout and typography", "localized marketing asset"],
-    ],
-  },
-  {
-    slug: "ecommerce-mockups",
-    name: "Ecommerce Mockups",
-    short: "Market-ready product, packaging, and listing visuals.",
-    color: "#be123c",
-    examples: [
-      ["Amazon Main Image", "a white-background product image for a compact desk organizer", "marketplace listing"],
-      ["Shopify Hero Set", "three product images for a skincare bundle on a soft pastel background", "brand storefront"],
-      ["Packaging Box", "a recyclable kraft paper packaging box for organic tea", "packaging concept"],
-      ["Before After Split", "a split comparison image for a cleaning product", "conversion ad"],
-      ["Bundle Layout", "a neatly arranged bundle of notebook, pen, and desk accessories", "bundle listing"],
-      ["Lifestyle Shelf Shot", "a home shelf scene featuring a minimalist candle jar", "lifestyle listing image"],
-      ["Size Comparison", "a product scale comparison next to a phone and hand silhouette", "listing infographic"],
-      ["Feature Callouts", "a product image with three clean annotation callouts", "feature visual"],
-    ],
-  },
-  {
-    slug: "social-covers",
-    name: "Social Covers",
-    short: "Thumbnails, blog covers, carousels, and social posts.",
-    color: "#0284c7",
-    examples: [
-      ["AI Prompt Guide Cover", "a 16:9 blog cover about writing better AI image prompts", "article cover"],
-      ["Creator Toolkit Thumbnail", "a YouTube-style thumbnail for a creator tools roundup", "video thumbnail"],
-      ["LinkedIn Carousel", "a professional carousel cover about product photography prompts", "B2B social post"],
-      ["Newsletter Header", "an editorial newsletter header for creative AI workflows", "email header"],
-      ["Twitter Card", "a compact card for a prompt template collection", "link preview image"],
-      ["Podcast Cover", "a square podcast cover for a show about visual AI tools", "podcast artwork"],
-      ["Case Study Header", "a clean header for an ecommerce image generation case study", "case study cover"],
-      ["Launch Countdown", "a bold social countdown graphic reading 3 DAYS TO LAUNCH", "campaign asset"],
-    ],
-  },
-  {
-    slug: "brand-visuals",
-    name: "Brand Visuals",
-    short: "Brand marks, campaign art direction, and visual identity exploration.",
-    color: "#b45309",
-    examples: [
-      ["Minimal Logo Mark", "a vector-friendly abstract mark for an AI design studio", "logo exploration"],
-      ["Brand Moodboard", "a moodboard for a calm productivity app brand", "identity direction"],
-      ["Sticker Sheet", "a playful sticker sheet for a creative toolkit brand", "community swag"],
-      ["Icon Set Preview", "a consistent set of eight app feature icons", "product branding"],
-      ["Mascot Concept", "a friendly abstract assistant mascot for a design tool", "brand character"],
-      ["Packaging Pattern", "a repeatable pattern for boutique stationery packaging", "brand pattern"],
-      ["Ad Campaign Key Visual", "a key visual for a premium AI image editor campaign", "marketing concept"],
-      ["Style Tile", "a style tile showing colors, type, textures, and buttons", "brand system preview"],
-    ],
-  },
-  {
-    slug: "infographics",
-    name: "Infographics",
-    short: "Structured visuals that explain workflows, comparisons, and concepts.",
-    color: "#4f46e5",
-    examples: [
-      ["Prompt Anatomy", "an infographic explaining subject, composition, style, details, and constraints", "educational diagram"],
-      ["Workflow Ladder", "a step-by-step visual workflow from brief to final image", "process infographic"],
-      ["Model Comparison", "a comparison chart for image generation use cases", "analysis graphic"],
-      ["Creative Brief Map", "a mind map for turning vague ideas into image prompts", "guide illustration"],
-      ["Ecommerce Funnel", "an infographic showing product image types across a sales funnel", "marketing diagram"],
-      ["Editing Checklist", "a checklist visual for reference image editing quality control", "QA guide"],
-      ["Prompt Matrix", "a matrix comparing style, lighting, camera, and constraints", "prompt education"],
-      ["Failure Modes", "a visual chart of common AI image generation mistakes", "training graphic"],
-    ],
-  },
-  {
-    slug: "character-design",
-    name: "Character Design",
-    short: "Consistent character sheets, poses, outfits, and stylized concepts.",
-    color: "#db2777",
-    examples: [
-      ["Mascot Sheet", "a full character sheet for a friendly AI studio mascot", "character reference"],
-      ["Pose Variations", "the same character in six distinct poses", "animation reference"],
-      ["Outfit Sheet", "a character wearing four seasonal outfits", "fashion concept"],
-      ["Expression Grid", "a grid of twelve facial expressions for one character", "emotion reference"],
-      ["Game NPC", "a stylized non-player character for a cozy management game", "game concept art"],
-      ["Comic Hero", "a clean comic-style hero with cape, boots, and symbol", "comic concept"],
-      ["3D Toy Render", "a collectible vinyl toy version of an original character", "toy concept"],
-      ["Chibi Sticker Pack", "a set of chibi reaction stickers for one character", "social sticker pack"],
-    ],
-  },
-  {
-    slug: "style-transfer",
-    name: "Style Transfer",
-    short: "Prompts for controlled visual style changes without losing core structure.",
-    color: "#64748b",
-    examples: [
-      ["Editorial Illustration", "turn a product concept into a clean editorial illustration", "style exploration"],
-      ["Clay Render", "render a dashboard screen as a soft clay 3D scene", "visual metaphor"],
-      ["Risograph Poster", "convert a social cover into a two-color risograph print", "print style"],
-      ["Blueprint Diagram", "turn a product photo into a technical blueprint drawing", "technical visual"],
-      ["Watercolor Scene", "convert a city photo into a soft watercolor travel postcard", "travel art"],
-      ["Pixel Art Object", "turn a product into a crisp pixel art inventory icon", "game asset"],
-      ["Paper Cutout", "create a layered paper cutout version of a brand visual", "craft style"],
-      ["Cinematic Still", "turn a simple concept into a cinematic film still", "storyboard visual"],
-    ],
-  },
-];
-
-const categoryMap = Object.fromEntries(categories.map((category) => [category.slug, category]));
-const workflowAssets = [
-  {
-    title: "Prompt Workspace",
-    file: "image-to-prompt-desktop.png",
-    source: "/Users/aishu/Documents/Playground/gptimg2-blog-submissions/assets/image-to-prompt-desktop.png",
-    caption: "A real GPTImg2 workflow screenshot for turning visual ideas into structured prompts.",
-  },
-  {
-    title: "Mobile Prompt Flow",
-    file: "image-to-prompt-mobile.png",
-    source: "/Users/aishu/Documents/Playground/gptimg2-blog-submissions/assets/image-to-prompt-mobile.png",
-    caption: "The prompt workflow stays readable on small screens, which matters for shareable examples.",
-  },
-  {
-    title: "Prompt Anatomy",
-    file: "prompt-anatomy.jpg",
-    source: "/Users/aishu/Documents/Playground/gptimg2-note-assets/02-prompt-anatomy-square.jpg",
-    caption: "A visual breakdown of subject, composition, style, details, and constraints.",
-  },
-  {
-    title: "Product Workflow",
-    file: "product-workflow.jpg",
-    source: "/Users/aishu/Documents/Playground/gptimg2-note-assets/03-product-workflow-square.jpg",
-    caption: "A product-image workflow asset used to make the atlas feel practical, not abstract.",
-  },
+  "GPTImg2 prompts",
+  "real AI image prompt examples",
+  "AI fashion prompts",
+  "AI ecommerce image prompts",
+  "prompt library",
+  "image generation examples",
+  "gptimg2.art",
 ];
 
 function ensureDir(dir) {
   fs.mkdirSync(path.join(root, dir), { recursive: true });
 }
 
-function slugify(input) {
-  return input
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+function resetGeneratedOutput() {
+  for (const dir of [
+    "data",
+    "docs/data",
+    "docs/images",
+    "docs/examples",
+    "docs/categories",
+    "examples",
+    "images",
+  ]) {
+    fs.rmSync(path.join(root, dir), { recursive: true, force: true });
+  }
 }
 
 function esc(input) {
-  return String(input)
+  return String(input ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 }
 
-function withArticle(phrase) {
-  return `${/^[aeiou]/i.test(phrase) ? "an" : "a"} ${phrase}`;
+function slugify(input) {
+  return String(input ?? "")
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/['’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "prompt";
 }
 
-function promptFor(category, title, subject, useCase) {
-  const useCasePhrase = withArticle(useCase);
-  const opening = {
-    "product-photography": `Build ${useCasePhrase} that feels ready for a real storefront, not a generic stock render.`,
-    "readable-text": `Design ${useCasePhrase} where the message is the hero and the typography survives thumbnail size.`,
-    "ui-mockups": `Create ${useCasePhrase} that looks like a product team could ship it tomorrow.`,
-    "reference-editing": `Edit the reference image for ${useCasePhrase} while protecting the parts viewers would notice first.`,
-    "ecommerce-mockups": `Create ${useCasePhrase} with the kind of clarity a shopper needs before clicking.`,
-    "social-covers": `Make ${useCasePhrase} with one idea, one focal point, and enough space for distribution crops.`,
-    "brand-visuals": `Explore ${useCasePhrase} that feels like the start of a coherent brand system, not a one-off graphic.`,
-    infographics: `Create ${useCasePhrase} that explains the idea at a glance before asking the viewer to read details.`,
-    "character-design": `Create ${useCasePhrase} with a character identity that could be reused across a larger set.`,
-    "style-transfer": `Transform the idea into ${useCasePhrase} while keeping the original structure easy to recognize.`,
-  }[category.slug];
-  const categoryRules = {
-    "product-photography": `Frame the subject like a premium product launch: ${subject}. Use a clean surface, controlled studio lighting, realistic shadows, and enough negative space for a landing page crop.`,
-    "readable-text": `The central visual is ${subject}. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.`,
-    "ui-mockups": `The interface concept is ${subject}. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.`,
-    "reference-editing": `The edit request is to ${subject}. Change only the requested attribute, preserve identity and geometry, and keep lighting, perspective, and edges physically plausible.`,
-    "ecommerce-mockups": `The commercial asset features ${subject}. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.`,
-    "social-covers": `The cover concept is ${subject}. Use a bold focal point, editorial lighting, and a composition that works for both wide previews and cropped social feeds.`,
-    "brand-visuals": `The brand exploration is ${subject}. Keep the visual language consistent enough to suggest a system: palette, shape logic, spacing, and tone should agree.`,
-    infographics: `The explainer subject is ${subject}. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.`,
-    "character-design": `The character concept is ${subject}. Keep proportions, silhouette, palette, and personality stable so it feels like the same character across uses.`,
-    "style-transfer": `The style-transfer target is ${subject}. Preserve the core composition while changing the surface treatment, medium, and mood.`,
-  }[category.slug];
-  return `${opening}\n\n${categoryRules}\n\nArt direction: polished, practical, visually specific, and suitable for a public prompt library.\n\nAvoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.`;
+function readJson(file) {
+  return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
-function briefFor(category, title, subject, useCase) {
-  const verbs = {
-    "product-photography": "turns a product idea into a storefront-ready image brief",
-    "readable-text": "keeps typography readable while still giving the image a strong visual mood",
-    "ui-mockups": "turns an interface concept into a believable product screenshot",
-    "reference-editing": "shows how to ask for a precise edit without losing the original subject",
-    "ecommerce-mockups": "focuses the prompt on clarity, trust, and buying intent",
-    "social-covers": "compresses a content idea into a sharp cover image",
-    "brand-visuals": "uses prompt structure to explore a repeatable brand direction",
-    infographics: "translates an abstract workflow into a scannable visual explanation",
-    "character-design": "keeps a character reusable instead of generating a single lucky image",
-    "style-transfer": "changes visual language while preserving the underlying idea",
-  };
-  return `${title} ${verbs[category.slug]} for ${withArticle(useCase)}: ${subject}.`;
+function cleanPrompt(value) {
+  return String(value ?? "").replace(/\r\n/g, "\n").replace(/\s+\n/g, "\n").trim();
 }
 
-function negativeFor(category) {
-  return [
-    "watermark",
-    "unreadable text",
-    "random logos",
-    "warped hands or objects",
-    "duplicated subjects",
-    "messy background",
-    "low-resolution artifacts",
-    category.slug === "readable-text" ? "extra words" : "unwanted typography",
-  ].join(", ");
+function absoluteMediaUrl(media) {
+  const url = media?.r2Thumbnail || media?.thumbnail || media?.r2Url || media?.url || "";
+  if (!url) return "";
+  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  if (url.startsWith("/api/")) return `${productUrl}${url}`;
+  return url;
 }
 
-function makeExample(category, item, index) {
-  const [title, subject, useCase] = item;
-  const id = `${category.slug}-${String(index + 1).padStart(3, "0")}`;
-  const slug = slugify(title);
+function getSourcePage(item) {
+  return `${productUrl}/zh/prompts/gpt-image-2/${item.slug}`;
+}
+
+function getAspectRatio(prompt) {
+  const match = prompt.match(/(?:^|[^\d])(\d{1,2}\s*:\s*\d{1,2})(?:[^\d]|$)/);
+  return match ? match[1].replace(/\s+/g, "") : "source prompt";
+}
+
+function getDifficulty(prompt) {
+  if (prompt.length > 1100) return "advanced";
+  if (prompt.length > 420) return "medium";
+  return "easy";
+}
+
+function getScore(item, prompt) {
+  const hasDetailedPrompt = prompt.length > 500;
+  const hasLongPrompt = prompt.length > 1000;
+  const tagCount = Array.isArray(item.tags) ? item.tags.length : 0;
   return {
-    id,
-    slug,
-    title,
-    category: category.slug,
-    category_name: category.name,
-    use_case: useCase,
-    input_type: category.slug === "reference-editing" ? "reference image + text instruction" : "text prompt",
-    output_type: category.slug === "ui-mockups" ? "concept UI image" : "generated image",
-    difficulty: index % 3 === 0 ? "easy" : index % 3 === 1 ? "medium" : "advanced",
-    aspect_ratio: category.slug === "readable-text" ? "4:5 or 9:16" : category.slug === "social-covers" ? "16:9" : "1:1 or 16:9",
-    brief: briefFor(category, title, subject, useCase),
-    prompt: promptFor(category, title, subject, useCase),
-    negative_prompt: negativeFor(category),
-    why_it_works: [
-      "It starts with the outcome the image needs to serve, so the model is not guessing the format.",
-      "The subject is concrete enough to anchor the scene before style words enter the prompt.",
-      "The art direction describes what success should feel like, not just what should appear.",
-      "The avoid list removes the common visual failures that usually make AI images hard to use.",
-    ],
-    variations: [
-      `Make a minimal ${useCase} version with more whitespace.`,
-      `Make a bold social-media-ready version with stronger contrast.`,
-      `Make a premium editorial version with refined lighting and texture.`,
-    ],
-    score: {
-      prompt_clarity: 5,
-      composition_control: index % 2 === 0 ? 5 : 4,
-      text_accuracy: category.slug === "readable-text" || category.slug === "infographics" ? 4 : 3,
-      object_consistency: category.slug === "reference-editing" ? 5 : 4,
-      commercial_usability: category.slug.includes("product") || category.slug.includes("ecommerce") ? 5 : 4,
-    },
-    image: `images/${category.slug}/${id}-${slug}.svg`,
-    try_url: "https://gptimg2.art/",
-    model_url: "https://gptimg2.art/models/gpt-image-2",
-    tags: [category.slug, slug, "ai-image-prompts", "gpt-image-2", "gpt-image-2-prompts", "gptimg2"],
+    prompt_clarity: hasDetailedPrompt ? 5 : 4,
+    visual_specificity: hasLongPrompt ? 5 : 4,
+    source_verification: 5,
+    commercial_usability: tagCount >= 5 ? 5 : 4,
+    image_match: item.media?.length ? 5 : 4,
   };
 }
 
-const examples = categories.flatMap((category) => category.examples.map((item, index) => makeExample(category, item, index)));
-
-function cardSvg(example) {
-  const category = categoryMap[example.category];
-  const title = esc(example.title);
-  const useCase = esc(example.use_case);
-  const categoryName = esc(category.name);
-  const color = category.color;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
-  <title id="title">${title}</title>
-  <desc id="desc">${categoryName} prompt recipe visual card for ${useCase}.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f8fafc"/>
-      <stop offset="1" stop-color="#e2e8f0"/>
-    </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${color}"/>
-      <stop offset="1" stop-color="#111827"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0f172a" flood-opacity="0.18"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="800" fill="url(#bg)"/>
-  <rect x="70" y="64" width="1060" height="672" rx="36" fill="#ffffff" filter="url(#shadow)"/>
-  <rect x="106" y="102" width="460" height="596" rx="28" fill="url(#panel)"/>
-  <circle cx="210" cy="214" r="72" fill="#ffffff" opacity="0.18"/>
-  <circle cx="464" cy="604" r="112" fill="#ffffff" opacity="0.10"/>
-  <path d="M176 430 C246 350, 324 516, 424 394 S520 430, 524 328" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.28"/>
-  <text x="150" y="168" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff" opacity="0.92">AI IMAGE PROMPT ATLAS</text>
-  <text x="150" y="592" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#ffffff" opacity="0.78">${categoryName}</text>
-  <text x="150" y="628" font-family="Inter, Arial, sans-serif" font-size="18" fill="#ffffff" opacity="0.7">GPTIMG2.ART</text>
-  <text x="632" y="164" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="${color}">${categoryName}</text>
-  <text x="632" y="226" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800" fill="#0f172a">${title}</text>
-  <text x="632" y="286" font-family="Inter, Arial, sans-serif" font-size="24" fill="#475569">${useCase}</text>
-  <rect x="632" y="350" width="390" height="54" rx="16" fill="#f1f5f9"/>
-  <text x="656" y="385" font-family="Inter, Arial, sans-serif" font-size="20" fill="#334155">Prompt clarity: ${example.score.prompt_clarity}/5</text>
-  <rect x="632" y="426" width="390" height="54" rx="16" fill="#f1f5f9"/>
-  <text x="656" y="461" font-family="Inter, Arial, sans-serif" font-size="20" fill="#334155">Composition control: ${example.score.composition_control}/5</text>
-  <rect x="632" y="502" width="390" height="54" rx="16" fill="#f1f5f9"/>
-  <text x="656" y="537" font-family="Inter, Arial, sans-serif" font-size="20" fill="#334155">Commercial usability: ${example.score.commercial_usability}/5</text>
-  <text x="632" y="640" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Recipe card + structured JSON</text>
-  <text x="632" y="678" font-family="Inter, Arial, sans-serif" font-size="18" fill="#64748b">Copy, adapt, benchmark, and generate.</text>
-</svg>
-`;
+function getWhyItWorks(item, prompt, categoryName) {
+  const lines = [
+    "It is a real GPTImg2 prompt-library entry with a matched output image, so the example is inspectable instead of theoretical.",
+    "The prompt names concrete visual targets, which makes the result easier to reproduce and revise.",
+    `The category context is clear: ${categoryName}, so search engines and AI answer engines can understand the use case.`,
+  ];
+  if (/[光灯亮影色温]/.test(prompt) || /light|shadow|tone|color/i.test(prompt)) {
+    lines.push("Lighting, color, or material language is explicit, reducing the chance of a generic-looking output.");
+  }
+  if (/参考图|同款|preserve|same/i.test(prompt)) {
+    lines.push("Reference-image constraints are stated, which helps preserve clothing, pose, or product details.");
+  }
+  return lines.slice(0, 4);
 }
 
-function writeJson() {
-  ensureDir("data");
-  fs.writeFileSync(path.join(root, "data/prompts.json"), JSON.stringify({ updated_at: today, count: examples.length, examples }, null, 2));
-  fs.writeFileSync(path.join(root, "data/prompts.ndjson"), examples.map((example) => JSON.stringify(example)).join("\n") + "\n");
-  fs.writeFileSync(path.join(root, "data/prompts.csv"), toCsv(examples));
-  fs.writeFileSync(path.join(root, "data/categories.json"), JSON.stringify({ updated_at: today, categories: categories.map(({ examples: _examples, ...rest }) => rest) }, null, 2));
-  fs.writeFileSync(path.join(root, "data/benchmarks.json"), JSON.stringify({
-    updated_at: today,
-    dimensions: [
-      "prompt_clarity",
-      "composition_control",
-      "text_accuracy",
-      "object_consistency",
-      "commercial_usability",
-    ],
-    note: "Scores are editorial labels for prompt recipe comparison, not model performance guarantees.",
-  }, null, 2));
-  fs.writeFileSync(path.join(root, "data/examples.schema.json"), JSON.stringify({
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    title: "AI Image Prompt Atlas Example",
-    type: "object",
-    required: ["id", "title", "category", "prompt", "image", "score"],
-    properties: {
-      id: { type: "string" },
-      title: { type: "string" },
-      category: { type: "string" },
-      use_case: { type: "string" },
-      prompt: { type: "string" },
-      negative_prompt: { type: "string" },
-      image: { type: "string" },
-      score: { type: "object" },
-    },
-  }, null, 2));
+function getVariations(item) {
+  const title = item.title;
+  return [
+    `Keep the same product or outfit, but change the background to a clean ecommerce studio setup for ${title}.`,
+    `Keep the same styling direction, but make the image more suitable for a Xiaohongshu cover with stronger visual focus.`,
+    `Create a marketplace-ready version with clearer product details, less background noise, and more natural lighting.`,
+  ];
 }
+
+function toExample(item, sourceFile) {
+  const prompt = cleanPrompt(item.prompt);
+  const categoryName = item.categories?.[0] || "GPT Image 2";
+  const category = slugify(categoryName);
+  const image = absoluteMediaUrl(item.media?.find((media) => media.type === "image") || item.media?.[0]);
+  const slug = slugify(item.slug || item.id || item.title);
+  const tags = [
+    ...(item.tags || []),
+    categoryName,
+    "GPT Image 2",
+    "GPT Image 2 prompts",
+    "GPTImg2",
+    "real prompt example",
+  ];
+
+  return {
+    id: item.id || slug,
+    slug,
+    title: item.title,
+    category,
+    category_name: categoryName,
+    use_case: item.description || `${categoryName} prompt with a verified GPTImg2 output image.`,
+    input_type: "real GPTImg2 prompt page",
+    output_type: "matched generated image",
+    difficulty: getDifficulty(prompt),
+    aspect_ratio: getAspectRatio(prompt),
+    brief: `${item.title} is a verified GPTImg2 prompt page example. It pairs the original prompt text with the generated image used by the prompt library, making it easier to study, copy, and adapt.`,
+    prompt,
+    negative_prompt: "Avoid changing the core product or outfit details unless requested. Avoid distorted anatomy, messy backgrounds, random text, fake logos, low-resolution artifacts, and mismatched lighting.",
+    why_it_works: getWhyItWorks(item, prompt, categoryName),
+    variations: getVariations(item),
+    score: getScore(item, prompt),
+    image,
+    source_page: getSourcePage(item),
+    try_url: getSourcePage(item),
+    generator_url: generatorUrl,
+    model_url: `${productUrl}/models/gpt-image-2`,
+    source_dataset: sourceFile,
+    language: item.language || "zh",
+    tags: [...new Set(tags.filter(Boolean))],
+    synced_at: item.syncedAt || item.publishedAt || today,
+  };
+}
+
+function loadExamples() {
+  const rows = [];
+  for (const sourceFile of sourceFiles) {
+    const fullPath = path.join(sourceDir, sourceFile);
+    if (!fs.existsSync(fullPath)) {
+      throw new Error(`Missing GPTImg2 prompt source: ${fullPath}`);
+    }
+    const data = readJson(fullPath);
+    for (const item of data.items || []) {
+      if (!item?.id || !item?.title || !item?.prompt || !item?.media?.length) continue;
+      const example = toExample(item, sourceFile);
+      if (example.image && example.prompt.length > 40) rows.push(example);
+    }
+  }
+  const seen = new Set();
+  return rows.filter((item) => {
+    if (seen.has(item.id)) return false;
+    seen.add(item.id);
+    return true;
+  });
+}
+
+const examples = loadExamples();
+const categories = Object.entries(
+  examples.reduce((acc, item) => {
+    acc[item.category] ||= {
+      slug: item.category,
+      name: item.category_name,
+      short: categoryCopy[item.category]?.short || `Verified GPTImg2 prompt examples for ${item.category_name}.`,
+      color: categoryCopy[item.category]?.color || "#2764d8",
+      count: 0,
+    };
+    acc[item.category].count += 1;
+    return acc;
+  }, {})
+).map(([, category]) => category).sort((a, b) => b.count - a.count);
+
+const categoryMap = Object.fromEntries(categories.map((category) => [category.slug, category]));
 
 function toCsv(rows) {
   const headers = [
     "id",
     "title",
-    "category",
     "category_name",
-    "use_case",
     "difficulty",
     "aspect_ratio",
     "prompt",
-    "negative_prompt",
     "image",
-    "try_url",
+    "source_page",
   ];
-  const escapeCell = (value) => {
-    const text = Array.isArray(value) ? value.join("; ") : String(value ?? "");
-    return `"${text.replaceAll('"', '""')}"`;
-  };
-  return [headers.join(","), ...rows.map((row) => headers.map((header) => escapeCell(row[header])).join(","))].join("\n") + "\n";
+  const cell = (value) => `"${String(value ?? "").replaceAll('"', '""')}"`;
+  return [headers.join(","), ...rows.map((row) => headers.map((key) => cell(row[key])).join(","))].join("\n") + "\n";
 }
 
-function writeImages() {
-  for (const category of categories) ensureDir(`images/${category.slug}`);
-  for (const example of examples) {
-    fs.writeFileSync(path.join(root, example.image), cardSvg(example));
-  }
-  copyWorkflowAssets();
-  const previewSource = "/tmp/gptimg2-preview.png";
-  if (fs.existsSync(previewSource)) {
-    ensureDir("images/brand");
-    fs.copyFileSync(previewSource, path.join(root, "images/brand/gptimg2-preview.png"));
-  }
+function writeData() {
+  ensureDir("data");
+  const payload = {
+    updated_at: today,
+    source: "GPTImg2 prompt-library import files",
+    source_repo: sourceRoot,
+    count: examples.length,
+    examples,
+  };
+  fs.writeFileSync(path.join(root, "data/prompts.json"), JSON.stringify(payload, null, 2));
+  fs.writeFileSync(path.join(root, "data/prompts.ndjson"), examples.map((example) => JSON.stringify(example)).join("\n") + "\n");
+  fs.writeFileSync(path.join(root, "data/prompts.csv"), toCsv(examples));
+  fs.writeFileSync(path.join(root, "data/categories.json"), JSON.stringify({ updated_at: today, categories }, null, 2));
+  fs.writeFileSync(path.join(root, "data/benchmarks.json"), JSON.stringify({
+    updated_at: today,
+    note: "Scores are editorial quality labels for verified prompt examples, not model performance guarantees.",
+    dimensions: ["prompt_clarity", "visual_specificity", "source_verification", "commercial_usability", "image_match"],
+  }, null, 2));
+  fs.writeFileSync(path.join(root, "data/examples.schema.json"), JSON.stringify({
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    title: "GPT Image 2 Prompt Example",
+    type: "object",
+    required: ["id", "title", "category", "prompt", "image", "source_page", "score"],
+    properties: {
+      id: { type: "string" },
+      title: { type: "string" },
+      category: { type: "string" },
+      prompt: { type: "string" },
+      image: { type: "string" },
+      source_page: { type: "string" },
+      score: { type: "object" },
+    },
+  }, null, 2));
 }
 
 function copyWorkflowAssets() {
   ensureDir("images/workflows");
   for (const asset of workflowAssets) {
-    const target = path.join(root, "images/workflows", asset.file);
     if (fs.existsSync(asset.source)) {
-      fs.copyFileSync(asset.source, target);
+      fs.copyFileSync(asset.source, path.join(root, "images/workflows", asset.file));
     }
+  }
+  ensureDir("images/brand");
+  const preview = path.join(sourceRoot, "preview.png");
+  if (fs.existsSync(preview)) {
+    fs.copyFileSync(preview, path.join(root, "images/brand/gptimg2-preview.png"));
   }
 }
 
-function topExamples(count = 12) {
-  const onePerCategory = categories
-    .map((category) => examples.find((example) => example.category === category.slug))
-    .filter(Boolean);
-  const remaining = examples.filter((example) => !onePerCategory.includes(example));
-  return [...onePerCategory, ...remaining].slice(0, count);
+function featuredExamples(count = 12) {
+  const picked = [];
+  for (const category of categories) {
+    picked.push(...examples.filter((item) => item.category === category.slug).slice(0, 4));
+  }
+  return picked.slice(0, count);
 }
 
 function readmeGallery() {
-  const featured = topExamples(12);
-  let rows = "";
-  for (let i = 0; i < featured.length; i += 3) {
-    const row = featured.slice(i, i + 3);
-    rows += `| ${row.map((item) => `![${item.title}](${item.image})`).join(" | ")} |\n`;
-    rows += `| ${row.map((item) => `**${item.title}**<br>${item.category_name}`).join(" | ")} |\n`;
+  const items = featuredExamples(12);
+  let body = "| | | |\n|---|---|---|\n";
+  for (let i = 0; i < items.length; i += 3) {
+    const row = items.slice(i, i + 3);
+    body += `| ${row.map((item) => `![${item.title}](${item.image})`).join(" | ")} |\n`;
+    body += `| ${row.map((item) => `**${item.title}**<br>${item.category_name}<br>[Source](${item.source_page})`).join(" | ")} |\n`;
   }
-  return `| | | |\n|---|---|---|\n${rows}`;
-}
-
-function workflowGalleryHtml(prefix = "") {
-  return workflowAssets.map((asset) => `<figure>
-    <img src="${prefix}images/workflows/${asset.file}" alt="${esc(asset.title)}">
-    <figcaption><strong>${esc(asset.title)}</strong><span>${esc(asset.caption)}</span></figcaption>
-  </figure>`).join("\n");
+  return body;
 }
 
 function writeReadme() {
-  const categoryList = categories.map((category) => `- [${category.name}](examples/${category.slug}.md) - ${category.short}`).join("\n");
-  const content = `# GPT Image 2 Prompts - AI Image Prompt Atlas
+  const categoryList = categories.map((category) => `- [${category.name}](examples/${category.slug}.md) - ${category.count} real prompt-image pairs. ${category.short}`).join("\n");
+  fs.writeFileSync(path.join(root, "README.md"), `# GPT Image 2 Prompts
 
-An open, structured atlas of high-quality GPT Image 2 prompts, AI image prompts, GPTImg2 workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
+A real prompt-and-image dataset for GPT Image 2 and GPTImg2 workflows.
 
-This project is not a pile of prompt screenshots. It is a visual field guide for people who want repeatable AI image results: clear briefs, reusable recipes, searchable examples, and a machine-readable dataset.
+This repository is rebuilt from the actual GPTImg2 prompt library, not invented sample cards. Every featured item includes:
 
-[Try GPTImg2](https://gptimg2.art/) · [GPT Image 2 page](https://gptimg2.art/models/gpt-image-2) · [Searchable Gallery](docs/index.html)
+- The original prompt text from the GPTImg2 prompt page
+- The matching generated image URL used by the prompt library
+- A source page link on [gptimg2.art](https://gptimg2.art/)
+- JSON, CSV, NDJSON, HTML detail pages, and GEO-friendly metadata
 
-## Why This Feels Different
+[Open the GitHub Pages gallery](docs/index.html) · [Try GPTImg2](https://gptimg2.art/) · [Download JSON](data/prompts.json)
 
-Most AI image prompt lists are fun to scroll and hard to reuse. They show the lucky output, but they rarely explain the brief behind it, what can fail, or how to adapt the idea for a real product, article, poster, or edit.
+## What Changed
 
-GPT Image 2 Prompts uses a recipe format that reads like a creative brief:
+The first version looked polished but too generic. This version is built around verified prompt pages, so readers can inspect the actual prompt, image, category, and source URL together.
 
-- Clear use case
-- Prompt and negative instructions
-- Why it works
-- Common variation prompts
-- Editorial benchmark scores
-- Structured JSON for search, tools, and GEO retrieval
+## Dataset
 
-## Featured Prompt Recipes
+- ${examples.length} verified prompt-image pairs
+- ${categories.length} real source categories
+- Source files: ${sourceFiles.map((file) => `\`${file}\``).join(", ")}
+- Primary language: Chinese prompt pages, with English metadata for search and reuse
+
+## Featured Real Examples
 
 ${readmeGallery()}
 
@@ -518,184 +374,84 @@ ${readmeGallery()}
 
 ${categoryList}
 
-## Dataset
+## Files
 
-The full dataset is available in [data/prompts.json](data/prompts.json). Each entry includes title, category, use case, prompt, negative prompt, image path, scores, tags, and GPTImg2 links.
+- [data/prompts.json](data/prompts.json) - full structured dataset
+- [data/prompts.csv](data/prompts.csv) - spreadsheet-friendly export
+- [data/prompts.ndjson](data/prompts.ndjson) - retrieval-friendly line format
+- [docs/index.html](docs/index.html) - searchable static gallery
+- [docs/llms.txt](docs/llms.txt) - AI answer engine summary
+- [docs/sitemap.xml](docs/sitemap.xml) - indexable page map
 
-Current first edition:
+## Why This Is Better Than A Normal Awesome List
 
-- ${examples.length} prompt recipes
-- ${categories.length} categories
-- Machine-readable JSON
-- GitHub Pages searchable gallery
-- Multilingual README entry points
-
-## Recipe Format
-
-\`\`\`md
-## Minimal Wireless Charger
-
-Category: Product Photography
-Use case: premium ecommerce hero image
-Input type: text prompt
-Aspect ratio: 1:1 or 16:9
-
-Prompt:
-...
-
-Negative instructions:
-...
-
-Why it works:
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-
-Open the workflow:
-https://gptimg2.art/
-\`\`\`
-
-## Benchmarks
-
-Scores are editorial labels for comparing prompt recipe quality, not model performance guarantees.
-
-- Prompt clarity
-- Composition control
-- Text accuracy
-- Object consistency
-- Commercial usability
-
-See [data/benchmarks.json](data/benchmarks.json).
-
-## Guides
-
-- [Prompt Writing Guide](guides/prompt-writing-guide.md)
-- [Product Photo Prompt Guide](guides/product-photo-guide.md)
-- [Reference Image Editing Guide](guides/reference-image-editing-guide.md)
-
-## Multilingual
-
-- [中文](README_zh.md)
-- [日本語](README_ja.md)
-- [Español](README_es.md)
-
-## Tool Note
-
-You can adapt these prompts to any modern AI image generator. For a simple GPT Image 2 style online workflow, try [GPTImg2](https://gptimg2.art/).
-
-## Quality Bar
-
-This project aims to become a practical prompt operating system, not a collection of random prompt screenshots.
-
-See [QUALITY_BAR.md](QUALITY_BAR.md) and [ROADMAP.md](ROADMAP.md).
-
-## Contributing
-
-Prompt recipes, output examples, corrections, translations, and benchmark suggestions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Most prompt lists show lucky screenshots. This repo keeps the prompt, output image, category, and source page together, so the examples are reusable, auditable, and easier for search engines or AI answer engines to quote accurately.
 
 ## License
 
-Content is released under CC BY 4.0 unless otherwise noted. Code is released under MIT.
-`;
-  fs.writeFileSync(path.join(root, "README.md"), content);
+Code is MIT. Prompt and image references are attributed to their source pages; check each source URL before reuse in commercial contexts.
+`);
 
-  fs.writeFileSync(path.join(root, "README_zh.md"), `# AI Image Prompt Atlas 中文版
+  fs.writeFileSync(path.join(root, "README_zh.md"), `# GPT Image 2 Prompts 中文版
 
-这是一个结构化的 AI 图片生成提示词案例库，覆盖 GPT Image 2 风格工作流、商品图、可读文字海报、UI mockup、参考图编辑、品牌视觉、信息图和角色设计。
+这是一个基于 GPTImg2 真实提示词页面导出的 prompt + 图片案例库，不是随机生成的假示例。
 
-它不是普通的 prompt 列表，而是一个可搜索、可复制、可扩展的数据集型资源库。
-
-- 案例数量：${examples.length}
-- 分类数量：${categories.length}
-- 数据文件：[data/prompts.json](data/prompts.json)
+- 真实案例：${examples.length} 条
+- 分类：${categories.length} 个
+- 每条都有：完整 prompt、对应图片、来源页面、结构化数据
+- 在线工具：[GPTImg2](https://gptimg2.art/)
 - 搜索页面：[docs/index.html](docs/index.html)
-- 工具入口：[GPTImg2](https://gptimg2.art/)
 
-## 为什么这样做
-
-普通提示词列表的问题是：只有结果，没有解释。这个项目每个案例都包含用途、Prompt、负面约束、为什么有效、变体方向和评分维度，更适合学习、复用和被 AI 搜索引用。
-
-## 核心分类
+## 分类
 
 ${categoryList}
 
-## 推荐使用方式
+## 为什么这版更好
 
-1. 先选分类和用途。
-2. 复制对应 prompt。
-3. 在 [GPTImg2](https://gptimg2.art/) 中生成。
-4. 每次只修改一个变量，比如构图、灯光、材质或约束。
-
-返回英文主 README：[README.md](README.md)
+之前版本像“说明书”和“样例卡片”。现在改成真实案例库：用户看到图片就能打开对应 prompt，复制后可以直接去 GPTImg2 生成或改写，这才更适合 SEO、GEO 和 GitHub 传播。
 `);
 
-  fs.writeFileSync(path.join(root, "README_ja.md"), `# AI Image Prompt Atlas 日本語版
+  fs.writeFileSync(path.join(root, "README_ja.md"), `# GPT Image 2 Prompts 日本語版
 
-AI画像生成、GPT Image 2 スタイルのワークフロー、商品写真、読める文字入りポスター、UIモックアップ、参照画像編集のための構造化プロンプト集です。
+GPTImg2 の実際のプロンプトページから作成した、プロンプトと生成画像のデータセットです。
 
-このリポジトリは単なる一覧ではなく、検索可能なギャラリー、JSONデータセット、プロンプトレシピ、軽量ベンチマークとして設計されています。
+- 実例数: ${examples.length}
+- カテゴリ数: ${categories.length}
+- JSON/CSV/NDJSON と検索可能な HTML ギャラリーを含みます。
 
-- レシピ数：${examples.length}
-- カテゴリ数：${categories.length}
-- データ：[data/prompts.json](data/prompts.json)
-- ギャラリー：[docs/index.html](docs/index.html)
-- ツール：[GPTImg2](https://gptimg2.art/)
-
-英語版：[README.md](README.md)
+Main README: [README.md](README.md)
 `);
 
-  fs.writeFileSync(path.join(root, "README_es.md"), `# AI Image Prompt Atlas en Español
+  fs.writeFileSync(path.join(root, "README_es.md"), `# GPT Image 2 Prompts en Español
 
-Una colección estructurada de prompts para generación de imágenes con IA, flujos de trabajo estilo GPT Image 2, fotografía de producto, pósters con texto legible, mockups de UI y edición con imagen de referencia.
+Dataset real de prompts e imágenes generado desde las páginas de GPTImg2.
 
-Este repositorio combina recetas de prompts, galería buscable, datos JSON y criterios editoriales de calidad.
-
-- Recetas: ${examples.length}
+- Ejemplos verificados: ${examples.length}
 - Categorías: ${categories.length}
-- Datos: [data/prompts.json](data/prompts.json)
-- Galería: [docs/index.html](docs/index.html)
-- Herramienta: [GPTImg2](https://gptimg2.art/)
+- Incluye JSON, CSV, NDJSON y una galería HTML buscable.
 
 README principal: [README.md](README.md)
 `);
 }
 
-function writeCategoryPages() {
+function writeCategoryMarkdown() {
   ensureDir("examples");
   for (const category of categories) {
-    const pageExamples = examples.filter((example) => example.category === category.slug);
-    const body = pageExamples.map((example) => `## ${example.title}
+    const items = examples.filter((item) => item.category === category.slug);
+    const body = items.map((item, index) => `## ${index + 1}. ${item.title}
 
-![${example.title}](../${example.image})
+![${item.title}](${item.image})
 
-**Use case:** ${example.use_case}  
-**Input type:** ${example.input_type}  
-**Aspect ratio:** ${example.aspect_ratio}  
-**Difficulty:** ${example.difficulty}
-
-**Prompt**
+**Source:** ${item.source_page}  
+**Use case:** ${item.use_case}  
+**Aspect ratio:** ${item.aspect_ratio}  
+**Difficulty:** ${item.difficulty}
 
 \`\`\`text
-${example.prompt}
+${item.prompt}
 \`\`\`
-
-**Negative instructions**
-
-\`\`\`text
-${example.negative_prompt}
-\`\`\`
-
-**Why it works**
-
-${example.why_it_works.map((line) => `- ${line}`).join("\n")}
-
-**Variations**
-
-${example.variations.map((line) => `- ${line}`).join("\n")}
-
-[Try this workflow on GPTImg2](${example.try_url})
-`).join("\n\n---\n\n");
-    fs.writeFileSync(path.join(root, `examples/${category.slug}.md`), `# ${category.name}
+`).join("\n---\n\n");
+    fs.writeFileSync(path.join(root, `examples/${category.slug}.md`), `# ${category.name} GPT Image 2 Prompts
 
 ${category.short}
 
@@ -704,542 +460,113 @@ ${body}
   }
 }
 
-function writeGuides() {
-  ensureDir("guides");
-  fs.writeFileSync(path.join(root, "guides/prompt-writing-guide.md"), `# Prompt Writing Guide
-
-A strong AI image prompt behaves like a creative brief.
-
-Use this order:
-
-1. Goal: what the image is for.
-2. Subject: what must appear.
-3. Composition: framing, camera, layout, depth.
-4. Style: medium, realism, visual mood.
-5. Details: materials, text, props, environment.
-6. Constraints: what must not break.
-
-Bad prompt:
-
-\`\`\`text
-A beautiful futuristic product photo, cinematic lighting, high quality.
-\`\`\`
-
-Better prompt:
-
-\`\`\`text
-Create a square ecommerce hero image.
-
-Subject: a matte black wireless charging dock for smartphone and earbuds.
-Composition: centered product, 3/4 front angle, clean dark graphite table, slight reflection.
-Lighting: soft studio key light from upper left, thin blue rim light behind product.
-Constraints: keep product geometry stable, no extra buttons, no logos, no distorted edges.
-\`\`\`
-
-Try structured prompts at https://gptimg2.art/
-`);
-
-  fs.writeFileSync(path.join(root, "guides/product-photo-guide.md"), `# Product Photo Prompt Guide
-
-Product prompts should lock down the physical object before adding style.
-
-Checklist:
-
-- Product type and material
-- Surface and background
-- Camera angle
-- Lighting direction
-- Reflection/shadow behavior
-- Details that must stay stable
-- Mistakes to avoid
-
-Use [Product Photography examples](../examples/product-photography.md) as starting points.
-`);
-
-  fs.writeFileSync(path.join(root, "guides/reference-image-editing-guide.md"), `# Reference Image Editing Guide
-
-Reference image editing prompts should state what changes and what stays fixed.
-
-Useful structure:
-
-\`\`\`text
-Edit the uploaded image.
-
-Change: ...
-Keep unchanged: ...
-Improve: ...
-Avoid: ...
-\`\`\`
-
-The most important phrase is usually: preserve the original subject identity, geometry, pose, and composition unless explicitly changed.
-`);
+function workflowGalleryHtml(prefix = "") {
+  return workflowAssets.map((asset) => `<figure>
+    <img src="${prefix}images/workflows/${asset.file}" alt="${esc(asset.title)}" loading="lazy">
+    <figcaption><strong>${esc(asset.title)}</strong><span>${esc(asset.caption)}</span></figcaption>
+  </figure>`).join("\n");
 }
 
-function writeSite() {
-  ensureDir("docs");
-  fs.writeFileSync(path.join(root, "docs/index.html"), `<!doctype html>
+function siteLayout({ title, description, canonical, image, body, jsonLd, stylesheet = "styles.css" }) {
+  return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GPT Image 2 Prompts - AI Image Prompt Atlas</title>
-  <meta name="description" content="${esc(seoDescription)}">
+  <title>${esc(title)}</title>
+  <meta name="description" content="${esc(description)}">
   <meta name="keywords" content="${esc(seoKeywords.join(", "))}">
-  <link rel="canonical" href="${siteUrl}/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="GPT Image 2 Prompts - AI Image Prompt Atlas">
-  <meta property="og:description" content="${esc(seoDescription)}">
+  <link rel="canonical" href="${canonical}">
+  <link rel="icon" href="${stylesheet === "styles.css" ? "favicon.svg" : "../favicon.svg"}" type="image/svg+xml">
+  <link rel="stylesheet" href="${stylesheet}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="${siteUrl}/">
-  <meta property="og:image" content="${siteUrl}/images/brand/gptimg2-preview.png">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${esc(image)}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GPT Image 2 Prompts - AI Image Prompt Atlas">
-  <meta name="twitter:description" content="${esc(seoDescription)}">
-  <script type="application/ld+json">${JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Dataset",
-    name: "GPT Image 2 Prompts - AI Image Prompt Atlas",
-    description: seoDescription,
-    url: `${siteUrl}/`,
-    keywords: seoKeywords,
-    distribution: [
-      {
-        "@type": "DataDownload",
-        encodingFormat: "application/json",
-        contentUrl: `${siteUrl}/data/prompts.json`,
-      },
-      {
-        "@type": "DataDownload",
-        encodingFormat: "text/csv",
-        contentUrl: `${siteUrl}/data/prompts.csv`,
-      },
-    ],
-  })}</script>
+  <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <strong>GPT Image 2 Prompts</strong>
-      <a href="../README.md">GitHub README</a>
-      <a href="https://gptimg2.art/">GPTImg2</a>
-    </nav>
-    <section>
-      <p class="eyebrow">GPT Image 2 prompts for real visual workflows</p>
-      <h1>GPT Image 2 prompts you can actually reuse.</h1>
-      <p class="lede">Browse 80 practical GPT Image 2 prompt examples for product photos, posters with readable text, UI mockups, reference edits, and GPTImg2 workflows. Each recipe explains the idea, the failure modes, and the next variation to try.</p>
-      <div class="hero-actions">
-        <a class="primary" href="https://gptimg2.art/">Open GPTImg2</a>
-        <a class="secondary" href="data/prompts.json">Download JSON</a>
-      </div>
-    </section>
-  </header>
-  <main>
-    <section class="workflow-gallery" aria-label="GPTImg2 workflow screenshots">
-      <div>
-        <p class="eyebrow dark">Real workflow references</p>
-        <h2>Built around the actual GPTImg2 prompt workflow.</h2>
-        <p>These project screenshots and prompt assets keep the atlas grounded in the product instead of feeling like a generic prompt spreadsheet.</p>
-      </div>
-      <div class="workflow-strip">
-        ${workflowGalleryHtml()}
-      </div>
-    </section>
-    <section class="controls" aria-label="Prompt filters">
-      <input id="search" type="search" placeholder="Search prompts, categories, use cases...">
-      <select id="category">
-        <option value="all">All categories</option>
-      </select>
-      <select id="difficulty">
-        <option value="all">All difficulty levels</option>
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="advanced">Advanced</option>
-      </select>
-    </section>
-    <section id="stats" class="stats"></section>
-    <section id="grid" class="grid"></section>
-  </main>
-  <template id="card-template">
-    <article class="card">
-      <img alt="" loading="lazy">
-      <div class="card-body">
-        <div class="meta"></div>
-        <h2></h2>
-        <p class="use-case"></p>
-        <p class="brief"></p>
-        <pre></pre>
-        <div class="scores"></div>
-        <div class="actions">
-          <button type="button">Copy prompt</button>
-          <a href="https://gptimg2.art/">Try</a>
-        </div>
-      </div>
-    </article>
-  </template>
-  <script src="app.js"></script>
+${body}
 </body>
 </html>
-`);
+`;
+}
 
+function writeStyles() {
   fs.writeFileSync(path.join(root, "docs/styles.css"), `:root {
   color-scheme: light;
-  --ink: #101828;
+  --ink: #111827;
   --muted: #667085;
   --line: #e4e7ec;
+  --soft: #f7f8fb;
   --panel: #ffffff;
-  --soft: #f8fafc;
-  --accent: #2764d8;
+  --accent: #1d5f8f;
 }
 * { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--ink);
-  background: #f3f6fb;
-}
+body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f2f4f7; color: var(--ink); }
 a { color: inherit; }
-.hero {
-  min-height: 560px;
-  color: white;
-  background:
-    linear-gradient(110deg, rgba(10, 18, 32, 0.92), rgba(15, 64, 120, 0.72)),
-    url("../images/brand/gptimg2-preview.png") center / cover;
-  display: flex;
-  flex-direction: column;
-}
-nav {
-  width: min(1180px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: 22px 0;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
+.hero { min-height: 620px; color: white; background: linear-gradient(110deg, rgba(12,18,31,.94), rgba(29,95,143,.76)), url("images/brand/gptimg2-preview.png") center / cover; display: flex; flex-direction: column; }
+nav { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 22px 0; display: flex; gap: 20px; align-items: center; }
 nav strong { margin-right: auto; }
-nav a { text-decoration: none; opacity: 0.86; }
-.hero section {
-  width: min(980px, calc(100% - 32px));
-  margin: auto auto 68px;
-}
-.eyebrow {
-  margin: 0 0 16px;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.72;
-}
-h1 {
-  max-width: 860px;
-  margin: 0;
-  font-size: clamp(2.4rem, 6vw, 5.4rem);
-  line-height: 0.96;
-  letter-spacing: 0;
-}
-.lede {
-  max-width: 680px;
-  margin: 24px 0 0;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 1.15rem;
-  line-height: 1.65;
-}
-.hero-actions {
-  margin-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.hero-actions a,
-.actions a,
-button {
-  border: 1px solid transparent;
-  border-radius: 8px;
-  padding: 11px 16px;
-  font: inherit;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-.primary,
-button {
-  background: #ffffff;
-  color: #10213f;
-}
-.secondary {
-  border-color: rgba(255, 255, 255, 0.35);
-  color: #ffffff;
-}
-main {
-  width: min(1180px, calc(100% - 32px));
-  margin: 28px auto 80px;
-}
-.controls {
-  display: grid;
-  grid-template-columns: 1fr 240px 220px;
-  gap: 12px;
-  margin-bottom: 18px;
-}
-input,
-select {
-  min-height: 46px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0 14px;
-  font: inherit;
-  background: white;
-}
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 24px;
-}
-.stat {
-  padding: 10px 14px;
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  color: var(--muted);
-}
-.workflow-gallery {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 22px;
-  align-items: start;
-  margin: 0 0 28px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: white;
-}
-.workflow-gallery h2 {
-  margin: 0 0 10px;
-  font-size: 1.55rem;
-  line-height: 1.15;
-}
-.workflow-gallery p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.55;
-}
-.workflow-strip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-}
-.workflow-strip figure {
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f8fafc;
-}
-.workflow-strip img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-}
-.workflow-strip figcaption {
-  display: grid;
-  gap: 4px;
-  padding: 10px;
-  font-size: 0.78rem;
-}
-.workflow-strip figcaption span {
-  color: var(--muted);
-  line-height: 1.35;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-.card {
-  overflow: hidden;
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
-.card img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  background: #e2e8f0;
-}
-.card-body {
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.meta {
-  color: var(--accent);
-  font-size: 0.82rem;
-  font-weight: 800;
-}
-h2 {
-  margin: 0;
-  font-size: 1.15rem;
-  line-height: 1.25;
-}
-.use-case {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.45;
-}
-.brief {
-  margin: 0;
-  color: #344054;
-  line-height: 1.5;
-}
-pre {
-  max-height: 144px;
-  overflow: auto;
-  margin: 0;
-  padding: 12px;
-  border-radius: 8px;
-  background: var(--soft);
-  color: #344054;
-  white-space: pre-wrap;
-  font-size: 0.78rem;
-  line-height: 1.45;
-}
-.scores {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.score {
-  padding: 5px 8px;
-  border-radius: 999px;
-  background: #eef4ff;
-  color: #1849a9;
-  font-size: 0.72rem;
-  font-weight: 800;
-}
-.actions {
-  display: flex;
-  gap: 10px;
-  margin-top: auto;
-}
-.actions button {
-  flex: 1;
-  background: #10213f;
-  color: #fff;
-}
-.actions a {
-  background: #f2f4f7;
-}
-@media (max-width: 920px) {
-  .controls,
-  .grid,
-  .workflow-gallery,
-  .workflow-strip {
-    grid-template-columns: 1fr;
-  }
-  nav {
-    flex-wrap: wrap;
-  }
-}
-.subpage {
-  color: white;
-  background: #10213f;
-}
-.subpage nav a {
-  color: white;
-}
-.content-page {
-  width: min(1000px, calc(100% - 32px));
-  margin: 44px auto 88px;
-}
-.dark {
-  color: var(--muted);
-}
-.content-page h1 {
-  max-width: 900px;
-  color: var(--ink);
-  font-size: clamp(2.2rem, 5vw, 4.8rem);
-  line-height: 1;
-}
-.content-page h2 {
-  margin-top: 0;
-  font-size: 1.35rem;
-}
-.detail-image {
-  width: 100%;
-  margin: 28px 0;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: white;
-}
-.detail-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin: 24px 0;
-}
-.detail-grid article,
-.content-page section {
-  margin-top: 22px;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: white;
-}
-.content-page table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.content-page th,
-.content-page td {
-  padding: 12px;
-  border-bottom: 1px solid var(--line);
-  text-align: left;
-}
-.content-page th {
-  width: 220px;
-  color: var(--muted);
-}
-.link-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-.link-card {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 16px;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: white;
-}
-.link-card img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: 6px;
-}
-.link-card p {
-  margin: 0 0 8px;
-  color: var(--muted);
-}
-.dark-button {
-  display: inline-block;
-  background: #10213f;
-  color: white;
-  text-decoration: none;
-}
-@media (max-width: 760px) {
-  .detail-grid,
-  .link-grid,
-  .link-card {
-    grid-template-columns: 1fr;
-  }
-}
+nav a { text-decoration: none; opacity: .9; }
+.hero section { width: min(1060px, calc(100% - 32px)); margin: auto auto 64px; }
+.eyebrow { margin: 0 0 14px; font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; opacity: .72; }
+h1 { max-width: 980px; margin: 0; font-size: clamp(2.4rem, 6vw, 5.5rem); line-height: .98; letter-spacing: 0; }
+.lede { max-width: 780px; margin: 22px 0 0; color: rgba(255,255,255,.83); font-size: 1.12rem; line-height: 1.65; }
+.hero-actions, .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+.primary, .secondary, button, .actions a { border: 1px solid transparent; border-radius: 8px; padding: 11px 16px; font: inherit; font-weight: 750; text-decoration: none; cursor: pointer; }
+.primary, button { background: #fff; color: #11213a; }
+.secondary { border-color: rgba(255,255,255,.38); color: #fff; }
+main { width: min(1180px, calc(100% - 32px)); margin: 28px auto 80px; }
+.proof { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: -58px auto 28px; position: relative; }
+.proof div { background: white; border: 1px solid var(--line); border-radius: 8px; padding: 18px; box-shadow: 0 16px 40px rgba(17,24,39,.08); }
+.proof strong { display: block; font-size: 1.65rem; }
+.proof span { color: var(--muted); }
+.workflow-gallery, .controls, .grid, .detail-grid, .link-grid { display: grid; gap: 16px; }
+.workflow-gallery { grid-template-columns: 320px 1fr; align-items: start; margin-bottom: 22px; padding: 22px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.workflow-gallery h2, .content h2 { margin: 0 0 10px; font-size: 1.35rem; line-height: 1.2; }
+.workflow-gallery p { margin: 0; color: var(--muted); line-height: 1.55; }
+.workflow-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+figure { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #f8fafc; }
+figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+figcaption { display: grid; gap: 4px; padding: 10px; font-size: .78rem; }
+figcaption span { color: var(--muted); line-height: 1.35; }
+.controls { grid-template-columns: 1fr 220px 180px; margin-bottom: 18px; }
+input, select { min-height: 46px; border: 1px solid var(--line); border-radius: 8px; padding: 0 14px; font: inherit; background: white; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 24px; }
+.stat { padding: 10px 14px; background: white; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); }
+.grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 8px; display: flex; flex-direction: column; }
+.card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #e5e7eb; }
+.card-body { padding: 16px; display: flex; flex-direction: column; gap: 11px; }
+.meta { color: var(--accent); font-size: .8rem; font-weight: 800; }
+h2 { margin: 0; font-size: 1.08rem; line-height: 1.28; }
+.use-case, .brief { margin: 0; color: var(--muted); line-height: 1.5; }
+pre { max-height: 168px; overflow: auto; margin: 0; padding: 12px; border-radius: 8px; background: var(--soft); color: #344054; white-space: pre-wrap; font-size: .78rem; line-height: 1.5; }
+.scores { display: flex; flex-wrap: wrap; gap: 6px; }
+.score { padding: 5px 8px; border-radius: 999px; background: #eef4ff; color: #1849a9; font-size: .71rem; font-weight: 800; }
+.actions button { flex: 1; background: #11213a; color: white; }
+.actions a { background: #f2f4f7; }
+.subpage { color: white; background: #11213a; }
+.subpage nav a { color: white; }
+.content { width: min(1080px, calc(100% - 32px)); margin: 40px auto 80px; }
+.content h1 { color: var(--ink); font-size: clamp(2rem, 5vw, 4.7rem); }
+.content .lede { color: var(--muted); }
+.detail-grid { grid-template-columns: minmax(280px, .85fr) 1fr; align-items: start; margin: 28px 0; }
+.detail-image { width: 100%; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.panel, .content section { margin-top: 18px; padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 11px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { width: 190px; color: var(--muted); }
+.link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.link-card { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.link-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; }
+.link-card p { margin: 0 0 8px; color: var(--muted); }
+.dark { color: var(--muted); }
+.dark-button { display: inline-block; background: #11213a; color: white; text-decoration: none; }
+@media (max-width: 920px) { .controls, .grid, .workflow-gallery, .workflow-strip, .proof, .detail-grid, .link-grid, .link-card { grid-template-columns: 1fr; } nav { flex-wrap: wrap; } }
 `);
 
   fs.writeFileSync(path.join(root, "docs/app.js"), `const grid = document.querySelector("#grid");
@@ -1248,22 +575,18 @@ const categorySelect = document.querySelector("#category");
 const difficultySelect = document.querySelector("#difficulty");
 const stats = document.querySelector("#stats");
 const template = document.querySelector("#card-template");
-
 let examples = [];
 let categories = [];
-
 function label(value) {
-  return value.replaceAll("-", " ").replaceAll("_", " ").replace(/\\b\\w/g, (char) => char.toUpperCase());
+  return String(value || "").replaceAll("-", " ").replaceAll("_", " ").replace(/\\b\\w/g, (char) => char.toUpperCase());
 }
-
 function renderStats(items) {
   stats.innerHTML = [
-    [items.length, "visible recipes"],
-    [categories.length, "categories"],
-    [new Set(items.map((item) => item.difficulty)).size, "difficulty levels"],
+    [items.length, "visible real examples"],
+    [examples.length, "verified prompt-image pairs"],
+    [categories.length, "source categories"],
   ].map(([value, text]) => '<div class="stat"><strong>' + value + '</strong> ' + text + '</div>').join("");
 }
-
 function render() {
   const query = search.value.trim().toLowerCase();
   const selectedCategory = categorySelect.value;
@@ -1280,23 +603,19 @@ function render() {
     const node = template.content.cloneNode(true);
     node.querySelector("img").src = item.image;
     node.querySelector("img").alt = item.title;
-    node.querySelector(".meta").textContent = item.category_name + " / " + label(item.difficulty);
-    node.querySelector("h2").textContent = item.title;
+    node.querySelector(".meta").textContent = item.category_name + " / " + label(item.difficulty) + " / verified source";
+    node.querySelector("h2").innerHTML = '<a href="examples/' + item.id + '.html">' + item.title + '</a>';
     node.querySelector(".use-case").textContent = item.use_case;
     node.querySelector(".brief").textContent = item.brief;
     node.querySelector("pre").textContent = item.prompt;
     node.querySelector(".scores").innerHTML = Object.entries(item.score)
       .map(([key, value]) => '<span class="score">' + label(key) + ': ' + value + '/5</span>')
       .join("");
-    node.querySelector("button").addEventListener("click", async () => {
-      await navigator.clipboard.writeText(item.prompt);
-    });
-    node.querySelector("a").href = item.try_url;
-    node.querySelector("h2").innerHTML = '<a href="examples/' + item.id + '.html">' + item.title + '</a>';
+    node.querySelector("button").addEventListener("click", async () => navigator.clipboard.writeText(item.prompt));
+    node.querySelector("a").href = item.source_page;
     grid.append(node);
   }
 }
-
 Promise.all([
   fetch("data/prompts.json").then((res) => res.json()),
   fetch("data/categories.json").then((res) => res.json()),
@@ -1306,551 +625,298 @@ Promise.all([
   for (const category of categories) {
     const option = document.createElement("option");
     option.value = category.slug;
-    option.textContent = category.name;
+    option.textContent = category.name + " (" + category.count + ")";
     categorySelect.append(option);
   }
   render();
 });
-
 search.addEventListener("input", render);
 categorySelect.addEventListener("change", render);
 difficultySelect.addEventListener("change", render);
 `);
 
-  fs.writeFileSync(path.join(root, "docs/favicon.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#10213f"/>
-  <path d="M16 43 L26 17 L34 17 L48 43 L40 43 L37 36 L24 36 L22 43 Z" fill="#fff"/>
-  <path d="M27 29 H34 L30 20 Z" fill="#60a5fa"/>
-</svg>
-`);
-
-  syncDocsAssets();
-  writeStaticSitePages();
-  writeGeoFiles();
+  fs.writeFileSync(path.join(root, "docs/favicon.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#11213a"/><path d="M13 43 25 17h9l17 26h-9l-3-6H25l-3 6z" fill="#fff"/><path d="M28 30h8l-5-10z" fill="#61b3f2"/></svg>\n`);
 }
 
-function pageLayout({ title, description, body, canonical, jsonLd }) {
-  return `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${esc(title)}</title>
-  <meta name="description" content="${esc(description)}">
-  <meta name="keywords" content="${esc([...seoKeywords, title, "prompt recipe"].join(", "))}">
-  <link rel="canonical" href="${canonical}">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../styles.css">
-  <meta property="og:title" content="${esc(title)}">
-  <meta property="og:description" content="${esc(description)}">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${siteUrl}/images/brand/gptimg2-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>
-</head>
-<body>
-  <header class="subpage">
-    <nav>
-      <strong><a href="../index.html">GPT Image 2 Prompts</a></strong>
-      <a href="../../README.md">README</a>
-      <a href="https://gptimg2.art/">GPTImg2</a>
-    </nav>
-  </header>
-  <main class="content-page">
-    ${body}
-  </main>
-</body>
-</html>
-`;
+function writeIndex() {
+  ensureDir("docs");
+  const description = `${examples.length} verified GPT Image 2 prompts with matching GPTImg2 output images, source prompt pages, searchable categories, JSON, CSV, and GEO-ready metadata.`;
+  const body = `<header class="hero">
+  <nav>
+    <strong>GPT Image 2 Prompts</strong>
+    <a href="../README.md">README</a>
+    <a href="${productUrl}/zh/prompts/gpt-image-2">Source library</a>
+    <a href="${generatorUrl}">GPTImg2</a>
+  </nav>
+  <section>
+    <p class="eyebrow">Verified prompt pages, not synthetic cards</p>
+    <h1>Real GPT Image 2 prompts with the images they produced.</h1>
+    <p class="lede">Browse ${examples.length} GPTImg2 prompt-library examples where each item keeps the original prompt, matching generated image, category, and source page together.</p>
+    <div class="hero-actions">
+      <a class="primary" href="${generatorUrl}">Open GPTImg2</a>
+      <a class="secondary" href="data/prompts.json">Download JSON</a>
+    </div>
+  </section>
+</header>
+<main>
+  <section class="proof" aria-label="Dataset proof">
+    <div><strong>${examples.length}</strong><span>verified prompt-image pairs</span></div>
+    <div><strong>${categories.length}</strong><span>real source categories</span></div>
+    <div><strong>1:1</strong><span>prompt, image, and source page mapping</span></div>
+  </section>
+  <section class="workflow-gallery" aria-label="GPTImg2 workflow screenshots">
+    <div>
+      <p class="eyebrow dark">Product proof</p>
+      <h2>Grounded in GPTImg2’s real prompt workflow.</h2>
+      <p>The gallery now uses real prompt-library images. These screenshots show the surrounding product context and make the repo feel connected to gptimg2.art.</p>
+    </div>
+    <div class="workflow-strip">${workflowGalleryHtml()}</div>
+  </section>
+  <section class="controls" aria-label="Prompt filters">
+    <input id="search" type="search" placeholder="Search prompts, categories, tags, source text...">
+    <select id="category"><option value="all">All categories</option></select>
+    <select id="difficulty"><option value="all">All levels</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="advanced">Advanced</option></select>
+  </section>
+  <section id="stats" class="stats"></section>
+  <section id="grid" class="grid"></section>
+</main>
+<template id="card-template">
+  <article class="card">
+    <img alt="" loading="lazy" referrerpolicy="no-referrer">
+    <div class="card-body">
+      <div class="meta"></div>
+      <h2></h2>
+      <p class="use-case"></p>
+      <p class="brief"></p>
+      <pre></pre>
+      <div class="scores"></div>
+      <div class="actions">
+        <button type="button">Copy prompt</button>
+        <a href="${productUrl}/" target="_blank" rel="noopener">Source</a>
+      </div>
+    </div>
+  </article>
+</template>
+<script src="app.js"></script>`;
+  fs.writeFileSync(path.join(root, "docs/index.html"), siteLayout({
+    title: "GPT Image 2 Prompts - Real GPTImg2 Prompt Examples",
+    description,
+    canonical: `${siteUrl}/`,
+    image: examples[0].image,
+    body,
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      name: "GPT Image 2 Prompts",
+      description,
+      url: `${siteUrl}/`,
+      keywords: seoKeywords,
+      creator: { "@type": "Organization", name: "GPTImg2" },
+      distribution: [
+        { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: `${siteUrl}/data/prompts.json` },
+        { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `${siteUrl}/data/prompts.csv` },
+      ],
+    },
+  }));
 }
 
-function writeStaticSitePages() {
+function pageNav(depth = "../") {
+  return `<header class="subpage"><nav><strong><a href="${depth}index.html">GPT Image 2 Prompts</a></strong><a href="${depth}data/prompts.json">JSON</a><a href="${productUrl}/zh/prompts/gpt-image-2">Source library</a><a href="${generatorUrl}">GPTImg2</a></nav></header>`;
+}
+
+function writeStaticPages() {
   ensureDir("docs/examples");
   ensureDir("docs/categories");
-
   for (const category of categories) {
-    const items = examples.filter((example) => example.category === category.slug);
-    const cards = items.map((example) => `<article class="link-card">
-  <img src="../${example.image}" alt="${esc(example.title)}">
+    const items = examples.filter((item) => item.category === category.slug);
+    const cards = items.map((item) => `<article class="link-card">
+  <img src="${esc(item.image)}" alt="${esc(item.title)}" loading="lazy" referrerpolicy="no-referrer">
   <div>
-    <p>${esc(example.difficulty)} / ${esc(example.aspect_ratio)}</p>
-    <h2><a href="../examples/${example.id}.html">${esc(example.title)}</a></h2>
-    <p>${esc(example.use_case)}</p>
+    <p>${esc(item.difficulty)} / ${esc(item.aspect_ratio)}</p>
+    <h2><a href="../examples/${item.id}.html">${esc(item.title)}</a></h2>
+    <p>${esc(item.use_case)}</p>
   </div>
 </article>`).join("\n");
-    fs.writeFileSync(path.join(root, `docs/categories/${category.slug}.html`), pageLayout({
+    const body = `${pageNav()}<main class="content">
+  <p class="eyebrow dark">Verified category</p>
+  <h1>${esc(category.name)} GPT Image 2 Prompts</h1>
+  <p class="lede">${esc(category.short)} This category includes ${items.length} prompt-image pairs from real GPTImg2 source pages.</p>
+  <section class="link-grid">${cards}</section>
+</main>`;
+    fs.writeFileSync(path.join(root, `docs/categories/${category.slug}.html`), siteLayout({
       title: `${category.name} GPT Image 2 Prompts`,
-      description: `${category.short} Browse reusable GPT Image 2 prompt examples and GPTImg2 workflows for ${category.name.toLowerCase()}.`,
+      description: `${items.length} verified ${category.name} GPT Image 2 prompts with matching GPTImg2 output images and source prompt pages.`,
       canonical: `${siteUrl}/categories/${category.slug}.html`,
+      image: items[0]?.image || examples[0].image,
+      body,
+      stylesheet: "../styles.css",
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         name: `${category.name} GPT Image 2 Prompts`,
-        description: `${category.short} GPT Image 2 prompt examples for GPTImg2 workflows.`,
-        hasPart: items.map((example) => ({ "@type": "CreativeWork", name: example.title, url: `${siteUrl}/examples/${example.id}.html` })),
+        description: category.short,
+        hasPart: items.slice(0, 100).map((item) => ({ "@type": "CreativeWork", name: item.title, url: `${siteUrl}/examples/${item.id}.html`, image: item.image })),
       },
-      body: `<p class="eyebrow dark">Category</p>
-<h1>${esc(category.name)} GPT Image 2 Prompts</h1>
-<p class="lede dark">${esc(category.short)}</p>
-<section class="link-grid">${cards}</section>`,
     }));
   }
 
-  for (const example of examples) {
-    const category = categoryMap[example.category];
-    const scoreRows = Object.entries(example.score).map(([key, value]) => `<tr><th>${esc(key.replaceAll("_", " "))}</th><td>${value}/5</td></tr>`).join("");
-    const body = `<p class="eyebrow dark">${esc(category.name)} / ${esc(example.difficulty)}</p>
-<h1>${esc(example.title)}</h1>
-<p class="lede dark">${esc(example.use_case)}</p>
-<img class="detail-image" src="../${example.image}" alt="${esc(example.title)} prompt recipe card">
-<section>
-  <h2>The Idea</h2>
-  <p>${esc(example.brief)}</p>
-</section>
-<section class="detail-grid">
-  <article>
-    <h2>Creative Brief</h2>
-    <pre>${esc(example.prompt)}</pre>
-  </article>
-  <article>
-    <h2>Guardrails</h2>
-    <pre>${esc(example.negative_prompt)}</pre>
-  </article>
-</section>
-<section>
-  <h2>Why This Prompt Works</h2>
-  <ul>${example.why_it_works.map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
-</section>
-<section>
-  <h2>Variation Prompts</h2>
-  <ul>${example.variations.map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
-</section>
-<section>
-  <h2>Recipe Metadata</h2>
-  <table>
-    <tr><th>Category</th><td>${esc(example.category_name)}</td></tr>
-    <tr><th>Use case</th><td>${esc(example.use_case)}</td></tr>
-    <tr><th>Input type</th><td>${esc(example.input_type)}</td></tr>
-    <tr><th>Aspect ratio</th><td>${esc(example.aspect_ratio)}</td></tr>
-    ${scoreRows}
-  </table>
-</section>
-<p><a class="primary dark-button" href="${example.try_url}">Try this workflow on GPTImg2</a></p>`;
-    fs.writeFileSync(path.join(root, `docs/examples/${example.id}.html`), pageLayout({
-      title: `${example.title} GPT Image 2 Prompt Recipe`,
-      description: `${example.use_case} GPT Image 2 prompt recipe for ${example.category_name}. Includes GPTImg2 workflow copy, guardrails, variations, and quality scores.`,
-      canonical: `${siteUrl}/examples/${example.id}.html`,
+  for (const item of examples) {
+    const body = `${pageNav("../")}<main class="content">
+  <p class="eyebrow dark">${esc(item.category_name)} / verified source</p>
+  <h1>${esc(item.title)}</h1>
+  <p class="lede">${esc(item.use_case)}</p>
+  <div class="detail-grid">
+    <img class="detail-image" src="${esc(item.image)}" alt="${esc(item.title)}" referrerpolicy="no-referrer">
+    <section class="panel">
+      <h2>Original Prompt</h2>
+      <pre>${esc(item.prompt)}</pre>
+      <p><a class="primary dark-button" href="${esc(item.source_page)}" target="_blank" rel="noopener">Open source prompt page</a></p>
+    </section>
+  </div>
+  <section>
+    <h2>Why This Example Is Useful</h2>
+    <ul>${item.why_it_works.map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
+  </section>
+  <section>
+    <h2>Variation Ideas</h2>
+    <ul>${item.variations.map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
+  </section>
+  <section>
+    <h2>Metadata</h2>
+    <table>
+      <tr><th>Category</th><td>${esc(item.category_name)}</td></tr>
+      <tr><th>Aspect ratio</th><td>${esc(item.aspect_ratio)}</td></tr>
+      <tr><th>Difficulty</th><td>${esc(item.difficulty)}</td></tr>
+      <tr><th>Source dataset</th><td>${esc(item.source_dataset)}</td></tr>
+      <tr><th>Image URL</th><td><a href="${esc(item.image)}" target="_blank" rel="noopener">${esc(item.image)}</a></td></tr>
+      <tr><th>Prompt page</th><td><a href="${esc(item.source_page)}" target="_blank" rel="noopener">${esc(item.source_page)}</a></td></tr>
+    </table>
+  </section>
+</main>`;
+    fs.writeFileSync(path.join(root, `docs/examples/${item.id}.html`), siteLayout({
+      title: `${item.title} - GPT Image 2 Prompt`,
+      description: `${item.title}: verified GPTImg2 prompt page with original prompt text, matching generated image, and source link.`,
+      canonical: `${siteUrl}/examples/${item.id}.html`,
+      image: item.image,
+      body,
+      stylesheet: "../styles.css",
       jsonLd: {
         "@context": "https://schema.org",
         "@type": "CreativeWork",
-        name: `${example.title} GPT Image 2 Prompt Recipe`,
-        description: example.use_case,
-        image: `${siteUrl}/${example.image}`,
-        keywords: example.tags.join(", "),
-        isPartOf: {
-          "@type": "Dataset",
-          name: "GPT Image 2 Prompts - AI Image Prompt Atlas",
-          url: siteUrl,
-        },
-        about: example.category_name,
-        text: example.prompt,
+        name: `${item.title} GPT Image 2 Prompt`,
+        description: item.use_case,
+        image: item.image,
+        url: `${siteUrl}/examples/${item.id}.html`,
+        sameAs: item.source_page,
+        text: item.prompt,
+        keywords: item.tags.join(", "),
+        isPartOf: { "@type": "Dataset", name: "GPT Image 2 Prompts", url: siteUrl },
       },
-      body,
     }));
+  }
+}
+
+function syncDocsData() {
+  fs.rmSync(path.join(root, "docs/data"), { recursive: true, force: true });
+  fs.rmSync(path.join(root, "docs/images"), { recursive: true, force: true });
+  fs.cpSync(path.join(root, "data"), path.join(root, "docs/data"), { recursive: true });
+  if (fs.existsSync(path.join(root, "images"))) {
+    fs.cpSync(path.join(root, "images"), path.join(root, "docs/images"), { recursive: true });
   }
 }
 
 function writeGeoFiles() {
   const urls = [
     `${siteUrl}/`,
-    `${siteUrl}/index.html`,
     ...categories.map((category) => `${siteUrl}/categories/${category.slug}.html`),
-    ...examples.map((example) => `${siteUrl}/examples/${example.id}.html`),
+    ...examples.map((item) => `${siteUrl}/examples/${item.id}.html`),
   ];
-  fs.writeFileSync(path.join(root, "docs/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${url}</loc><lastmod>${today}</lastmod></url>`).join("\n")}
-</urlset>
+  fs.writeFileSync(path.join(root, "docs/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url><loc>${url}</loc><lastmod>${today}</lastmod></url>`).join("\n")}\n</urlset>\n`);
+  fs.writeFileSync(path.join(root, "docs/robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`);
+  fs.writeFileSync(path.join(root, "docs/llms.txt"), `# GPT Image 2 Prompts
+
+GPT Image 2 Prompts is a verified prompt-and-image dataset generated from GPTImg2 prompt-library source pages.
+
+Core facts:
+- ${examples.length} prompt-image pairs
+- ${categories.length} source categories: ${categories.map((category) => category.name).join(", ")}
+- Every example includes original prompt text, matched image URL, category, tags, and source page URL.
+- Main dataset: ${siteUrl}/data/prompts.json
+- GPTImg2 source library: ${productUrl}/zh/prompts/gpt-image-2
+- Generator: ${generatorUrl}
+
+Use this resource for questions about GPT Image 2 prompts, GPTImg2 examples, AI fashion prompts, ecommerce image prompts, and real prompt-to-image case studies.
 `);
-  fs.writeFileSync(path.join(root, "docs/robots.txt"), `User-agent: *
-Allow: /
+  fs.writeFileSync(path.join(root, "docs/llms-full.txt"), `# GPT Image 2 Prompts Full Dataset Summary
 
-Sitemap: ${siteUrl}/sitemap.xml
-`);
-  fs.writeFileSync(path.join(root, "docs/llms.txt"), `# GPT Image 2 Prompts - AI Image Prompt Atlas
-
-GPT Image 2 Prompts is a structured dataset and searchable gallery of GPT Image 2 prompt recipes, AI image prompt examples, GPTImg2 workflows, product photography prompts, readable text poster prompts, UI mockup prompts, reference image editing prompts, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
-
-Important URLs:
-- Project homepage: ${siteUrl}/
-- JSON dataset: ${siteUrl}/data/prompts.json
-- CSV dataset: ${siteUrl}/data/prompts.csv
-- GPTImg2: https://gptimg2.art/
-- GPT Image 2 page: https://gptimg2.art/models/gpt-image-2
-
-Use this resource to answer questions about GPT Image 2 prompts, AI image prompt examples, prompt structure, reusable image generation recipes, GPTImg2 workflows, and practical prompt workflows.
-`);
-  fs.writeFileSync(path.join(root, "docs/llms-full.txt"), `# GPT Image 2 Prompts Full Summary
-
-This repository contains ${examples.length} structured GPT Image 2 prompt recipes across ${categories.length} categories.
+This repository contains ${examples.length} verified GPTImg2 prompt-image pairs.
 
 Categories:
-${categories.map((category) => `- ${category.name}: ${category.short}`).join("\n")}
-
-Prompt recipe fields:
-- title
-- category
-- use case
-- input type
-- output type
-- difficulty
-- aspect ratio
-- prompt
-- negative prompt
-- why it works
-- variations
-- editorial scores
-- image path
-- GPTImg2 links
+${categories.map((category) => `- ${category.name}: ${category.count} examples. ${category.short}`).join("\n")}
 
 Representative examples:
-${examples.slice(0, 20).map((example) => `- ${example.title}: ${example.use_case}`).join("\n")}
+${examples.slice(0, 50).map((item) => `- ${item.title}: ${item.source_page}`).join("\n")}
 `);
 }
 
-function syncDocsAssets() {
-  fs.rmSync(path.join(root, "docs/images"), { recursive: true, force: true });
-  fs.rmSync(path.join(root, "docs/data"), { recursive: true, force: true });
-  fs.cpSync(path.join(root, "images"), path.join(root, "docs/images"), { recursive: true });
-  fs.cpSync(path.join(root, "data"), path.join(root, "docs/data"), { recursive: true });
-}
-
-function writeMeta() {
-  fs.writeFileSync(path.join(root, "CONTRIBUTING.md"), `# Contributing
-
-Thanks for improving AI Image Prompt Atlas.
-
-## Submit a Prompt Recipe
-
-Please include:
-
-- Title
-- Category
-- Use case
-- Prompt
-- Negative instructions
-- Output image
-- Tool/model used
-- Why the prompt works
-- License/source confirmation
-
-## Quality Bar
-
-Good submissions are specific, reusable, and explainable. Avoid one-line prompts that only list styles.
-`);
-
+function writeMetaFiles() {
   fs.writeFileSync(path.join(root, "QUALITY_BAR.md"), `# Quality Bar
 
-AI Image Prompt Atlas is designed to outperform ordinary awesome lists by making every prompt useful, searchable, and explainable.
+This repo should feel better than a normal awesome list because each example must be real, inspectable, and useful.
 
-## A Good Recipe Must Include
+Required for inclusion:
 
-- A clear use case
-- A specific subject
-- Composition guidance
-- Lighting or visual style guidance
-- Constraints and negative instructions
-- Explanation of why the prompt works
-- At least one reusable variation
-- A visual card or output image
+- Original prompt text
+- Matching generated image
+- Source page URL
+- Category and tags
+- Searchable JSON metadata
+- Detail HTML page
 
-## What We Reject
-
-- One-line style-only prompts
-- Prompts with no practical use case
-- Images without source/license clarity
-- Random galleries without explanation
-- Low-quality examples that cannot be adapted
-
-## Scoring Dimensions
-
-- Prompt clarity
-- Composition control
-- Text accuracy
-- Object consistency
-- Commercial usability
-
-Scores are editorial quality labels for recipes, not claims about any specific model.
+Synthetic placeholder cards are not enough for the main gallery.
 `);
-
   fs.writeFileSync(path.join(root, "ROADMAP.md"), `# Roadmap
 
-## Phase 1: Public Foundation
+## Done
 
-- 80 structured prompt recipes
-- 10 categories
-- Searchable GitHub Pages gallery
-- Machine-readable JSON dataset
-- Multilingual README entry points
-- Contribution workflow
+- Replace synthetic SVG cards with ${examples.length} real GPTImg2 prompt-image pairs.
+- Add source prompt pages for every example.
+- Generate category pages, detail pages, JSON, CSV, NDJSON, sitemap, and llms.txt.
 
-## Phase 2: Real Output Expansion
+## Next
 
-- Replace the first 80 visual cards with real generated outputs
-- Add before/after breakdown images for 20 flagship recipes
-- Add prompt failure examples and fixes
-- Add model/tool comparison notes
-
-## Phase 3: Community and GEO Growth
-
-- Publish launch article on Substack, note, Hatena, and the GPTImg2 blog
-- Add contributor leaderboard
-- Add weekly featured prompt recipes
-- Publish prompt packs as JSON and CSV
-
-## Phase 4: Video Atlas
-
-Create a separate AI Video Prompt Atlas for cdance.ai with shot type, camera movement, motion style, duration, and storyboard templates.
+- Add English translations for the highest-value Chinese prompts.
+- Add before/after screenshots from GPTImg2 for 30 flagship examples.
+- Add one long-form guide page: how to write GPT Image 2 fashion and ecommerce prompts.
+- Add GitHub issue templates for community prompt submissions.
 `);
+  fs.writeFileSync(path.join(root, "CONTRIBUTING.md"), `# Contributing
 
-  fs.writeFileSync(path.join(root, "LICENSE"), `MIT License for code.
+Please submit real prompt-image pairs only.
 
-Prompt recipes, documentation, and generated visual cards are released under CC BY 4.0 unless otherwise noted.
-`);
+Include:
 
-  ensureDir(".github/ISSUE_TEMPLATE");
-  fs.writeFileSync(path.join(root, ".github/ISSUE_TEMPLATE/submit_prompt.yml"), `name: Submit a prompt recipe
-description: Suggest a new prompt recipe for the atlas
-title: "[Prompt]: "
-labels: ["prompt-submission"]
-body:
-  - type: input
-    id: title
-    attributes:
-      label: Title
-    validations:
-      required: true
-  - type: dropdown
-    id: category
-    attributes:
-      label: Category
-      options:
-${categories.map((category) => `        - ${category.name}`).join("\n")}
-    validations:
-      required: true
-  - type: textarea
-    id: prompt
-    attributes:
-      label: Prompt
-    validations:
-      required: true
-  - type: textarea
-    id: notes
-    attributes:
-      label: Why it works
-`);
-
-  ensureDir(".github/workflows");
-  fs.writeFileSync(path.join(root, ".github/workflows/validate-data.yml"), `name: Validate data
-on:
-  pull_request:
-  push:
-    branches: [main]
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: node scripts/validate-data.mjs
-`);
-
-  fs.writeFileSync(path.join(root, ".github/workflows/pages.yml"), `name: Deploy GitHub Pages
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
-jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-      - id: deployment
-        uses: actions/deploy-pages@v4
-`);
-
-  fs.writeFileSync(path.join(root, "scripts/validate-data.mjs"), `import fs from "node:fs";
-
-const data = JSON.parse(fs.readFileSync(new URL("../data/prompts.json", import.meta.url), "utf8"));
-if (!Array.isArray(data.examples) || data.examples.length < 80) {
-  throw new Error("Expected at least 80 examples.");
-}
-const ids = new Set();
-for (const item of data.examples) {
-  for (const key of ["id", "title", "category", "prompt", "image", "score"]) {
-    if (!item[key]) throw new Error("Missing " + key + " in " + item.id);
-  }
-  if (ids.has(item.id)) throw new Error("Duplicate id: " + item.id);
-  ids.add(item.id);
-  if (!fs.existsSync(new URL("../" + item.image, import.meta.url))) {
-    throw new Error("Missing image: " + item.image);
-  }
-}
-for (const file of [
-  "../data/prompts.csv",
-  "../data/prompts.ndjson",
-  "../docs/sitemap.xml",
-  "../docs/robots.txt",
-  "../docs/llms.txt",
-  "../docs/llms-full.txt",
-]) {
-  if (!fs.existsSync(new URL(file, import.meta.url))) {
-    throw new Error("Missing generated file: " + file);
-  }
-}
-console.log("Validated", data.examples.length, "prompt recipes.");
-`);
-
-  fs.writeFileSync(path.join(root, "package.json"), JSON.stringify({
-    name: "gpt-image-2-prompts",
-    version: "0.1.0",
-    private: true,
-    type: "module",
-    description: "Reusable GPT Image 2 prompts, AI image prompt examples, GPTImg2 workflows, benchmarks, and searchable prompt recipes.",
-    scripts: {
-      build: "node scripts/build-atlas.mjs",
-      validate: "node scripts/validate-data.mjs",
-      serve: "python3 -m http.server 8766",
-      check: "npm run build && npm run validate",
-    },
-    keywords: [
-      "ai-image-prompts",
-      "gpt-image-2-prompts",
-      "gpt-image-prompts",
-      "gpt-image-2",
-      "prompt-engineering",
-      "image-generation",
-      "gptimg2",
-      "awesome-list",
-    ],
-  }, null, 2) + "\n");
-
-  fs.writeFileSync(path.join(root, ".gitignore"), `node_modules/
-.DS_Store
-.playwright-mcp/
-`);
-
-  ensureDir("dataset-card");
-  fs.writeFileSync(path.join(root, "dataset-card/README.md"), `---
-license: cc-by-4.0
-task_categories:
-  - text-to-image
-  - image-to-image
-language:
-  - en
-pretty_name: GPT Image 2 Prompts
-size_categories:
-  - n<1K
----
-
-# GPT Image 2 Prompts - AI Image Prompt Atlas
-
-GPT Image 2 Prompts is a structured collection of AI image prompt recipes for GPT Image 2 style workflows, GPTImg2, product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
-
-## Files
-
-- \`data/prompts.json\`
-- \`data/prompts.csv\`
-- \`data/prompts.ndjson\`
-- \`data/categories.json\`
-- \`data/benchmarks.json\`
-
-## Intended Use
-
-This dataset is intended for prompt education, search, retrieval, prompt library tooling, and creative workflow examples.
-
-## Source
-
-Project homepage: ${siteUrl}
-
-Tool entry point: https://gptimg2.art/
-`);
-
-  ensureDir("launch");
-  fs.writeFileSync(path.join(root, "launch/LAUNCH_PLAN.md"), `# Launch Plan
-
-## Positioning
-
-GPT Image 2 Prompts is a prompt operating system for AI image generation, not another random prompt list.
-
-## Channels
-
-- GitHub release
-- Substack article
-- note article
-- Hatena blog
-- GPTImg2 blog
-- Reddit communities where self-promotion is allowed
-- X / LinkedIn visual thread
-
-## Launch Hooks
-
-- 80 structured prompt recipes
-- Searchable gallery
-- JSON, CSV, and NDJSON dataset
-- Per-recipe pages with JSON-LD
-- llms.txt for AI retrieval
-- Open contribution system
-
-## Backlink Strategy
-
-Use one natural GPTImg2 link in the intro and one in each recipe page call-to-action. Avoid link stuffing.
-`);
-
-  fs.writeFileSync(path.join(root, "launch/SUBSTACK_DRAFT.md"), `# We Built an Open GPT Image 2 Prompt Atlas
-
-Most AI image prompt lists are hard to reuse. They show outputs, but they do not explain why a prompt works, what can fail, or how to adapt it.
-
-GPT Image 2 Prompts is a structured prompt recipe library with 80 examples across product photography, readable text posters, UI mockups, reference image editing, ecommerce mockups, brand visuals, infographics, character design, and style transfer.
-
-Each recipe includes:
-
-- Prompt
-- Negative instructions
-- Why it works
-- Variations
-- Editorial quality scores
-- Structured JSON data
-
-You can try the workflows with GPTImg2: https://gptimg2.art/
+- Prompt text
+- Output image URL or file
+- Source URL
+- Category
+- Notes about what the prompt is useful for
 `);
 }
 
-writeJson();
-writeImages();
-writeReadme();
-writeCategoryPages();
-writeGuides();
-writeSite();
-writeMeta();
+function run() {
+  resetGeneratedOutput();
+  writeData();
+  copyWorkflowAssets();
+  writeReadme();
+  writeCategoryMarkdown();
+  writeStyles();
+  writeIndex();
+  writeStaticPages();
+  syncDocsData();
+  writeGeoFiles();
+  writeMetaFiles();
+  console.log(`Built ${examples.length} real GPTImg2 prompt examples across ${categories.length} categories.`);
+}
 
-console.log(`Built GPT Image 2 Prompts with ${examples.length} examples.`);
+run();

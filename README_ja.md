@@ -1,13 +1,9 @@
-# AI Image Prompt Atlas 日本語版
+# GPT Image 2 Prompts 日本語版
 
-AI画像生成、GPT Image 2 スタイルのワークフロー、商品写真、読める文字入りポスター、UIモックアップ、参照画像編集のための構造化プロンプト集です。
+GPTImg2 の実際のプロンプトページから作成した、プロンプトと生成画像のデータセットです。
 
-このリポジトリは単なる一覧ではなく、検索可能なギャラリー、JSONデータセット、プロンプトレシピ、軽量ベンチマークとして設計されています。
+- 実例数: 874
+- カテゴリ数: 3
+- JSON/CSV/NDJSON と検索可能な HTML ギャラリーを含みます。
 
-- レシピ数：80
-- カテゴリ数：10
-- データ：[data/prompts.json](data/prompts.json)
-- ギャラリー：[docs/index.html](docs/index.html)
-- ツール：[GPTImg2](https://gptimg2.art/)
-
-英語版：[README.md](README.md)
+Main README: [README.md](README.md)

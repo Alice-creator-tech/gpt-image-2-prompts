@@ -1,53 +1,60 @@
-# GPT Image 2 Prompts Full Summary
+# GPT Image 2 Prompts Full Dataset Summary
 
-This repository contains 80 structured GPT Image 2 prompt recipes across 10 categories.
+This repository contains 874 verified GPTImg2 prompt-image pairs.
 
 Categories:
-- Product Photography: Commercial product images with controlled lighting, materials, and layout.
-- Readable Text Posters: Poster and cover prompts that prioritize legible typography and clean layout.
-- UI Mockups: App and dashboard visuals with readable interface hierarchy.
-- Reference Image Editing: Editing prompts that preserve subject identity while changing context or style.
-- Ecommerce Mockups: Market-ready product, packaging, and listing visuals.
-- Social Covers: Thumbnails, blog covers, carousels, and social posts.
-- Brand Visuals: Brand marks, campaign art direction, and visual identity exploration.
-- Infographics: Structured visuals that explain workflows, comparisons, and concepts.
-- Character Design: Consistent character sheets, poses, outfits, and stylized concepts.
-- Style Transfer: Prompts for controlled visual style changes without losing core structure.
-
-Prompt recipe fields:
-- title
-- category
-- use case
-- input type
-- output type
-- difficulty
-- aspect ratio
-- prompt
-- negative prompt
-- why it works
-- variations
-- editorial scores
-- image path
-- GPTImg2 links
+- Men's Fashion: 588 examples. Verified GPTImg2 prompt examples for Men's Fashion.
+- Women's Fashion: 179 examples. Verified GPTImg2 prompt examples for Women's Fashion.
+- Kids Fashion: 107 examples. Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.
 
 Representative examples:
-- Minimal Wireless Charger: premium ecommerce hero image
-- Glass Skincare Bottle: beauty product listing image
-- Ceramic Coffee Mug: lifestyle product hero image
-- Running Shoe Detail: sport ecommerce detail shot
-- Desk Lamp Launch: landing page product render
-- Reusable Water Bottle: marketplace catalog image
-- Smartwatch Strap Set: accessory comparison image
-- Artisan Chocolate Box: premium food product photo
-- Launch Poster: startup announcement visual
-- Workshop Flyer: event promotion poster
-- Quote Card: social media quote graphic
-- Sale Banner: campaign banner
-- Music Poster: music event poster
-- App Update Card: SaaS release image
-- Coffee Menu: restaurant menu visual
-- Book Cover: publishing concept
-- Analytics Dashboard: SaaS hero mockup
-- Mobile Finance App: app store preview
-- AI Editor Interface: product screenshot concept
-- Travel Planner: mobile UI concept
+- 韩系温柔 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-001
+- 夏日海边温柔风 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-002
+- 秋日温柔 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-003
+- 复古胶片风 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-004
+- 居家自拍大片 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-005
+- 韩系闺蜜风 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-006
+- 韩系温柔 AI 女装提示词 2: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-007
+- 画廊时尚大片 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-008
+- 韩系街拍风 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-009
+- 都市夜景时尚大片 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-010
+- 法式优雅钢琴写真 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-011
+- 韩系街拍风 AI 女装提示词 2: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-012
+- 夏日清新写真 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-013
+- 通勤干练 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-014
+- 甜美温柔 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-015
+- 韩系温柔 AI 女装提示词 3: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-016
+- 甜酷辣妹 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-017
+- 清冷高级 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-018
+- 现代居家 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-019
+- 春日绿意街道 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-020
+- 热带露台度假 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-021
+- 法式慵懒 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-022
+- 甜酷辣妹 AI 女装提示词 2: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-023
+- 法式慵懒 AI 女装提示词 2: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-024
+- 公园氛围感 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-025
+- 海边度假 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-026
+- 室内日常穿搭 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-027
+- 湖景度假少女 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-028
+- 法式慵懒 AI 女装提示词 3: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-029
+- 法式慵懒 AI 女装提示词 4: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-030
+- 春日清新 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-031
+- 法式慵懒 AI 女装提示词 5: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-032
+- 展厅时尚 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-033
+- 温馨自拍 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-034
+- 户外少女 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-035
+- 海边自拍 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-036
+- 服装展示 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-037
+- OOTD 摆拍 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-038
+- 户外少女 AI 女装提示词 2: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-039
+- 展厅写真 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-040
+- 法式慵懒 AI 女装提示词 6: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-041
+- 冬日居家自拍 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-042
+- 酒店走廊法式慵懒 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-043
+- 服装店内自拍 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-044
+- 室内自拍休闲居家 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-045
+- 镜前穿搭 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-046
+- 临海旅拍 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-047
+- 都市街景甜酷辣妹 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-048
+- 艺术展厅 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-049
+- 复古森系户外 AI 女装提示词: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-050
