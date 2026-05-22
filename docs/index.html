@@ -16,16 +16,41 @@
       <a href="https://gptimg2.art/">GPTImg2</a>
     </nav>
     <section>
-      <p class="eyebrow">Open prompt recipes for visual AI workflows</p>
-      <h1>Search, copy, benchmark, and adapt high-quality AI image prompts.</h1>
-      <p class="lede">A structured atlas for product photos, readable text posters, UI mockups, reference edits, social covers, and GPT Image 2 style generation workflows.</p>
+      <p class="eyebrow">A visual field guide for AI image generation</p>
+      <h1>Prompts you can actually reuse, not just admire.</h1>
+      <p class="lede">Browse 80 practical image briefs for product photos, posters with readable text, UI mockups, reference edits, and GPT Image 2 style workflows. Each recipe explains the idea, the failure modes, and the next variation to try.</p>
       <div class="hero-actions">
-        <a class="primary" href="https://gptimg2.art/">Try GPTImg2</a>
+        <a class="primary" href="https://gptimg2.art/">Open GPTImg2</a>
         <a class="secondary" href="data/prompts.json">Download JSON</a>
       </div>
     </section>
   </header>
   <main>
+    <section class="workflow-gallery" aria-label="GPTImg2 workflow screenshots">
+      <div>
+        <p class="eyebrow dark">Real workflow references</p>
+        <h2>Built around the actual GPTImg2 prompt workflow.</h2>
+        <p>These project screenshots and prompt assets keep the atlas grounded in the product instead of feeling like a generic prompt spreadsheet.</p>
+      </div>
+      <div class="workflow-strip">
+        <figure>
+    <img src="images/workflows/image-to-prompt-desktop.png" alt="Prompt Workspace">
+    <figcaption><strong>Prompt Workspace</strong><span>A real GPTImg2 workflow screenshot for turning visual ideas into structured prompts.</span></figcaption>
+  </figure>
+<figure>
+    <img src="images/workflows/image-to-prompt-mobile.png" alt="Mobile Prompt Flow">
+    <figcaption><strong>Mobile Prompt Flow</strong><span>The prompt workflow stays readable on small screens, which matters for shareable examples.</span></figcaption>
+  </figure>
+<figure>
+    <img src="images/workflows/prompt-anatomy.jpg" alt="Prompt Anatomy">
+    <figcaption><strong>Prompt Anatomy</strong><span>A visual breakdown of subject, composition, style, details, and constraints.</span></figcaption>
+  </figure>
+<figure>
+    <img src="images/workflows/product-workflow.jpg" alt="Product Workflow">
+    <figcaption><strong>Product Workflow</strong><span>A product-image workflow asset used to make the atlas feel practical, not abstract.</span></figcaption>
+  </figure>
+      </div>
+    </section>
     <section class="controls" aria-label="Prompt filters">
       <input id="search" type="search" placeholder="Search prompts, categories, use cases...">
       <select id="category">
@@ -48,6 +73,7 @@
         <div class="meta"></div>
         <h2></h2>
         <p class="use-case"></p>
+        <p class="brief"></p>
         <pre></pre>
         <div class="scores"></div>
         <div class="actions">

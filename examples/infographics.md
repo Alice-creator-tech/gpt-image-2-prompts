@@ -14,21 +14,13 @@ Structured visuals that explain workflows, comparisons, and concepts.
 **Prompt**
 
 ```text
-Create a polished educational diagram.
+Create an educational diagram that explains the idea at a glance before asking the viewer to read details.
 
-Subject: an infographic explaining subject, composition, style, details, and constraints.
+The explainer subject is an infographic explaining subject, composition, style, details, and constraints. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -39,10 +31,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -67,21 +59,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished process infographic.
+Create a process infographic that explains the idea at a glance before asking the viewer to read details.
 
-Subject: a step-by-step visual workflow from brief to final image.
+The explainer subject is a step-by-step visual workflow from brief to final image. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -92,10 +76,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -120,21 +104,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished analysis graphic.
+Create an analysis graphic that explains the idea at a glance before asking the viewer to read details.
 
-Subject: a comparison chart for image generation use cases.
+The explainer subject is a comparison chart for image generation use cases. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -145,10 +121,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -173,21 +149,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished guide illustration.
+Create a guide illustration that explains the idea at a glance before asking the viewer to read details.
 
-Subject: a mind map for turning vague ideas into image prompts.
+The explainer subject is a mind map for turning vague ideas into image prompts. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -198,10 +166,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -226,21 +194,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished marketing diagram.
+Create a marketing diagram that explains the idea at a glance before asking the viewer to read details.
 
-Subject: an infographic showing product image types across a sales funnel.
+The explainer subject is an infographic showing product image types across a sales funnel. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -251,10 +211,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -279,21 +239,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished QA guide.
+Create a QA guide that explains the idea at a glance before asking the viewer to read details.
 
-Subject: a checklist visual for reference image editing quality control.
+The explainer subject is a checklist visual for reference image editing quality control. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -304,10 +256,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -332,21 +284,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished prompt education.
+Create a prompt education that explains the idea at a glance before asking the viewer to read details.
 
-Subject: a matrix comparing style, lighting, camera, and constraints.
+The explainer subject is a matrix comparing style, lighting, camera, and constraints. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -357,10 +301,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -385,21 +329,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished training graphic.
+Create a training graphic that explains the idea at a glance before asking the viewer to read details.
 
-Subject: a visual chart of common AI image generation mistakes.
+The explainer subject is a visual chart of common AI image generation mistakes. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Diagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -410,10 +346,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 

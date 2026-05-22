@@ -14,19 +14,13 @@ Market-ready product, packaging, and listing visuals.
 **Prompt**
 
 ```text
-Create a polished marketplace listing.
+Create a marketplace listing with the kind of clarity a shopper needs before clicking.
 
-Subject: a white-background product image for a compact desk organizer.
+The commercial asset features a white-background product image for a compact desk organizer. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -37,10 +31,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -65,19 +59,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished brand storefront.
+Create a brand storefront with the kind of clarity a shopper needs before clicking.
 
-Subject: three product images for a skincare bundle on a soft pastel background.
+The commercial asset features three product images for a skincare bundle on a soft pastel background. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -88,10 +76,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -116,19 +104,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished packaging concept.
+Create a packaging concept with the kind of clarity a shopper needs before clicking.
 
-Subject: a recyclable kraft paper packaging box for organic tea.
+The commercial asset features a recyclable kraft paper packaging box for organic tea. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -139,10 +121,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -167,19 +149,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished conversion ad.
+Create a conversion ad with the kind of clarity a shopper needs before clicking.
 
-Subject: a split comparison image for a cleaning product.
+The commercial asset features a split comparison image for a cleaning product. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -190,10 +166,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -218,19 +194,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished bundle listing.
+Create a bundle listing with the kind of clarity a shopper needs before clicking.
 
-Subject: a neatly arranged bundle of notebook, pen, and desk accessories.
+The commercial asset features a neatly arranged bundle of notebook, pen, and desk accessories. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -241,10 +211,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -269,19 +239,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished lifestyle listing image.
+Create a lifestyle listing image with the kind of clarity a shopper needs before clicking.
 
-Subject: a home shelf scene featuring a minimalist candle jar.
+The commercial asset features a home shelf scene featuring a minimalist candle jar. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -292,10 +256,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -320,19 +284,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished listing infographic.
+Create a listing infographic with the kind of clarity a shopper needs before clicking.
 
-Subject: a product scale comparison next to a phone and hand silhouette.
+The commercial asset features a product scale comparison next to a phone and hand silhouette. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -343,10 +301,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -371,19 +329,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished feature visual.
+Create a feature visual with the kind of clarity a shopper needs before clicking.
 
-Subject: a product image with three clean annotation callouts.
+The commercial asset features a product image with three clean annotation callouts. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -394,10 +346,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 

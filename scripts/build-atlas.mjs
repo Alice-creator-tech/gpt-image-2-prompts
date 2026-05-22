@@ -169,6 +169,32 @@ const categories = [
 ];
 
 const categoryMap = Object.fromEntries(categories.map((category) => [category.slug, category]));
+const workflowAssets = [
+  {
+    title: "Prompt Workspace",
+    file: "image-to-prompt-desktop.png",
+    source: "/Users/aishu/Documents/Playground/gptimg2-blog-submissions/assets/image-to-prompt-desktop.png",
+    caption: "A real GPTImg2 workflow screenshot for turning visual ideas into structured prompts.",
+  },
+  {
+    title: "Mobile Prompt Flow",
+    file: "image-to-prompt-mobile.png",
+    source: "/Users/aishu/Documents/Playground/gptimg2-blog-submissions/assets/image-to-prompt-mobile.png",
+    caption: "The prompt workflow stays readable on small screens, which matters for shareable examples.",
+  },
+  {
+    title: "Prompt Anatomy",
+    file: "prompt-anatomy.jpg",
+    source: "/Users/aishu/Documents/Playground/gptimg2-note-assets/02-prompt-anatomy-square.jpg",
+    caption: "A visual breakdown of subject, composition, style, details, and constraints.",
+  },
+  {
+    title: "Product Workflow",
+    file: "product-workflow.jpg",
+    source: "/Users/aishu/Documents/Playground/gptimg2-note-assets/03-product-workflow-square.jpg",
+    caption: "A product-image workflow asset used to make the atlas feel practical, not abstract.",
+  },
+];
 
 function ensureDir(dir) {
   fs.mkdirSync(path.join(root, dir), { recursive: true });
@@ -189,16 +215,53 @@ function esc(input) {
     .replaceAll('"', "&quot;");
 }
 
+function withArticle(phrase) {
+  return `${/^[aeiou]/i.test(phrase) ? "an" : "a"} ${phrase}`;
+}
+
 function promptFor(category, title, subject, useCase) {
-  const base = `Create a polished ${useCase}.\n\nSubject: ${subject}.\n\nComposition: clear focal point, intentional negative space, balanced depth, no clutter.\n\nLighting: soft professional lighting with realistic shadows and material detail.\n\nStyle: high-quality AI image generation result suitable for a public design portfolio.\n\nDetails: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.\n\nConstraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.`;
-  const extras = {
-    "readable-text": `\n\nText rule: render only the requested words exactly. Keep typography large, centered, and readable.`,
-    "ui-mockups": `\n\nInterface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.`,
-    "reference-editing": `\n\nEditing rule: preserve the original subject identity, geometry, composition, and important details unless explicitly changed.`,
-    infographics: `\n\nDiagram rule: make the visual hierarchy scannable, with short labels and enough spacing between sections.`,
-    "character-design": `\n\nCharacter rule: keep identity, outfit logic, proportions, and style consistent across all views.`,
+  const useCasePhrase = withArticle(useCase);
+  const opening = {
+    "product-photography": `Build ${useCasePhrase} that feels ready for a real storefront, not a generic stock render.`,
+    "readable-text": `Design ${useCasePhrase} where the message is the hero and the typography survives thumbnail size.`,
+    "ui-mockups": `Create ${useCasePhrase} that looks like a product team could ship it tomorrow.`,
+    "reference-editing": `Edit the reference image for ${useCasePhrase} while protecting the parts viewers would notice first.`,
+    "ecommerce-mockups": `Create ${useCasePhrase} with the kind of clarity a shopper needs before clicking.`,
+    "social-covers": `Make ${useCasePhrase} with one idea, one focal point, and enough space for distribution crops.`,
+    "brand-visuals": `Explore ${useCasePhrase} that feels like the start of a coherent brand system, not a one-off graphic.`,
+    infographics: `Create ${useCasePhrase} that explains the idea at a glance before asking the viewer to read details.`,
+    "character-design": `Create ${useCasePhrase} with a character identity that could be reused across a larger set.`,
+    "style-transfer": `Transform the idea into ${useCasePhrase} while keeping the original structure easy to recognize.`,
+  }[category.slug];
+  const categoryRules = {
+    "product-photography": `Frame the subject like a premium product launch: ${subject}. Use a clean surface, controlled studio lighting, realistic shadows, and enough negative space for a landing page crop.`,
+    "readable-text": `The central visual is ${subject}. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.`,
+    "ui-mockups": `The interface concept is ${subject}. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.`,
+    "reference-editing": `The edit request is to ${subject}. Change only the requested attribute, preserve identity and geometry, and keep lighting, perspective, and edges physically plausible.`,
+    "ecommerce-mockups": `The commercial asset features ${subject}. Make the product easy to inspect, keep the background quiet, and use annotations only when they help the buying decision.`,
+    "social-covers": `The cover concept is ${subject}. Use a bold focal point, editorial lighting, and a composition that works for both wide previews and cropped social feeds.`,
+    "brand-visuals": `The brand exploration is ${subject}. Keep the visual language consistent enough to suggest a system: palette, shape logic, spacing, and tone should agree.`,
+    infographics: `The explainer subject is ${subject}. Use clear sections, short labels, strong hierarchy, and visual grouping so the viewer understands the flow quickly.`,
+    "character-design": `The character concept is ${subject}. Keep proportions, silhouette, palette, and personality stable so it feels like the same character across uses.`,
+    "style-transfer": `The style-transfer target is ${subject}. Preserve the core composition while changing the surface treatment, medium, and mood.`,
+  }[category.slug];
+  return `${opening}\n\n${categoryRules}\n\nArt direction: polished, practical, visually specific, and suitable for a public prompt library.\n\nAvoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.`;
+}
+
+function briefFor(category, title, subject, useCase) {
+  const verbs = {
+    "product-photography": "turns a product idea into a storefront-ready image brief",
+    "readable-text": "keeps typography readable while still giving the image a strong visual mood",
+    "ui-mockups": "turns an interface concept into a believable product screenshot",
+    "reference-editing": "shows how to ask for a precise edit without losing the original subject",
+    "ecommerce-mockups": "focuses the prompt on clarity, trust, and buying intent",
+    "social-covers": "compresses a content idea into a sharp cover image",
+    "brand-visuals": "uses prompt structure to explore a repeatable brand direction",
+    infographics: "translates an abstract workflow into a scannable visual explanation",
+    "character-design": "keeps a character reusable instead of generating a single lucky image",
+    "style-transfer": "changes visual language while preserving the underlying idea",
   };
-  return `${base}${extras[category.slug] ?? ""}`;
+  return `${title} ${verbs[category.slug]} for ${withArticle(useCase)}: ${subject}.`;
 }
 
 function negativeFor(category) {
@@ -229,13 +292,14 @@ function makeExample(category, item, index) {
     output_type: category.slug === "ui-mockups" ? "concept UI image" : "generated image",
     difficulty: index % 3 === 0 ? "easy" : index % 3 === 1 ? "medium" : "advanced",
     aspect_ratio: category.slug === "readable-text" ? "4:5 or 9:16" : category.slug === "social-covers" ? "16:9" : "1:1 or 16:9",
+    brief: briefFor(category, title, subject, useCase),
     prompt: promptFor(category, title, subject, useCase),
     negative_prompt: negativeFor(category),
     why_it_works: [
-      "The use case is declared before the visual style.",
-      "The subject is specific enough to reduce model guessing.",
-      "Composition and lighting constraints make the result easier to revise.",
-      "Failure modes are named directly, which improves practical usability.",
+      "It starts with the outcome the image needs to serve, so the model is not guessing the format.",
+      "The subject is concrete enough to anchor the scene before style words enter the prompt.",
+      "The art direction describes what success should feel like, not just what should appear.",
+      "The avoid list removes the common visual failures that usually make AI images hard to use.",
     ],
     variations: [
       `Make a minimal ${useCase} version with more whitespace.`,
@@ -365,10 +429,21 @@ function writeImages() {
   for (const example of examples) {
     fs.writeFileSync(path.join(root, example.image), cardSvg(example));
   }
+  copyWorkflowAssets();
   const previewSource = "/tmp/gptimg2-preview.png";
   if (fs.existsSync(previewSource)) {
     ensureDir("images/brand");
     fs.copyFileSync(previewSource, path.join(root, "images/brand/gptimg2-preview.png"));
+  }
+}
+
+function copyWorkflowAssets() {
+  ensureDir("images/workflows");
+  for (const asset of workflowAssets) {
+    const target = path.join(root, "images/workflows", asset.file);
+    if (fs.existsSync(asset.source)) {
+      fs.copyFileSync(asset.source, target);
+    }
   }
 }
 
@@ -391,21 +466,28 @@ function readmeGallery() {
   return `| | | |\n|---|---|---|\n${rows}`;
 }
 
+function workflowGalleryHtml(prefix = "") {
+  return workflowAssets.map((asset) => `<figure>
+    <img src="${prefix}images/workflows/${asset.file}" alt="${esc(asset.title)}">
+    <figcaption><strong>${esc(asset.title)}</strong><span>${esc(asset.caption)}</span></figcaption>
+  </figure>`).join("\n");
+}
+
 function writeReadme() {
   const categoryList = categories.map((category) => `- [${category.name}](examples/${category.slug}.md) - ${category.short}`).join("\n");
   const content = `# AI Image Prompt Atlas
 
 An open, structured atlas of high-quality AI image prompts, GPT Image 2 style workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
 
-This project is designed to be more than an awesome list. It is a prompt recipe library, a lightweight benchmark, a searchable gallery, and a machine-readable dataset.
+This project is not a pile of prompt screenshots. It is a visual field guide for people who want repeatable AI image results: clear briefs, reusable recipes, searchable examples, and a machine-readable dataset.
 
 [Try GPTImg2](https://gptimg2.art/) · [GPT Image 2 page](https://gptimg2.art/models/gpt-image-2) · [Searchable Gallery](docs/index.html)
 
-## Why This Exists
+## Why This Feels Different
 
-Most AI image prompt lists are hard to reuse. They show a result, but they do not explain why the prompt works, what can fail, or how to adapt it.
+Most AI image prompt lists are fun to scroll and hard to reuse. They show the lucky output, but they rarely explain the brief behind it, what can fail, or how to adapt the idea for a real product, article, poster, or edit.
 
-AI Image Prompt Atlas uses a recipe format:
+AI Image Prompt Atlas uses a recipe format that reads like a creative brief:
 
 - Clear use case
 - Prompt and negative instructions
@@ -434,7 +516,7 @@ Current first edition:
 - GitHub Pages searchable gallery
 - Multilingual README entry points
 
-## Prompt Recipe Format
+## Recipe Format
 
 \`\`\`md
 ## Minimal Wireless Charger
@@ -455,7 +537,7 @@ Why it works:
 - The subject is specific enough to reduce model guessing.
 - Composition and lighting constraints make the result easier to revise.
 
-Try this workflow:
+Open the workflow:
 https://gptimg2.art/
 \`\`\`
 
@@ -699,16 +781,26 @@ function writeSite() {
       <a href="https://gptimg2.art/">GPTImg2</a>
     </nav>
     <section>
-      <p class="eyebrow">Open prompt recipes for visual AI workflows</p>
-      <h1>Search, copy, benchmark, and adapt high-quality AI image prompts.</h1>
-      <p class="lede">A structured atlas for product photos, readable text posters, UI mockups, reference edits, social covers, and GPT Image 2 style generation workflows.</p>
+      <p class="eyebrow">A visual field guide for AI image generation</p>
+      <h1>Prompts you can actually reuse, not just admire.</h1>
+      <p class="lede">Browse 80 practical image briefs for product photos, posters with readable text, UI mockups, reference edits, and GPT Image 2 style workflows. Each recipe explains the idea, the failure modes, and the next variation to try.</p>
       <div class="hero-actions">
-        <a class="primary" href="https://gptimg2.art/">Try GPTImg2</a>
+        <a class="primary" href="https://gptimg2.art/">Open GPTImg2</a>
         <a class="secondary" href="data/prompts.json">Download JSON</a>
       </div>
     </section>
   </header>
   <main>
+    <section class="workflow-gallery" aria-label="GPTImg2 workflow screenshots">
+      <div>
+        <p class="eyebrow dark">Real workflow references</p>
+        <h2>Built around the actual GPTImg2 prompt workflow.</h2>
+        <p>These project screenshots and prompt assets keep the atlas grounded in the product instead of feeling like a generic prompt spreadsheet.</p>
+      </div>
+      <div class="workflow-strip">
+        ${workflowGalleryHtml()}
+      </div>
+    </section>
     <section class="controls" aria-label="Prompt filters">
       <input id="search" type="search" placeholder="Search prompts, categories, use cases...">
       <select id="category">
@@ -731,6 +823,7 @@ function writeSite() {
         <div class="meta"></div>
         <h2></h2>
         <p class="use-case"></p>
+        <p class="brief"></p>
         <pre></pre>
         <div class="scores"></div>
         <div class="actions">
@@ -864,6 +957,55 @@ select {
   border-radius: 8px;
   color: var(--muted);
 }
+.workflow-gallery {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin: 0 0 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+.workflow-gallery h2 {
+  margin: 0 0 10px;
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+.workflow-gallery p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.workflow-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.workflow-strip figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+.workflow-strip img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.workflow-strip figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  font-size: 0.78rem;
+}
+.workflow-strip figcaption span {
+  color: var(--muted);
+  line-height: 1.35;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -903,6 +1045,11 @@ h2 {
   margin: 0;
   color: var(--muted);
   line-height: 1.45;
+}
+.brief {
+  margin: 0;
+  color: #344054;
+  line-height: 1.5;
 }
 pre {
   max-height: 144px;
@@ -944,7 +1091,9 @@ pre {
 }
 @media (max-width: 920px) {
   .controls,
-  .grid {
+  .grid,
+  .workflow-gallery,
+  .workflow-strip {
     grid-template-columns: 1fr;
   }
   nav {
@@ -1090,6 +1239,7 @@ function render() {
     node.querySelector(".meta").textContent = item.category_name + " / " + label(item.difficulty);
     node.querySelector("h2").textContent = item.title;
     node.querySelector(".use-case").textContent = item.use_case;
+    node.querySelector(".brief").textContent = item.brief;
     node.querySelector("pre").textContent = item.prompt;
     node.querySelector(".scores").innerHTML = Object.entries(item.score)
       .map(([key, value]) => '<span class="score">' + label(key) + ': ' + value + '/5</span>')
@@ -1206,13 +1356,17 @@ function writeStaticSitePages() {
 <h1>${esc(example.title)}</h1>
 <p class="lede dark">${esc(example.use_case)}</p>
 <img class="detail-image" src="../${example.image}" alt="${esc(example.title)} prompt recipe card">
+<section>
+  <h2>The Idea</h2>
+  <p>${esc(example.brief)}</p>
+</section>
 <section class="detail-grid">
   <article>
-    <h2>Prompt</h2>
+    <h2>Creative Brief</h2>
     <pre>${esc(example.prompt)}</pre>
   </article>
   <article>
-    <h2>Negative Instructions</h2>
+    <h2>Guardrails</h2>
     <pre>${esc(example.negative_prompt)}</pre>
   </article>
 </section>

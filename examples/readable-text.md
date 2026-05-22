@@ -14,21 +14,13 @@ Poster and cover prompts that prioritize legible typography and clean layout.
 **Prompt**
 
 ```text
-Create a polished startup announcement visual.
+Design a startup announcement visual where the message is the hero and the typography survives thumbnail size.
 
-Subject: a clean launch poster with the headline NEW CREATIVE TOOLS.
+The central visual is a clean launch poster with the headline NEW CREATIVE TOOLS. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -39,10 +31,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -67,21 +59,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished event promotion poster.
+Design an event promotion poster where the message is the hero and the typography survives thumbnail size.
 
-Subject: a vertical workshop flyer with the headline PROMPT LAB.
+The central visual is a vertical workshop flyer with the headline PROMPT LAB. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -92,10 +76,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -120,21 +104,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished social media quote graphic.
+Design a social media quote graphic where the message is the hero and the typography survives thumbnail size.
 
-Subject: an editorial quote card with the phrase MAKE THE IDEA VISIBLE.
+The central visual is an editorial quote card with the phrase MAKE THE IDEA VISIBLE. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -145,10 +121,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -173,21 +149,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished campaign banner.
+Design a campaign banner where the message is the hero and the typography survives thumbnail size.
 
-Subject: a modern ecommerce banner with the headline WINTER STUDIO SALE.
+The central visual is a modern ecommerce banner with the headline WINTER STUDIO SALE. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -198,10 +166,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -226,21 +194,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished music event poster.
+Design a music event poster where the message is the hero and the typography survives thumbnail size.
 
-Subject: a minimal concert poster with the headline MIDNIGHT SYNTHS.
+The central visual is a minimal concert poster with the headline MIDNIGHT SYNTHS. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -251,10 +211,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -279,21 +239,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished SaaS release image.
+Design a SaaS release image where the message is the hero and the typography survives thumbnail size.
 
-Subject: a product update card with the text VERSION 2.0.
+The central visual is a product update card with the text VERSION 2.0. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -304,10 +256,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -332,21 +284,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished restaurant menu visual.
+Design a restaurant menu visual where the message is the hero and the typography survives thumbnail size.
 
-Subject: a small cafe menu board with clear prices and item names.
+The central visual is a small cafe menu board with clear prices and item names. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -357,10 +301,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -385,21 +329,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished publishing concept.
+Design a publishing concept where the message is the hero and the typography survives thumbnail size.
 
-Subject: a contemporary book cover with the title THE VISUAL BRIEF.
+The central visual is a contemporary book cover with the title THE VISUAL BRIEF. Keep the exact words large and legible, avoid extra lettering, and make the layout feel intentionally designed rather than decorated.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Text rule: render only the requested words exactly. Keep typography large, centered, and readable.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -410,10 +346,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 

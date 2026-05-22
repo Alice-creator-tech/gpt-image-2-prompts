@@ -117,6 +117,55 @@ select {
   border-radius: 8px;
   color: var(--muted);
 }
+.workflow-gallery {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin: 0 0 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+.workflow-gallery h2 {
+  margin: 0 0 10px;
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+.workflow-gallery p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.workflow-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.workflow-strip figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+.workflow-strip img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.workflow-strip figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  font-size: 0.78rem;
+}
+.workflow-strip figcaption span {
+  color: var(--muted);
+  line-height: 1.35;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -156,6 +205,11 @@ h2 {
   margin: 0;
   color: var(--muted);
   line-height: 1.45;
+}
+.brief {
+  margin: 0;
+  color: #344054;
+  line-height: 1.5;
 }
 pre {
   max-height: 144px;
@@ -197,7 +251,9 @@ pre {
 }
 @media (max-width: 920px) {
   .controls,
-  .grid {
+  .grid,
+  .workflow-gallery,
+  .workflow-strip {
     grid-template-columns: 1fr;
   }
   nav {

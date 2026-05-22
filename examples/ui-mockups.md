@@ -14,21 +14,13 @@ App and dashboard visuals with readable interface hierarchy.
 **Prompt**
 
 ```text
-Create a polished SaaS hero mockup.
+Create a SaaS hero mockup that looks like a product team could ship it tomorrow.
 
-Subject: a clean analytics dashboard for creator revenue and audience growth.
+The interface concept is a clean analytics dashboard for creator revenue and audience growth. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -39,10 +31,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -67,21 +59,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished app store preview.
+Create an app store preview that looks like a product team could ship it tomorrow.
 
-Subject: a mobile app screen for budgeting and subscription tracking.
+The interface concept is a mobile app screen for budgeting and subscription tracking. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -92,10 +76,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -120,21 +104,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished product screenshot concept.
+Create a product screenshot concept that looks like a product team could ship it tomorrow.
 
-Subject: an AI image editor interface with prompt panel and before-after preview.
+The interface concept is an AI image editor interface with prompt panel and before-after preview. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -145,10 +121,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -173,21 +149,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished mobile UI concept.
+Create a mobile UI concept that looks like a product team could ship it tomorrow.
 
-Subject: a trip planning app with itinerary cards, map preview, and weather.
+The interface concept is a trip planning app with itinerary cards, map preview, and weather. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -198,10 +166,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -226,21 +194,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished productivity tool mockup.
+Create a productivity tool mockup that looks like a product team could ship it tomorrow.
 
-Subject: a collaborative kanban board with tasks, avatars, and priority tags.
+The interface concept is a collaborative kanban board with tasks, avatars, and priority tags. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -251,10 +211,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -279,21 +239,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished mobile app mockup.
+Create a mobile app mockup that looks like a product team could ship it tomorrow.
 
-Subject: a cooking app screen with ingredients, timer, and nutrition card.
+The interface concept is a cooking app screen with ingredients, timer, and nutrition card. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -304,10 +256,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -332,21 +284,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished creator platform concept.
+Create a creator platform concept that looks like a product team could ship it tomorrow.
 
-Subject: an artist dashboard with stream analytics and playlist placements.
+The interface concept is an artist dashboard with stream analytics and playlist placements. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -357,10 +301,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 
@@ -385,21 +329,13 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 **Prompt**
 
 ```text
-Create a polished education SaaS visual.
+Create an education SaaS visual that looks like a product team could ship it tomorrow.
 
-Subject: an online course dashboard with progress rings and lesson cards.
+The interface concept is an online course dashboard with progress rings and lesson cards. Show believable navigation, hierarchy, cards, controls, and empty states without filling the screen with tiny unreadable labels.
 
-Composition: clear focal point, intentional negative space, balanced depth, no clutter.
+Art direction: polished, practical, visually specific, and suitable for a public prompt library.
 
-Lighting: soft professional lighting with realistic shadows and material detail.
-
-Style: high-quality AI image generation result suitable for a public design portfolio.
-
-Details: include accurate shapes, clean edges, coherent color harmony, and a result that still works at thumbnail size.
-
-Constraints: avoid warped geometry, random text, extra logos, duplicated objects, messy reflections, watermark, and low-resolution artifacts.
-
-Interface rule: keep UI text minimal, avoid tiny illegible labels, and make the hierarchy feel like a real product screen.
+Avoid: warped geometry, random logos, accidental text, duplicated objects, messy backgrounds, watermark, and low-resolution artifacts.
 ```
 
 **Negative instructions**
@@ -410,10 +346,10 @@ watermark, unreadable text, random logos, warped hands or objects, duplicated su
 
 **Why it works**
 
-- The use case is declared before the visual style.
-- The subject is specific enough to reduce model guessing.
-- Composition and lighting constraints make the result easier to revise.
-- Failure modes are named directly, which improves practical usability.
+- It starts with the outcome the image needs to serve, so the model is not guessing the format.
+- The subject is concrete enough to anchor the scene before style words enter the prompt.
+- The art direction describes what success should feel like, not just what should appear.
+- The avoid list removes the common visual failures that usually make AI images hard to use.
 
 **Variations**
 

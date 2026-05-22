@@ -2,15 +2,15 @@
 
 An open, structured atlas of high-quality AI image prompts, GPT Image 2 style workflows, image editing recipes, product photo prompts, readable text poster prompts, UI mockups, and reusable visual generation patterns.
 
-This project is designed to be more than an awesome list. It is a prompt recipe library, a lightweight benchmark, a searchable gallery, and a machine-readable dataset.
+This project is not a pile of prompt screenshots. It is a visual field guide for people who want repeatable AI image results: clear briefs, reusable recipes, searchable examples, and a machine-readable dataset.
 
 [Try GPTImg2](https://gptimg2.art/) · [GPT Image 2 page](https://gptimg2.art/models/gpt-image-2) · [Searchable Gallery](docs/index.html)
 
-## Why This Exists
+## Why This Feels Different
 
-Most AI image prompt lists are hard to reuse. They show a result, but they do not explain why the prompt works, what can fail, or how to adapt it.
+Most AI image prompt lists are fun to scroll and hard to reuse. They show the lucky output, but they rarely explain the brief behind it, what can fail, or how to adapt the idea for a real product, article, poster, or edit.
 
-AI Image Prompt Atlas uses a recipe format:
+AI Image Prompt Atlas uses a recipe format that reads like a creative brief:
 
 - Clear use case
 - Prompt and negative instructions
@@ -58,7 +58,7 @@ Current first edition:
 - GitHub Pages searchable gallery
 - Multilingual README entry points
 
-## Prompt Recipe Format
+## Recipe Format
 
 ```md
 ## Minimal Wireless Charger
@@ -79,7 +79,7 @@ Why it works:
 - The subject is specific enough to reduce model guessing.
 - Composition and lighting constraints make the result easier to revise.
 
-Try this workflow:
+Open the workflow:
 https://gptimg2.art/
 ```
 

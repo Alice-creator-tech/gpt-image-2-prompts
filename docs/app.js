@@ -39,6 +39,7 @@ function render() {
     node.querySelector(".meta").textContent = item.category_name + " / " + label(item.difficulty);
     node.querySelector("h2").textContent = item.title;
     node.querySelector(".use-case").textContent = item.use_case;
+    node.querySelector(".brief").textContent = item.brief;
     node.querySelector("pre").textContent = item.prompt;
     node.querySelector(".scores").innerHTML = Object.entries(item.score)
       .map(([key, value]) => '<span class="score">' + label(key) + ': ' + value + '/5</span>')
