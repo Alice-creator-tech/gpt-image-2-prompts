@@ -1,6 +1,6 @@
 # Women's Fashion GPT Image 2 Prompts
 
-Verified GPTImg2 prompt examples for Women's Fashion.
+Verified GPTImg2 prompts for women's fashion, product styling, ecommerce hero images, and social commerce visuals.
 
 ## 1. 韩系温柔 AI 女装提示词 1
 

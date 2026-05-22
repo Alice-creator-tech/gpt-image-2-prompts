@@ -11,6 +11,13 @@ This repository is rebuilt from the actual GPTImg2 prompt library, not invented 
 
 [Open the GitHub Pages gallery](docs/index.html) · [Try GPTImg2](https://gptimg2.art/) · [Download JSON](data/prompts.json)
 
+## SEO Guides
+
+- [Best GPT Image 2 Prompts](docs/best-gpt-image-2-prompts/)
+- [GPT Image 2 Fashion Prompts](docs/gpt-image-2-fashion-prompts/)
+- [GPT Image 2 Ecommerce Prompts](docs/gpt-image-2-ecommerce-prompts/)
+- [ChatGPT Image 2 Prompts](docs/chatgpt-image-2-prompts/)
+
 ## What Changed
 
 The first version looked polished but too generic. This version is built around verified prompt pages, so readers can inspect the actual prompt, image, category, and source URL together.
@@ -38,8 +45,8 @@ The first version looked polished but too generic. This version is built around 
 
 ## Categories
 
-- [Men's Fashion](examples/mens-fashion.md) - 588 real prompt-image pairs. Verified GPTImg2 prompt examples for Men's Fashion.
-- [Women's Fashion](examples/womens-fashion.md) - 179 real prompt-image pairs. Verified GPTImg2 prompt examples for Women's Fashion.
+- [Men's Fashion](examples/mens-fashion.md) - 588 real prompt-image pairs. Real GPTImg2 prompt pages for menswear lookbooks, product detail shots, model scenes, and marketplace-ready visuals.
+- [Women's Fashion](examples/womens-fashion.md) - 179 real prompt-image pairs. Verified GPTImg2 prompts for women's fashion, product styling, ecommerce hero images, and social commerce visuals.
 - [Kids Fashion](examples/kids-fashion.md) - 107 real prompt-image pairs. Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.
 
 ## Files

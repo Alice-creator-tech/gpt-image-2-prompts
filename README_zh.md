@@ -10,8 +10,8 @@
 
 ## 分类
 
-- [Men's Fashion](examples/mens-fashion.md) - 588 real prompt-image pairs. Verified GPTImg2 prompt examples for Men's Fashion.
-- [Women's Fashion](examples/womens-fashion.md) - 179 real prompt-image pairs. Verified GPTImg2 prompt examples for Women's Fashion.
+- [Men's Fashion](examples/mens-fashion.md) - 588 real prompt-image pairs. Real GPTImg2 prompt pages for menswear lookbooks, product detail shots, model scenes, and marketplace-ready visuals.
+- [Women's Fashion](examples/womens-fashion.md) - 179 real prompt-image pairs. Verified GPTImg2 prompts for women's fashion, product styling, ecommerce hero images, and social commerce visuals.
 - [Kids Fashion](examples/kids-fashion.md) - 107 real prompt-image pairs. Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.
 
 ## 为什么这版更好

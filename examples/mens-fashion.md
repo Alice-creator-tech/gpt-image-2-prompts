@@ -1,6 +1,6 @@
 # Men's Fashion GPT Image 2 Prompts
 
-Verified GPTImg2 prompt examples for Men's Fashion.
+Real GPTImg2 prompt pages for menswear lookbooks, product detail shots, model scenes, and marketplace-ready visuals.
 
 ## 1. 男装写真 AI 男装提示词 1
 

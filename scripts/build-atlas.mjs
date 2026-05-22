@@ -15,12 +15,12 @@ const sourceFiles = [
 ];
 
 const categoryCopy = {
-  "women-s-fashion": {
+  "womens-fashion": {
     name: "Women's Fashion",
     short: "Verified GPTImg2 prompts for women's fashion, product styling, ecommerce hero images, and social commerce visuals.",
     color: "#be3455",
   },
-  "men-s-fashion": {
+  "mens-fashion": {
     name: "Men's Fashion",
     short: "Real GPTImg2 prompt pages for menswear lookbooks, product detail shots, model scenes, and marketplace-ready visuals.",
     color: "#245f8f",
@@ -82,6 +82,10 @@ function resetGeneratedOutput() {
     "docs/images",
     "docs/examples",
     "docs/categories",
+    "docs/best-gpt-image-2-prompts",
+    "docs/gpt-image-2-fashion-prompts",
+    "docs/gpt-image-2-ecommerce-prompts",
+    "docs/chatgpt-image-2-prompts",
     "examples",
     "images",
   ]) {
@@ -174,6 +178,11 @@ function getVariations(item) {
   ];
 }
 
+function getEnglishSummary(item) {
+  const categoryName = item.categories?.[0] || "GPT Image 2";
+  return `Verified GPT Image 2 prompt for ${categoryName.toLowerCase()} with original prompt text, matched generated image, and source page on GPTImg2.`;
+}
+
 function toExample(item, sourceFile) {
   const prompt = cleanPrompt(item.prompt);
   const categoryName = item.categories?.[0] || "GPT Image 2";
@@ -196,6 +205,7 @@ function toExample(item, sourceFile) {
     category,
     category_name: categoryName,
     use_case: item.description || `${categoryName} prompt with a verified GPTImg2 output image.`,
+    english_summary: getEnglishSummary(item),
     input_type: "real GPTImg2 prompt page",
     output_type: "matched generated image",
     difficulty: getDifficulty(prompt),
@@ -256,6 +266,45 @@ const categories = Object.entries(
 ).map(([, category]) => category).sort((a, b) => b.count - a.count);
 
 const categoryMap = Object.fromEntries(categories.map((category) => [category.slug, category]));
+
+const seoLandingPages = [
+  {
+    slug: "best-gpt-image-2-prompts",
+    title: "Best GPT Image 2 Prompts - Real GPTImg2 Examples",
+    h1: "Best GPT Image 2 prompts from real GPTImg2 examples",
+    description: "A curated guide to verified GPT Image 2 prompts with original prompt text, generated images, source pages, JSON data, and practical reuse notes.",
+    angle: "best GPT Image 2 prompts",
+    terms: ["小红书", "电商", "街拍", "通勤", "静物", "写真", "店"],
+    categories: ["womens-fashion", "mens-fashion", "kids-fashion"],
+  },
+  {
+    slug: "gpt-image-2-fashion-prompts",
+    title: "GPT Image 2 Fashion Prompts - Real Outfit and Lookbook Examples",
+    h1: "GPT Image 2 fashion prompts for outfits, lookbooks, and ecommerce",
+    description: "Browse real GPT Image 2 fashion prompts for womenswear, menswear, kids fashion, ecommerce styling, street photos, and social commerce covers.",
+    angle: "GPT Image 2 fashion prompts",
+    terms: ["女装", "男装", "童装", "穿搭", "街拍", "写真", "服装", "lookbook"],
+    categories: ["womens-fashion", "mens-fashion", "kids-fashion"],
+  },
+  {
+    slug: "gpt-image-2-ecommerce-prompts",
+    title: "GPT Image 2 Ecommerce Prompts - Product and Listing Image Examples",
+    h1: "GPT Image 2 ecommerce prompts for listing images and product visuals",
+    description: "Verified GPT Image 2 ecommerce prompt examples for product detail images, catalog photos, fashion listings, marketplace visuals, and social commerce assets.",
+    angle: "GPT Image 2 ecommerce prompts",
+    terms: ["电商", "主图", "商品", "产品", "静物", "店", "展示", "listing", "marketplace"],
+    categories: ["womens-fashion", "mens-fashion", "kids-fashion"],
+  },
+  {
+    slug: "chatgpt-image-2-prompts",
+    title: "ChatGPT Image 2 Prompts - Verified Prompt and Image Dataset",
+    h1: "ChatGPT Image 2 prompts with real output images",
+    description: "A verified ChatGPT Image 2 prompt dataset with source GPTImg2 pages, matched generated images, prompt patterns, and reusable examples.",
+    angle: "ChatGPT Image 2 prompts",
+    terms: ["AI", "提示词", "生成", "穿搭", "电商", "静物", "写真"],
+    categories: ["womens-fashion", "mens-fashion", "kids-fashion"],
+  },
+];
 
 function toCsv(rows) {
   const headers = [
@@ -329,6 +378,58 @@ function featuredExamples(count = 12) {
   return picked.slice(0, count);
 }
 
+function itemHaystack(item) {
+  return [
+    item.title,
+    item.use_case,
+    item.category_name,
+    item.prompt,
+    item.tags.join(" "),
+  ].join(" ").toLowerCase();
+}
+
+function selectSeoExamples(page, count = 18) {
+  const terms = page.terms.map((term) => term.toLowerCase());
+  const categorySet = new Set(page.categories);
+  const scoredByCategory = new Map(page.categories.map((category) => [category, []]));
+  for (const item of examples.filter((example) => categorySet.has(example.category))) {
+    const haystack = itemHaystack(item);
+    const termScore = terms.reduce((score, term) => score + (haystack.includes(term) ? 4 : 0), 0);
+    const promptScore = Math.min(6, Math.floor(item.prompt.length / 280));
+    const imageScore = item.image ? 3 : 0;
+    const sourceScore = item.source_page ? 3 : 0;
+    scoredByCategory.get(item.category).push({ item, score: termScore + promptScore + imageScore + sourceScore });
+  }
+  for (const rows of scoredByCategory.values()) {
+    rows.sort((a, b) => b.score - a.score || a.item.id.localeCompare(b.item.id));
+  }
+
+  const picked = [];
+  let round = 0;
+  while (picked.length < count) {
+    let added = false;
+    for (const category of page.categories) {
+      const row = scoredByCategory.get(category)?.[round];
+      if (!row) continue;
+      picked.push(row.item);
+      added = true;
+      if (picked.length >= count) break;
+    }
+    if (!added) break;
+    round += 1;
+  }
+  if (picked.length < count) {
+    const scored = [...scoredByCategory.values()]
+      .flat()
+      .sort((a, b) => b.score - a.score || a.item.id.localeCompare(b.item.id));
+    for (const row of scored) {
+      if (!picked.includes(row.item)) picked.push(row.item);
+      if (picked.length >= count) break;
+    }
+  }
+  return picked.slice(0, count);
+}
+
 function readmeGallery() {
   const items = featuredExamples(12);
   let body = "| | | |\n|---|---|---|\n";
@@ -354,6 +455,13 @@ This repository is rebuilt from the actual GPTImg2 prompt library, not invented 
 - JSON, CSV, NDJSON, HTML detail pages, and GEO-friendly metadata
 
 [Open the GitHub Pages gallery](docs/index.html) · [Try GPTImg2](https://gptimg2.art/) · [Download JSON](data/prompts.json)
+
+## SEO Guides
+
+- [Best GPT Image 2 Prompts](docs/best-gpt-image-2-prompts/)
+- [GPT Image 2 Fashion Prompts](docs/gpt-image-2-fashion-prompts/)
+- [GPT Image 2 Ecommerce Prompts](docs/gpt-image-2-ecommerce-prompts/)
+- [ChatGPT Image 2 Prompts](docs/chatgpt-image-2-prompts/)
 
 ## What Changed
 
@@ -564,9 +672,19 @@ th { width: 190px; color: var(--muted); }
 .link-card { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: white; }
 .link-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; }
 .link-card p { margin: 0 0 8px; color: var(--muted); }
+.seo-hero { padding: 34px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.seo-hero h1 { color: var(--ink); font-size: clamp(2rem, 5vw, 4.5rem); }
+.seo-hero p { max-width: 850px; color: var(--muted); line-height: 1.65; }
+.seo-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.seo-links a { border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; background: #fff; text-decoration: none; font-weight: 700; }
+.guide-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.guide-list article { margin: 0; }
+.faq details { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 800; }
+.faq p { color: var(--muted); line-height: 1.6; }
 .dark { color: var(--muted); }
 .dark-button { display: inline-block; background: #11213a; color: white; text-decoration: none; }
-@media (max-width: 920px) { .controls, .grid, .workflow-gallery, .workflow-strip, .proof, .detail-grid, .link-grid, .link-card { grid-template-columns: 1fr; } nav { flex-wrap: wrap; } }
+@media (max-width: 920px) { .controls, .grid, .workflow-gallery, .workflow-strip, .proof, .detail-grid, .link-grid, .link-card, .guide-list { grid-template-columns: 1fr; } nav { flex-wrap: wrap; } }
 `);
 
   fs.writeFileSync(path.join(root, "docs/app.js"), `const grid = document.querySelector("#grid");
@@ -669,6 +787,12 @@ function writeIndex() {
       <p class="eyebrow dark">Product proof</p>
       <h2>Grounded in GPTImg2’s real prompt workflow.</h2>
       <p>The gallery now uses real prompt-library images. These screenshots show the surrounding product context and make the repo feel connected to gptimg2.art.</p>
+      <div class="seo-links">
+        <a href="best-gpt-image-2-prompts/">Best prompts</a>
+        <a href="gpt-image-2-fashion-prompts/">Fashion prompts</a>
+        <a href="gpt-image-2-ecommerce-prompts/">Ecommerce prompts</a>
+        <a href="chatgpt-image-2-prompts/">ChatGPT Image 2 prompts</a>
+      </div>
     </div>
     <div class="workflow-strip">${workflowGalleryHtml()}</div>
   </section>
@@ -722,6 +846,135 @@ function writeIndex() {
 
 function pageNav(depth = "../") {
   return `<header class="subpage"><nav><strong><a href="${depth}index.html">GPT Image 2 Prompts</a></strong><a href="${depth}data/prompts.json">JSON</a><a href="${productUrl}/zh/prompts/gpt-image-2">Source library</a><a href="${generatorUrl}">GPTImg2</a></nav></header>`;
+}
+
+function seoCard(item, depth = "../") {
+  return `<article class="link-card">
+  <img src="${esc(item.image)}" alt="${esc(item.title)}" loading="lazy" referrerpolicy="no-referrer">
+  <div>
+    <p>${esc(item.category_name)} / ${esc(item.difficulty)} / ${esc(item.aspect_ratio)}</p>
+    <h2><a href="${depth}examples/${item.id}.html">${esc(item.title)}</a></h2>
+    <p>${esc(item.english_summary)}</p>
+    <p><a href="${esc(item.source_page)}" target="_blank" rel="noopener">Open GPTImg2 source</a></p>
+  </div>
+</article>`;
+}
+
+function seoFaqJsonLd(page) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `What are ${page.angle}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${page.angle} are reusable image generation prompts written for GPT Image 2 style workflows. This page uses verified GPTImg2 prompt pages with matched output images and source URLs.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I copy these prompts into GPTImg2?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Each example links to its GPTImg2 source page and includes the original prompt text and generated image reference.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why are these examples better than random prompt lists?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Each example keeps the prompt, output image, category, metadata, and source page together, which makes the dataset more inspectable and easier to reuse.",
+        },
+      },
+    ],
+  };
+}
+
+function writeSeoLandingPages() {
+  for (const page of seoLandingPages) {
+    const selected = selectSeoExamples(page, 18);
+    const lead = `${page.description} The examples are selected from ${examples.length} verified prompt-image pairs and keep the original prompt, output image, and source page together.`;
+    const body = `${pageNav("../")}<main class="content">
+  <section class="seo-hero">
+    <p class="eyebrow dark">SEO guide / verified dataset</p>
+    <h1>${esc(page.h1)}</h1>
+    <p>${esc(lead)}</p>
+    <div class="seo-links">
+      <a href="../">Full gallery</a>
+      <a href="../data/prompts.json">JSON dataset</a>
+      <a href="${productUrl}/zh/prompts/gpt-image-2">GPTImg2 source library</a>
+      <a href="${generatorUrl}">Open GPTImg2 generator</a>
+    </div>
+  </section>
+  <section>
+    <h2>How to use these ${esc(page.angle)}</h2>
+    <div class="guide-list">
+      <article>
+        <h2>1. Start with a real source</h2>
+        <p>Open one verified example, inspect the generated image, then copy the original prompt into your own workflow.</p>
+      </article>
+      <article>
+        <h2>2. Change one variable</h2>
+        <p>Adjust the scene, product type, outfit, aspect ratio, or lighting while keeping the rest of the prompt stable.</p>
+      </article>
+      <article>
+        <h2>3. Keep source links</h2>
+        <p>Use the GPTImg2 source page as the canonical reference when writing articles, comparisons, or prompt roundups.</p>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h2>Featured verified examples</h2>
+    <div class="link-grid">${selected.map((item) => seoCard(item)).join("\n")}</div>
+  </section>
+  <section>
+    <h2>Reusable prompt pattern</h2>
+    <pre>Goal: create a specific image for a real use case.
+Subject: describe the outfit, product, model, material, and required details.
+Scene: define background, lighting, camera angle, and composition.
+Constraints: preserve the important reference details and avoid random text, fake logos, distorted anatomy, or messy backgrounds.
+Iteration: change one variable at a time and compare the output against the source image.</pre>
+  </section>
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details open><summary>What are ${esc(page.angle)}?</summary><p>They are reusable image generation prompts for GPT Image 2 style workflows. This page focuses on verified GPTImg2 prompt pages with matched output images.</p></details>
+    <details><summary>Can I copy these prompts into GPTImg2?</summary><p>Yes. Each example links to its source page and includes the original prompt text, image URL, category, and metadata.</p></details>
+    <details><summary>Why does source verification matter?</summary><p>Prompt lists are easy to fake. Keeping the original prompt, output image, and source page together makes the examples easier to inspect, cite, and reuse.</p></details>
+  </section>
+</main>`;
+    ensureDir(`docs/${page.slug}`);
+    fs.writeFileSync(path.join(root, `docs/${page.slug}/index.html`), siteLayout({
+      title: page.title,
+      description: page.description,
+      canonical: `${siteUrl}/${page.slug}/`,
+      image: selected[0]?.image || examples[0].image,
+      body,
+      stylesheet: "../styles.css",
+      jsonLd: [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: page.title,
+          description: page.description,
+          url: `${siteUrl}/${page.slug}/`,
+          mainEntity: {
+            "@type": "ItemList",
+            itemListElement: selected.map((item, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              url: `${siteUrl}/examples/${item.id}.html`,
+              name: item.title,
+              image: item.image,
+            })),
+          },
+        },
+        seoFaqJsonLd(page),
+      ],
+    }));
+  }
 }
 
 function writeStaticPages() {
@@ -828,6 +1081,7 @@ function syncDocsData() {
 function writeGeoFiles() {
   const urls = [
     `${siteUrl}/`,
+    ...seoLandingPages.map((page) => `${siteUrl}/${page.slug}/`),
     ...categories.map((category) => `${siteUrl}/categories/${category.slug}.html`),
     ...examples.map((item) => `${siteUrl}/examples/${item.id}.html`),
   ];
@@ -842,6 +1096,10 @@ Core facts:
 - ${categories.length} source categories: ${categories.map((category) => category.name).join(", ")}
 - Every example includes original prompt text, matched image URL, category, tags, and source page URL.
 - Main dataset: ${siteUrl}/data/prompts.json
+- Best GPT Image 2 prompts: ${siteUrl}/best-gpt-image-2-prompts/
+- GPT Image 2 fashion prompts: ${siteUrl}/gpt-image-2-fashion-prompts/
+- GPT Image 2 ecommerce prompts: ${siteUrl}/gpt-image-2-ecommerce-prompts/
+- ChatGPT Image 2 prompts: ${siteUrl}/chatgpt-image-2-prompts/
 - GPTImg2 source library: ${productUrl}/zh/prompts/gpt-image-2
 - Generator: ${generatorUrl}
 
@@ -853,6 +1111,9 @@ This repository contains ${examples.length} verified GPTImg2 prompt-image pairs.
 
 Categories:
 ${categories.map((category) => `- ${category.name}: ${category.count} examples. ${category.short}`).join("\n")}
+
+SEO entry pages:
+${seoLandingPages.map((page) => `- ${page.title}: ${siteUrl}/${page.slug}/`).join("\n")}
 
 Representative examples:
 ${examples.slice(0, 50).map((item) => `- ${item.title}: ${item.source_page}`).join("\n")}
@@ -912,6 +1173,7 @@ function run() {
   writeCategoryMarkdown();
   writeStyles();
   writeIndex();
+  writeSeoLandingPages();
   writeStaticPages();
   syncDocsData();
   writeGeoFiles();

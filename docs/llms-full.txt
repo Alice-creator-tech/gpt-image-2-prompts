@@ -3,9 +3,15 @@
 This repository contains 874 verified GPTImg2 prompt-image pairs.
 
 Categories:
-- Men's Fashion: 588 examples. Verified GPTImg2 prompt examples for Men's Fashion.
-- Women's Fashion: 179 examples. Verified GPTImg2 prompt examples for Women's Fashion.
+- Men's Fashion: 588 examples. Real GPTImg2 prompt pages for menswear lookbooks, product detail shots, model scenes, and marketplace-ready visuals.
+- Women's Fashion: 179 examples. Verified GPTImg2 prompts for women's fashion, product styling, ecommerce hero images, and social commerce visuals.
 - Kids Fashion: 107 examples. Real prompt-and-image pairs for children's clothing, family ecommerce scenes, boutique styling, and catalog images.
+
+SEO entry pages:
+- Best GPT Image 2 Prompts - Real GPTImg2 Examples: https://gptimage2prompts.github.io/gpt-image-2-prompts/best-gpt-image-2-prompts/
+- GPT Image 2 Fashion Prompts - Real Outfit and Lookbook Examples: https://gptimage2prompts.github.io/gpt-image-2-prompts/gpt-image-2-fashion-prompts/
+- GPT Image 2 Ecommerce Prompts - Product and Listing Image Examples: https://gptimage2prompts.github.io/gpt-image-2-prompts/gpt-image-2-ecommerce-prompts/
+- ChatGPT Image 2 Prompts - Verified Prompt and Image Dataset: https://gptimage2prompts.github.io/gpt-image-2-prompts/chatgpt-image-2-prompts/
 
 Representative examples:
 - 韩系温柔 AI 女装提示词 1: https://gptimg2.art/zh/prompts/gpt-image-2/ai-womens-fashion-001

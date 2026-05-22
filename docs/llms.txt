@@ -7,6 +7,10 @@ Core facts:
 - 3 source categories: Men's Fashion, Women's Fashion, Kids Fashion
 - Every example includes original prompt text, matched image URL, category, tags, and source page URL.
 - Main dataset: https://gptimage2prompts.github.io/gpt-image-2-prompts/data/prompts.json
+- Best GPT Image 2 prompts: https://gptimage2prompts.github.io/gpt-image-2-prompts/best-gpt-image-2-prompts/
+- GPT Image 2 fashion prompts: https://gptimage2prompts.github.io/gpt-image-2-prompts/gpt-image-2-fashion-prompts/
+- GPT Image 2 ecommerce prompts: https://gptimage2prompts.github.io/gpt-image-2-prompts/gpt-image-2-ecommerce-prompts/
+- ChatGPT Image 2 prompts: https://gptimage2prompts.github.io/gpt-image-2-prompts/chatgpt-image-2-prompts/
 - GPTImg2 source library: https://gptimg2.art/zh/prompts/gpt-image-2
 - Generator: https://gptimg2.art/zh/ai-image
 

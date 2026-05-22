@@ -67,6 +67,16 @@ th { width: 190px; color: var(--muted); }
 .link-card { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: white; }
 .link-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; }
 .link-card p { margin: 0 0 8px; color: var(--muted); }
+.seo-hero { padding: 34px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.seo-hero h1 { color: var(--ink); font-size: clamp(2rem, 5vw, 4.5rem); }
+.seo-hero p { max-width: 850px; color: var(--muted); line-height: 1.65; }
+.seo-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.seo-links a { border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; background: #fff; text-decoration: none; font-weight: 700; }
+.guide-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.guide-list article { margin: 0; }
+.faq details { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 800; }
+.faq p { color: var(--muted); line-height: 1.6; }
 .dark { color: var(--muted); }
 .dark-button { display: inline-block; background: #11213a; color: white; text-decoration: none; }
-@media (max-width: 920px) { .controls, .grid, .workflow-gallery, .workflow-strip, .proof, .detail-grid, .link-grid, .link-card { grid-template-columns: 1fr; } nav { flex-wrap: wrap; } }
+@media (max-width: 920px) { .controls, .grid, .workflow-gallery, .workflow-strip, .proof, .detail-grid, .link-grid, .link-card, .guide-list { grid-template-columns: 1fr; } nav { flex-wrap: wrap; } }
